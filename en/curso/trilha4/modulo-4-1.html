@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -303,7 +303,7 @@
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
 <main class="min-w-0" id="conteudo">
-<!-- SVG FUTURISTA (visão geral, #29) -->
+<!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Before the seven topics, take a look at the path that connects everything: you write a <strong>workflow in Markdown</strong>, it starts living in a folder (<code>.claude/skills</code>), and the agent exposes it as a <strong>slash command</strong> that it can call when you (or an instruction) invoke it. A skill is essentially a reusable piece of process.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -391,7 +391,7 @@
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Transforme este workflow numa skill chamável (slash command).
 
 Nome desejado: &lt;nome-da-skill&gt;
-Quando deve ser usada: &lt;descreva o gatilho — ex.: "quando eu pedir um resumo de reunião"&gt;
+Quando deve ser usada: &lt;descreva o gatilho — ex.: "quando eu pedir um resumo de reuniêo"&gt;
 Argumentos que ela recebe: &lt;ex.: texto-bruto, formato-de-saida&gt;
 Passos do processo:
 1. &lt;passo 1&gt;
@@ -513,7 +513,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 
 ## Passos
 1. Leia os &lt;bullets&gt; e o &lt;tom&gt;.
-2. Escreva um e-mail polido, conciso, sem enrolação.
+2. Escreva um e-mail polido, conciso, sem enrolaçêo.
 3. Salve em temporary/&lt;nome-arquivo&gt;.md</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: run <code>/&lt;nome-da-skill&gt;</code> — if the skill appears in the slash commands list and asks for any missing arguments, it's registered.</p>
 </div>
@@ -655,7 +655,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <filter height="180%" id="m41b-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.4"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
 </defs>
 <rect fill="url(#m41b-grid)" height="220" width="1000" x="0" y="0"></rect>
-<!-- caixa "contexto da sessão" -->
+<!-- caixa "contexto da sessêo" -->
 <rect fill="#0e1b26" height="150" rx="16" stroke="#38bdf8" stroke-dasharray="6 4" stroke-width="2" width="430" x="40" y="40"></rect>
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="13" font-weight="700" text-anchor="middle" x="255" y="64">SESSION CONTEXT (limited space)</text>
 <g filter="url(#m41b-glow)"><rect fill="#2a1c05" height="44" rx="11" stroke="#fbbf24" stroke-width="2" width="370" x="70" y="86"></rect></g>
@@ -832,9 +832,9 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
         INEMA.registerCheck('modulo-4-1#q1', {
           answer: 1,
           explain: {
-            0: 'Não. O CLAUDE.md é para regras de toda sessão; um processo de 8 passos específico incharia o contexto. Per-task vai em skill.',
+            0: 'Nêo. O CLAUDE.md é para regras de toda sessêo; um processo de 8 passos específico incharia o contexto. Per-task vai em skill.',
             1: 'Isso. Workflow repetido + consistência + compartilhar com o time = caso clássico de skill versionada e chamável por slash command.',
-            2: 'Não. Redigitar 8 passos toda semana perde consistência e tokens — é exatamente a dor que uma skill resolve.'
+            2: 'Nêo. Redigitar 8 passos toda semana perde consistência e tokens — é exatamente a dor que uma skill resolve.'
           }
         });
       }

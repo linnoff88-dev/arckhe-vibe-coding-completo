@@ -6595,7 +6595,7 @@
 "b0dc43d1573d92e6": "✅ Cómo verificar: aparece el run, se genera el .docx y el archivo está en Drive; todo esto",
 "c2a117b0d1ec4e82": "✅ Cómo verificar: el schedule muestra el próximo run; un run de prueba queda en verde; la alerta se activa en un run forzado a fallar. Recuerda: los retries resuelven fallos",
 "fc7623fc3e397918": "✅ Cómo verificar: el terminal imprime una URL → autorizas en el navegador → imprime el refresh token. Pégalo en el",
-"d9cded013042f4e3": "✅ Cómo verificar: el tono cambia en los dos borradores (respuesta y fallback); se responde a un correo firmado «Un abrazo, João» con «Hola, João»; el borrador muestra el sello de confianza. Prueba cada uno",
+"d9cded013042f4e3": "✅ Cómo verificar: el tono cambia en los dos borradores (respuesta y fallback); se responde a un correo firmado «Un abrazo, Joêo» con «Hola, Joêo»; el borrador muestra el sello de confianza. Prueba cada uno",
 "8d2e58182721b6b2": "✅ Cómo verificar: para [1], envía una pregunta fuera de la base y comprueba que aparezca el borrador «vamos a investigar» (no una respuesta inventada). Para [2]/[3], envía exactamente el tipo de entrada que debe detectar el filtro y confirma que se desvíe.",
 "2b80f7cd5167d929": "✅ Cómo verificar: pídele a Claude Code «explica en portugués qué hace este cron» y comprueba que coincida con lo que quieres antes de programarlo.",
 "fd3fe3430c34b0d6": "✅ Cómo verificar: completa el form (p. ej.: landing page / salud / 40 h / enterprise) → «Generar presupuesto» → n8n se ejecuta → el presupuesto aparece en la app. Usa la URL de",

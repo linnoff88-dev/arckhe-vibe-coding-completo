@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -179,7 +179,7 @@
     html:not(.dark) .text-red-400 { color: #dc2626; }
     html:not(.dark) .bg-red-900\/20 { background-color: rgba(220, 38, 38, 0.07); }
     html:not(.dark) .border-red-500\/30 { border-color: rgba(220, 38, 38, 0.25); }
-    /* limiares: cyan auxiliar + amber/orange suaves (zona de atenção) */
+    /* limiares: cyan auxiliar + amber/orange suaves (zona de atençêo) */
     html:not(.dark) .text-cyan-400 { color: #0891b2; }
     html:not(.dark) .text-amber-400 { color: #b45309; }
     html:not(.dark) .text-orange-400 { color: #c2410c; }
@@ -246,7 +246,7 @@
 <span class="sm:hidden">T5</span><span class="hidden sm:inline">Projetos</span>
 </a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
-<span class="sm:hidden">T6</span><span class="hidden sm:inline">Produção</span>
+<span class="sm:hidden">T6</span><span class="hidden sm:inline">Produçêo</span>
 </a>
 <button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Minha jornada</span>
@@ -265,7 +265,7 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegação" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaçêo" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-blue-400" href="../../index.html">Início</a>
 <span>/</span>
@@ -279,7 +279,7 @@
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÓDULO 2.4</span>
 <h3 class="text-2xl font-bold mb-4">🧠 Contexto &amp; Tokens</h3>
-<p class="text-lg text-neutral-400 max-w-3xl">A qualidade de um agente não é fixa: ela <strong class="text-blue-300">apodrece quanto mais longa fica a sessão</strong>. Quanto mais a conversa enche, mais a janela vira ruído e mais o agente "derrapa". Este módulo te dá a disciplina de gerenciar o contexto e os tokens — saber ler os limiares, quando dar <code class="text-blue-300">/compact</code>, quando dar <code class="text-blue-300">/clear</code>, e como manter cada sessão enxuta para a qualidade ficar alta do começo ao fim.</p>
+<p class="text-lg text-neutral-400 max-w-3xl">A qualidade de um agente nêo é fixa: ela <strong class="text-blue-300">apodrece quanto mais longa fica a sessêo</strong>. Quanto mais a conversa enche, mais a janela vira ruído e mais o agente "derrapa". Este módulo te dá a disciplina de gerenciar o contexto e os tokens — saber ler os limiares, quando dar <code class="text-blue-300">/compact</code>, quando dar <code class="text-blue-300">/clear</code>, e como manter cada sessêo enxuta para a qualidade ficar alta do começo ao fim.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
 <div class="text-xl font-bold text-blue-400">6</div>
@@ -309,11 +309,11 @@
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
 <main class="min-w-0" id="conteudo">
-<!-- intro + SVG visão geral -->
+<!-- intro + SVG visêo geral -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Pense na <strong>janela de contexto</strong> como o tanque de combustível da sessão. Cada mensagem sua, cada resposta do agente, cada arquivo lido e cada ferramenta carregada ocupa <strong class="text-blue-400">tokens</strong> — pedaços de texto que o modelo tem que "segurar na cabeça" ao mesmo tempo. O tanque tem capacidade fixa. À medida que enche, a qualidade não cai de repente: ela vai degradando. Por volta de <strong>~60%</strong> de uso os erros começam a aparecer. A boa notícia: você tem dois pedais — <code class="text-blue-400">/compact</code> e <code class="text-blue-400">/clear</code> — para recuperar fôlego antes do tanque transbordar.</p>
+<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Pense na <strong>janela de contexto</strong> como o tanque de combustível da sessêo. Cada mensagem sua, cada resposta do agente, cada arquivo lido e cada ferramenta carregada ocupa <strong class="text-blue-400">tokens</strong> — pedaços de texto que o modelo tem que "segurar na cabeça" ao mesmo tempo. O tanque tem capacidade fixa. À medida que enche, a qualidade nêo cai de repente: ela vai degradando. Por volta de <strong>~60%</strong> de uso os erros começam a aparecer. A boa notícia: você tem dois pedais — <code class="text-blue-400">/compact</code> e <code class="text-blue-400">/clear</code> — para recuperar fôlego antes do tanque transbordar.</p>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
-<svg aria-label="Medidor de contexto ao longo de uma sessão: a barra enche da esquerda para a direita conforme a conversa cresce; até cerca de 60 por cento a qualidade fica alta, depois dos 60 por cento ela começa a cair; ao redor de 70 por cento a ação recomendada é compactar com barra compact, e acima de 85 por cento é zerar com barra clear" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
+<svg aria-label="Medidor de contexto ao longo de uma sessêo: a barra enche da esquerda para a direita conforme a conversa cresce; até cerca de 60 por cento a qualidade fica alta, depois dos 60 por cento ela começa a cair; ao redor de 70 por cento a açêo recomendada é compactar com barra compact, e acima de 85 por cento é zerar com barra clear" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
 <defs>
 <lineargradient id="m24-grad" x1="0" x2="1" y1="0" y2="0">
 <stop offset="0" stop-color="#38bdf8"></stop><stop offset="0.6" stop-color="#3b82f6"></stop><stop offset="1" stop-color="#2563eb"></stop>
@@ -327,7 +327,7 @@
 <marker id="m24-ahc" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#38bdf8"></path></marker>
 </defs>
 <rect fill="url(#m24-grid)" height="240" width="1000" x="0" y="0"></rect>
-<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="40" y="40">Tanque de contexto — enche conforme a sessão cresce →</text>
+<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="40" y="40">Tanque de contexto — enche conforme a sessêo cresce →</text>
 <!-- tanque -->
 <rect fill="#0e1b26" height="48" rx="12" stroke="#1e3a5f" stroke-width="2" width="800" x="40" y="60"></rect>
 <g filter="url(#m24-glow)"><rect fill="url(#m24-grad)" height="44" opacity="0.9" rx="11" width="640" x="42" y="62"></rect></g>
@@ -346,14 +346,14 @@
 <rect fill="#0e2018" height="30" rx="8" stroke="#3b82f6" stroke-width="1.8" width="118" x="710" y="132"></rect><text fill="#93c5fd" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="769" y="152">85%+ → /clear</text>
 </svg>
 </div>
-<p class="text-xs text-neutral-500">Diagrama ilustrativo — o tanque enche com a história da conversa; passe a "ler o medidor" e use <code>/compact</code> por volta de 70% e <code>/clear</code> acima de 85% para a qualidade não despencar.</p>
+<p class="text-xs text-neutral-500">Diagrama ilustrativo — o tanque enche com a história da conversa; passe a "ler o medidor" e use <code>/compact</code> por volta de 70% e <code>/clear</code> acima de 85% para a qualidade nêo despencar.</p>
 </section>
 <!-- TÓPICO 1 -->
 <section class="mb-16" data-inema-topic="modulo-2-4#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">🍂 Context rot — degradação após ~60%</h2>
+<h2 class="text-2xl font-bold">🍂 Context rot — degradaçêo após ~60%</h2>
 </div>
 <button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
@@ -361,29 +361,29 @@
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t1-p1">
-<strong class="text-blue-400">Context rot</strong> ("apodrecimento de contexto") é a degradação gradual da qualidade das respostas quanto mais longa fica uma <strong>única sessão</strong>. Não é um bug nem um modelo "cansado": é uma consequência de como a <strong class="text-blue-400">atenção</strong> do modelo funciona. Quanto mais texto está na janela, mais coisa a IA tem que ponderar de uma vez — e, passado um certo ponto (na prática, por volta de <strong>~60%</strong> de uso), os erros começam a aparecer.
+<strong class="text-blue-400">Context rot</strong> ("apodrecimento de contexto") é a degradaçêo gradual da qualidade das respostas quanto mais longa fica uma <strong>única sessêo</strong>. Nêo é um bug nem um modelo "cansado": é uma consequência de como a <strong class="text-blue-400">atençêo</strong> do modelo funciona. Quanto mais texto está na janela, mais coisa a IA tem que ponderar de uma vez — e, passado um certo ponto (na prática, por volta de <strong>~60%</strong> de uso), os erros começam a aparecer.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Janela de contexto</strong> — tudo o que o modelo "enxerga" agora: suas mensagens, as respostas, arquivos lidos e instruções. <strong>Token</strong> — o pedacinho de texto que o modelo conta (uma palavra costuma valer 1 a 3 tokens). A janela tem um limite de tokens.</p>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-4-t1-p2">
-          O mecanismo é simples de visualizar: conforme a conversa cresce, a janela enche de <strong>histórico ruidoso</strong> — tentativas que não deram certo, arquivos que você nem usa mais, idas e voltas. As mensagens recentes (que muitas vezes <em>não</em> são as mais importantes) começam a "abafar" as regras centrais do começo. O agente passa a esquecer instruções, repetir o que já fez ou misturar coisas — sintomas clássicos de contexto inchado.
+          O mecanismo é simples de visualizar: conforme a conversa cresce, a janela enche de <strong>histórico ruidoso</strong> — tentativas que nêo deram certo, arquivos que você nem usa mais, idas e voltas. As mensagens recentes (que muitas vezes <em>nêo</em> sêo as mais importantes) começam a "abafar" as regras centrais do começo. O agente passa a esquecer instruções, repetir o que já fez ou misturar coisas — sintomas clássicos de contexto inchado.
         </p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6 mb-6">
-<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m2-4-t1-p3">Quem não conhece o context rot culpa o modelo ("a IA ficou burra"), quando o problema é a sessão ter ficado longa demais. Reconhecer o padrão muda tudo: em vez de brigar com o agente, você <strong>limpa o tanque</strong> e a qualidade volta.</p>
+<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m2-4-t1-p3">Quem nêo conhece o context rot culpa o modelo ("a IA ficou burra"), quando o problema é a sessêo ter ficado longa demais. Reconhecer o padrêo muda tudo: em vez de brigar com o agente, você <strong>limpa o tanque</strong> e a qualidade volta.</p>
 <ul class="space-y-2 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Diagnóstico certo:</strong> "está ruim" vira "o contexto está cheio", que tem solução.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Qualidade estável:</strong> você intervém antes dos ~60%, não depois do estrago.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Diagnóstico certo:</strong> "está ruim" vira "o contexto está cheio", que tem soluçêo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Qualidade estável:</strong> você intervém antes dos ~60%, nêo depois do estrago.</span></li>
 <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Menos retrabalho:</strong> sessões curtas e limpas erram menos e gastam menos token.</span></li>
 </ul>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Degrada gradual</div><p class="text-xs text-neutral-400">Não cai de repente.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Degrada gradual</div><p class="text-xs text-neutral-400">Nêo cai de repente.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">~60% é o limiar</div><p class="text-xs text-neutral-400">Erros começam aí.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Ruído abafa regra</div><p class="text-xs text-neutral-400">Histórico esconde o essencial.</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Atenção limitada</div><p class="text-xs text-neutral-400">Raiz do fenômeno.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Atençêo limitada</div><p class="text-xs text-neutral-400">Raiz do fenômeno.</p></div>
 </div>
 <div class="flex justify-start mt-6">
 <button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
@@ -442,17 +442,17 @@
 </g>
 </svg>
 </div>
-<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — os números são guias práticos, não regras exatas. O hábito que importa é: olhe o medidor e aja <strong>antes</strong> de chegar à faixa crítica.</p>
+<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — os números sêo guias práticos, nêo regras exatas. O hábito que importa é: olhe o medidor e aja <strong>antes</strong> de chegar à faixa crítica.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-4-t2-p2">Limiares transformam uma sensação vaga ("acho que está ficando confuso") em uma rotina objetiva. Você para de reagir ao desastre e passa a agir preventivamente: ao bater os 70%, compactar já é reflexo; ao passar de 85%, zerar é automático. É a diferença entre dirigir olhando o painel e dirigir até o carro morrer na estrada.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-4-t2-p2">Limiares transformam uma sensaçêo vaga ("acho que está ficando confuso") em uma rotina objetiva. Você para de reagir ao desastre e passa a agir preventivamente: ao bater os 70%, compactar já é reflexo; ao passar de 85%, zerar é automático. É a diferença entre dirigir olhando o painel e dirigir até o carro morrer na estrada.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
-<p class="text-neutral-300 text-sm">Trate o limiar de <strong>70%</strong> como um "checkpoint": é o momento natural de pausar, rodar <code>/compact</code> e reavaliar se ainda faz sentido continuar na mesma tarefa. Não espere o agente começar a errar para olhar o medidor — ele já vai estar atrasado.</p>
+<p class="text-neutral-300 text-sm">Trate o limiar de <strong>70%</strong> como um "checkpoint": é o momento natural de pausar, rodar <code>/compact</code> e reavaliar se ainda faz sentido continuar na mesma tarefa. Nêo espere o agente começar a errar para olhar o medidor — ele já vai estar atrasado.</p>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">0–50% seguro</div><p class="text-xs text-neutral-400">Trabalhe sem preocupação.</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">50–70% atenção</div><p class="text-xs text-neutral-400">Pense em compactar.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">0–50% seguro</div><p class="text-xs text-neutral-400">Trabalhe sem preocupaçêo.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">50–70% atençêo</div><p class="text-xs text-neutral-400">Pense em compactar.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">70–85% /compact</div><p class="text-xs text-neutral-400">Compacte proativamente.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">85%+ /clear</div><p class="text-xs text-neutral-400">Zere e recomece.</p></div>
 </div>
@@ -476,14 +476,14 @@
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t3-p1">
-          São os dois comandos para gerenciar o tanque. <strong class="text-blue-400">/clear</strong> é o <strong>reset total</strong>: apaga toda a conversa e começa do zero, com o contexto vazio — use quando for <em>trocar de tarefa</em> ou quando a qualidade já degradou de vez. <strong class="text-blue-400">/compact</strong> é o <strong>resumo inteligente</strong>: o agente condensa a conversa, guarda o que importa (decisões, estado atual, regras) e comprime o resto — use <em>no meio de uma tarefa longa</em>, quando o contexto está alto mas você ainda precisa do histórico.
+          Sêo os dois comandos para gerenciar o tanque. <strong class="text-blue-400">/clear</strong> é o <strong>reset total</strong>: apaga toda a conversa e começa do zero, com o contexto vazio — use quando for <em>trocar de tarefa</em> ou quando a qualidade já degradou de vez. <strong class="text-blue-400">/compact</strong> é o <strong>resumo inteligente</strong>: o agente condensa a conversa, guarda o que importa (decisões, estado atual, regras) e comprime o resto — use <em>no meio de uma tarefa longa</em>, quando o contexto está alto mas você ainda precisa do histórico.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>/clear</strong> = esvaziar a caixa (perde o histórico, ganha contexto limpo). <strong>/compact</strong> = encolher a caixa para um resumo (mantém a essência, libera espaço). Regra de bolso: troca de assunto → <code>/clear</code>; mesma tarefa, tanque cheio → <code>/compact</code>.</p>
 </div>
 <!-- SVG clear vs compact -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
-<svg aria-label="Comparação de clear e compact: o comando clear esvazia totalmente a caixa de contexto deixando-a vazia; o comando compact encolhe a caixa cheia para um resumo compacto que preserva o que importa" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="Comparaçêo de clear e compact: o comando clear esvazia totalmente a caixa de contexto deixando-a vazia; o comando compact encolhe a caixa cheia para um resumo compacto que preserva o que importa" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <pattern height="32" id="m24c-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#3b82f6" opacity="0.1" r="1.3"></circle></pattern>
 <marker id="m24c-ah" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#38bdf8"></path></marker>
@@ -516,24 +516,24 @@
 <text fill="#93c5fd" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="500" y="196">/clear esquece tudo · /compact lembra o que importa em menos espaço</text>
 </svg>
 </div>
-<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — <code>/clear</code> zera; <code>/compact</code> encolhe mantendo decisões e estado. Escolha pela intenção: trocar de tarefa, ou continuar a mesma com menos peso.</p>
+<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — <code>/clear</code> zera; <code>/compact</code> encolhe mantendo decisões e estado. Escolha pela intençêo: trocar de tarefa, ou continuar a mesma com menos peso.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t3-p2">Usar o comando errado custa caro: dar <code>/clear</code> no meio de uma tarefa longa apaga o estado que você ainda precisava (e você reconstrói tudo na mão); dar <code>/compact</code> achando que vai "resumir" uma troca de assunto deixa lixo da tarefa antiga contaminando a nova. Saber qual usar, e quando, é o que separa quem mantém qualidade de quem briga com o agente.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t3-p2">Usar o comando errado custa caro: dar <code>/clear</code> no meio de uma tarefa longa apaga o estado que você ainda precisava (e você reconstrói tudo na mêo); dar <code>/compact</code> achando que vai "resumir" uma troca de assunto deixa lixo da tarefa antiga contaminando a nova. Saber qual usar, e quando, é o que separa quem mantém qualidade de quem briga com o agente.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
 <h4 class="font-bold text-blue-400 mb-4">✓ /clear quando…</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Você vai começar uma <strong>tarefa nova e não relacionada</strong>.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Você vai começar uma <strong>tarefa nova e nêo relacionada</strong>.</span></li>
 <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>A qualidade já degradou de vez (correções repetidas, esquecimentos).</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>O tanque passou de <strong>85%</strong> e o histórico antigo não importa mais.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>O tanque passou de <strong>85%</strong> e o histórico antigo nêo importa mais.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ /compact quando NÃO deveria</h4>
+<h4 class="font-bold text-red-400 mb-4">✗ /compact quando NêO deveria</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Trocar de assunto achando que o resumo "limpa" a tarefa anterior.</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Compactar a cada mensagem por ansiedade (você só perde detalhe útil).</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Usar <code>/compact</code> para "consertar" uma sessão já podre — aí é <code>/clear</code>.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Usar <code>/compact</code> para "consertar" uma sessêo já podre — aí é <code>/clear</code>.</span></li>
 </ul>
 </div>
 </div>
@@ -563,7 +563,7 @@
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">1️⃣ Uma tarefa por sessão</h2>
+<h2 class="text-2xl font-bold">1️⃣ Uma tarefa por sessêo</h2>
 </div>
 <button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
@@ -571,14 +571,14 @@
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t4-p1">
-          A regra de higiene mais simples e mais poderosa: <strong class="text-blue-400">uma tarefa por sessão</strong>. Você foca em um objetivo, termina, dá <code class="text-blue-300">/clear</code> e só então começa o próximo. Nada de reaproveitar uma conversa inchada de uma tarefa antiga para fazer algo sem relação — esse é o caminho mais rápido para o context rot.
+          A regra de higiene mais simples e mais poderosa: <strong class="text-blue-400">uma tarefa por sessêo</strong>. Você foca em um objetivo, termina, dá <code class="text-blue-300">/clear</code> e só entêo começa o próximo. Nada de reaproveitar uma conversa inchada de uma tarefa antiga para fazer algo sem relaçêo — esse é o caminho mais rápido para o context rot.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Sessão</strong> — uma conversa contínua com o agente, do início até você zerar. <strong>Conversa inchada</strong> — uma sessão que acumulou tarefas, tentativas e arquivos de mais, deixando a janela cheia de ruído.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Sessêo</strong> — uma conversa contínua com o agente, do início até você zerar. <strong>Conversa inchada</strong> — uma sessêo que acumulou tarefas, tentativas e arquivos de mais, deixando a janela cheia de ruído.</p>
 </div>
-<!-- timeline ciclo de vida da sessão -->
+<!-- timeline ciclo de vida da sessêo -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
-<svg aria-label="Linha do tempo de uma sessão saudável: início com contexto limpo, depois trabalho na tarefa, ao redor de 70 por cento rode compact, ao concluir troque de tarefa e rode clear para a próxima começar limpa" class="w-full h-auto" role="img" viewbox="0 0 1000 170">
+<svg aria-label="Linha do tempo de uma sessêo saudável: início com contexto limpo, depois trabalho na tarefa, ao redor de 70 por cento rode compact, ao concluir troque de tarefa e rode clear para a próxima começar limpa" class="w-full h-auto" role="img" viewbox="0 0 1000 170">
 <defs>
 <pattern height="32" id="m24d-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#3b82f6" opacity="0.1" r="1.3"></circle></pattern>
 </defs>
@@ -597,20 +597,20 @@
 <circle cx="900" cy="86" fill="#2a1313" r="13" stroke="#f87171" stroke-width="2.5"></circle><text fill="#fca5a5" font-size="13" font-weight="700" text-anchor="middle" x="900" y="91">5</text>
 <text fill="#fca5a5" font-size="11" text-anchor="middle" x="900" y="124">trocar tarefa → /clear</text>
 </g>
-<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="500" y="38">Ciclo de vida de uma sessão saudável</text>
+<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="500" y="38">Ciclo de vida de uma sessêo saudável</text>
 </svg>
 </div>
-<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — uma tarefa nasce limpa, é compactada no meio quando pesa, e morre num <code>/clear</code> antes da próxima começar. Sessão curta = qualidade alta.</p>
+<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — uma tarefa nasce limpa, é compactada no meio quando pesa, e morre num <code>/clear</code> antes da próxima começar. Sessêo curta = qualidade alta.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t4-p2">Contexto limpo é precisão. Quando a sessão só tem o que importa para a tarefa atual, o agente acerta mais, alucina menos e gasta menos tokens — porque não está reprocessando histórico irrelevante a cada resposta. Misturar tarefas numa mesma conversa faz o oposto: dilui o foco e queima tokens à toa.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t4-p2">Contexto limpo é precisêo. Quando a sessêo só tem o que importa para a tarefa atual, o agente acerta mais, alucina menos e gasta menos tokens — porque nêo está reprocessando histórico irrelevante a cada resposta. Misturar tarefas numa mesma conversa faz o oposto: dilui o foco e queima tokens à toa.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
-<p class="text-neutral-300 text-sm">Antes de <code>/clear</code>, peça ao agente um <strong>resumo do que foi decidido</strong> e cole o essencial no <code>CLAUDE.md</code> ou numa nota. Assim a próxima sessão começa limpa <em>e</em> com o contexto certo já carregado — sem arrastar o lixo da conversa antiga.</p>
+<p class="text-neutral-300 text-sm">Antes de <code>/clear</code>, peça ao agente um <strong>resumo do que foi decidido</strong> e cole o essencial no <code>CLAUDE.md</code> ou numa nota. Assim a próxima sessêo começa limpa <em>e</em> com o contexto certo já carregado — sem arrastar o lixo da conversa antiga.</p>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">1 tarefa = 1 sessão</div><p class="text-xs text-neutral-400">Termine, depois zere.</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Não reaproveite</div><p class="text-xs text-neutral-400">Conversa inchada = ruído.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">1 tarefa = 1 sessêo</div><p class="text-xs text-neutral-400">Termine, depois zere.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Nêo reaproveite</div><p class="text-xs text-neutral-400">Conversa inchada = ruído.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Limpo = preciso</div><p class="text-xs text-neutral-400">Menos erro, menos token.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Resuma antes</div><p class="text-xs text-neutral-400">Salve o essencial e /clear.</p></div>
 </div>
@@ -637,10 +637,10 @@
 <strong class="text-blue-400">Definir "pronto"</strong> é dar ao agente um critério explícito de quando parar — uma <em>definition of done</em>. Sem isso, um agente diligente continua trabalhando "para garantir": busca mais, refaz, expande, e queima tokens (e contexto) num loop sem fim. Com um alvo claro como <em>"exatamente 75 perfis"</em>, ele sabe a linha de chegada e para nela.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Definition of done</strong> — a condição objetiva que diz "acabou" (uma quantidade, um formato, um arquivo gerado). <strong>Loop</strong> — quando o agente fica repetindo passos sem convergir, geralmente por não saber quando é suficiente.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Definition of done</strong> — a condiçêo objetiva que diz "acabou" (uma quantidade, um formato, um arquivo gerado). <strong>Loop</strong> — quando o agente fica repetindo passos sem convergir, geralmente por nêo saber quando é suficiente.</p>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t5-p2">Um loop não é só lento — ele <strong>enche o tanque</strong>. Cada busca extra, cada "deixa eu verificar de novo" empilha tokens na janela e acelera o context rot. Definir "pronto" mata o problema na raiz: o agente para no alvo, a sessão fica curta, e você não desperdiça tokens nem qualidade. É a forma mais barata de proteger o contexto: prevenir o trabalho desnecessário antes de ele acontecer.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t5-p2">Um loop nêo é só lento — ele <strong>enche o tanque</strong>. Cada busca extra, cada "deixa eu verificar de novo" empilha tokens na janela e acelera o context rot. Definir "pronto" mata o problema na raiz: o agente para no alvo, a sessêo fica curta, e você nêo desperdiça tokens nem qualidade. É a forma mais barata de proteger o contexto: prevenir o trabalho desnecessário antes de ele acontecer.</p>
 <!-- code box #2 (definition of done) -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-blue-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">dar um critério de parada explícito para evitar loop e gasto de tokens</span></p>
@@ -651,12 +651,12 @@ pare ao atingir 75 e me devolva a lista.</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
-<p class="text-neutral-300 text-sm">Sempre que pedir algo "aberto" (pesquisar, coletar, gerar variações), inclua um <strong>número, um formato ou uma condição de parada</strong>. "Quantos?", "até quando?", "em que formato?" — responda essas três no próprio prompt e o agente não vai entrar em loop.</p>
+<p class="text-neutral-300 text-sm">Sempre que pedir algo "aberto" (pesquisar, coletar, gerar variações), inclua um <strong>número, um formato ou uma condiçêo de parada</strong>. "Quantos?", "até quando?", "em que formato?" — responda essas três no próprio prompt e o agente nêo vai entrar em loop.</p>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Alvo explícito</div><p class="text-xs text-neutral-400">"Exatamente 75 perfis".</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Condição de parada</div><p class="text-xs text-neutral-400">Diz quando "acabou".</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Condiçêo de parada</div><p class="text-xs text-neutral-400">Diz quando "acabou".</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Evita loop</div><p class="text-xs text-neutral-400">Sem "buscar por garantia".</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Poupa tokens</div><p class="text-xs text-neutral-400">Trabalho desnecessário = zero.</p></div>
 </div>
@@ -680,10 +680,10 @@ pare ao atingir 75 e me devolva a lista.</pre>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t6-p1">
-          Antes mesmo da primeira mensagem, parte do tanque já está ocupada por coisas que carregam <strong>na largada</strong>: o <code class="text-blue-300">CLAUDE.md</code>, as definições de cada servidor <strong class="text-blue-400">MCP</strong>, instruções de sistema. Economia de contexto é puxar três alavancas: usar <strong class="text-blue-400">skills</strong> (que carregam sob demanda, só quando acionadas, em vez de viver no CLAUDE.md), <strong class="text-blue-400">desligar MCP</strong> que você não usa (cada servidor injeta definições de ferramentas no contexto), e manter o <strong class="text-blue-400">CLAUDE.md enxuto</strong> (menos de ~500 linhas, só o que vale para toda sessão).
+          Antes mesmo da primeira mensagem, parte do tanque já está ocupada por coisas que carregam <strong>na largada</strong>: o <code class="text-blue-300">CLAUDE.md</code>, as definições de cada servidor <strong class="text-blue-400">MCP</strong>, instruções de sistema. Economia de contexto é puxar três alavancas: usar <strong class="text-blue-400">skills</strong> (que carregam sob demanda, só quando acionadas, em vez de viver no CLAUDE.md), <strong class="text-blue-400">desligar MCP</strong> que você nêo usa (cada servidor injeta definições de ferramentas no contexto), e manter o <strong class="text-blue-400">CLAUDE.md enxuto</strong> (menos de ~500 linhas, só o que vale para toda sessêo).
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Skill</strong> — uma capacidade que o agente carrega só quando precisa (sob demanda), sem pesar no contexto o tempo todo. <strong>MCP</strong> — um conector que dá ferramentas ao agente; cada um adiciona definições à janela mesmo sem ser usado. <strong>CLAUDE.md</strong> — o arquivo de instruções permanentes, que carrega em toda sessão.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Skill</strong> — uma capacidade que o agente carrega só quando precisa (sob demanda), sem pesar no contexto o tempo todo. <strong>MCP</strong> — um conector que dá ferramentas ao agente; cada um adiciona definições à janela mesmo sem ser usado. <strong>CLAUDE.md</strong> — o arquivo de instruções permanentes, que carrega em toda sessêo.</p>
 </div>
 <!-- SVG economia: alavancas reduzindo a barra -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -707,7 +707,7 @@ pare ao atingir 75 e me devolva a lista.</pre>
 <rect height="0" width="170" x="310" y="140"></rect> <!-- spacer -->
 <rect fill="#0e1b30" height="52" rx="10" stroke="#3b82f6" stroke-width="1.8" width="150" x="500" y="76"></rect>
 <text fill="#93c5fd" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="575" y="98">desligar MCP</text>
-<text fill="#93c5fd" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="575" y="116">não usado</text>
+<text fill="#93c5fd" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="575" y="116">nêo usado</text>
 <rect fill="#0e2436" height="52" rx="10" stroke="#38bdf8" stroke-width="1.8" width="160" x="670" y="76"></rect>
 <text fill="#7dd3fc" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="750" y="98">CLAUDE.md enxuto</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="750" y="116">&lt; ~500 linhas</text>
@@ -719,24 +719,24 @@ pare ao atingir 75 e me devolva a lista.</pre>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" x="300" y="184">↑ tanque leve = mais espaço para o trabalho de verdade</text>
 </svg>
 </div>
-<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — cada alavanca devolve espaço da janela. Junte as três (mais "uma tarefa por sessão") e você tem uma rotina de <strong>higiene de contexto</strong>.</p>
+<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — cada alavanca devolve espaço da janela. Junte as três (mais "uma tarefa por sessêo") e você tem uma rotina de <strong>higiene de contexto</strong>.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t6-p2">O contexto que você gasta na largada é contexto que <em>não</em> sobra para a tarefa. Um CLAUDE.md de 1.500 linhas e cinco MCPs ligados podem comer uma fatia grande do tanque antes de você digitar a primeira palavra — e te empurram para o limiar dos ~60% muito mais rápido. Higiene de contexto não é detalhe de avançado: é o que mantém suas sessões longas, baratas e precisas.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t6-p2">O contexto que você gasta na largada é contexto que <em>nêo</em> sobra para a tarefa. Um CLAUDE.md de 1.500 linhas e cinco MCPs ligados podem comer uma fatia grande do tanque antes de você digitar a primeira palavra — e te empurram para o limiar dos ~60% muito mais rápido. Higiene de contexto nêo é detalhe de avançado: é o que mantém suas sessões longas, baratas e precisas.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
 <h4 class="font-bold text-blue-400 mb-4">✓ Higiene de contexto</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Skills carregadas sob demanda, em vez de tudo no CLAUDE.md.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>MCP que você não usa hoje fica <strong>desligado</strong>.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>CLAUDE.md &lt; ~500 linhas, só o que vale para toda sessão.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Uma tarefa por sessão; <code>/compact</code> a ~70%, <code>/clear</code> ao trocar.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>MCP que você nêo usa hoje fica <strong>desligado</strong>.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>CLAUDE.md &lt; ~500 linhas, só o que vale para toda sessêo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Uma tarefa por sessêo; <code>/compact</code> a ~70%, <code>/clear</code> ao trocar.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <h4 class="font-bold text-red-400 mb-4">✗ Conversa inchada para tudo</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Despejar todo o conhecimento no CLAUDE.md "por via das dúvidas".</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Deixar dez MCPs ligados sem usar nenhum na sessão.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Deixar dez MCPs ligados sem usar nenhum na sessêo.</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Uma única conversa gigante para todas as tarefas do dia.</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Nunca olhar o medidor e só dar <code>/clear</code> quando trava.</span></li>
 </ul>
@@ -771,10 +771,10 @@ pare ao atingir 75 e me devolva a lista.</pre>
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
 <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📌</span> Resumo do Módulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">Context rot</strong><span class="text-neutral-400"> — a qualidade degrada quanto mais longa a sessão; os erros começam por volta de ~60% de uso.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">Limiares</strong><span class="text-neutral-400"> — 0-50% seguro · 50-70% atenção · 70-85% /compact · 85%+ /clear.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">Context rot</strong><span class="text-neutral-400"> — a qualidade degrada quanto mais longa a sessêo; os erros começam por volta de ~60% de uso.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">Limiares</strong><span class="text-neutral-400"> — 0-50% seguro · 50-70% atençêo · 70-85% /compact · 85%+ /clear.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">/clear vs /compact</strong><span class="text-neutral-400"> — zerar para trocar de tarefa; resumir no meio de uma tarefa longa.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">Uma tarefa por sessão</strong><span class="text-neutral-400"> — termine, dê /clear, comece a próxima; limpo = preciso e barato.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">Uma tarefa por sessêo</strong><span class="text-neutral-400"> — termine, dê /clear, comece a próxima; limpo = preciso e barato.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">Definir "pronto"</strong><span class="text-neutral-400"> — um alvo explícito ("exatamente 75 perfis") evita loop e gasto de tokens.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-neutral-100">Economia de contexto</strong><span class="text-neutral-400"> — skills sob demanda, MCP desligado, CLAUDE.md enxuto: higiene de contexto.</span></div></div>
 </div>
@@ -792,12 +792,12 @@ pare ao atingir 75 e me devolva a lista.</pre>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
 <nav aria-label="Índice da página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seção <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">6</span></span></p>
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">6</span></span></p>
 <ol class="space-y-1.5 text-sm">
 <li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-1">1. Context rot (~60%)</a></li>
 <li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-2">2. Os limiares</a></li>
 <li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-3">3. /clear vs /compact</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-4">4. Uma tarefa por sessão</a></li>
+<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-4">4. Uma tarefa por sessêo</a></li>
 <li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-5">5. Definir "pronto"</a></li>
 <li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-6">6. Economia de contexto</a></li>
 </ol>
@@ -833,9 +833,9 @@ pare ao atingir 75 e me devolva a lista.</pre>
         INEMA.registerCheck('modulo-2-4#q1', {
           answer: 1,
           explain: {
-            0: 'Não. /compact resume mantendo o histórico — mas você vai TROCAR de tarefa, então não quer o histórico antigo. Use /clear.',
+            0: 'Nêo. /compact resume mantendo o histórico — mas você vai TROCAR de tarefa, entêo nêo quer o histórico antigo. Use /clear.',
             1: 'Isso. Acima de 85% e trocando de tarefa, /clear zera o contexto e a tarefa nova começa limpa e precisa.',
-            2: 'Não. Continuar na mesma conversa arrasta o ruído da tarefa anterior e acelera o context rot. Zere com /clear.'
+            2: 'Nêo. Continuar na mesma conversa arrasta o ruído da tarefa anterior e acelera o context rot. Zere com /clear.'
           }
         });
       }

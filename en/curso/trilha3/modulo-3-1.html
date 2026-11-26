@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -311,7 +311,7 @@
 <h2 class="text-base font-semibold text-purple-400 mb-2 flex items-center"><span class="mr-2">🟣</span> How to use this module</h2>
 <p class="text-neutral-300 text-sm">Each pattern has a block <strong>copy-run</strong>: the goal, the prompt to paste, and how to check whether it worked. The parts between <code class="text-purple-400">&lt;assim&gt;</code> are variables—replace them with your own case. The patterns are tool-independent: they work for building workflows, generating documents, or creating agents.</p>
 </div>
-<!-- SVG FUTURISTA (visão geral, #29) -->
+<!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">A weak prompt and a strong prompt can ask for the same thing — but lead the AI down different paths. The weak prompt dictates steps, is vague about the output, and mixes tasks; the strong one describes the outcome, specifies the format, and handles one task at a time. The seven patterns in this module are the levers that turn one into the other.</p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -365,12 +365,12 @@
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">ask for an outcome, letting AI choose the path.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (copy and run)</span></div>
-<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Quero um resultado, não um passo a passo. Objetivo: &lt;descreva o que deve
+<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Quero um resultado, nêo um passo a passo. Objetivo: &lt;descreva o que deve
 acontecer, ex.: "quando chegar um e-mail com 'urgente' no assunto, registrar
 numa planilha"&gt;.
 
 Você escolhe as ferramentas e a estrutura. Antes de construir, me explique em
-1 parágrafo a abordagem que pretende usar e por quê. Não dite passos técnicos
+1 parágrafo a abordagem que pretende usar e por quê. Nêo dite passos técnicos
 de volta para mim — proponha a melhor rota.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the AI responds with an approach and a rationale (not questions about "which node to use"). If it asks you to define the steps, reinforce: "you decide the best way".</p>
 </div>
@@ -436,7 +436,7 @@ Especificações da saída:
 - Nome do arquivo: &lt;ex.: leads.csv&gt;
 - Onde salvar: &lt;ex.: pasta saidas/&gt;
 
-Se faltar alguma informação para cumprir isso, pergunte antes de começar.</pre>
+Se faltar alguma informaçêo para cumprir isso, pergunte antes de começar.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the output has the requested format, quantity, and name, in the requested location. If it says "approximately," reinforce the exact quantity as the stopping criterion.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
@@ -504,8 +504,8 @@ Antes de construir qualquer coisa:
 2. Me faça todas as perguntas de esclarecimento que tiver.
 3. Apresente um plano numerado para eu aprovar.
 
-Não escreva nem altere arquivos até eu dizer "aprovado". Depois disso, pode
-executar sem pedir confirmação a cada passo.</pre>
+Nêo escreva nem altere arquivos até eu dizer "aprovado". Depois disso, pode
+executar sem pedir confirmaçêo a cada passo.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the first response is a plan + questions, not code. You answer, approve, and only then does the build start.</p>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Key concepts</h3>
@@ -544,7 +544,7 @@ executar sem pedir confirmação a cada passo.</pre>
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">give feedback that preserves what’s good and directs the change.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (copy and run)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Feedback sobre o que você entregou:
-- O que ficou bom (mantenha): &lt;ex.: a estrutura e a divisão em seções&gt;
+- O que ficou bom (mantenha): &lt;ex.: a estrutura e a divisêo em seções&gt;
 - O que mudar e por quê: &lt;ex.: o tom está formal demais; quero algo mais
   casual e direto, porque o público é técnico e informal&gt;
 
@@ -581,7 +581,7 @@ também para valer nas próximas vezes.</pre>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-1-t5-p1">
           The relationship model: <strong class="text-purple-400">you’re the manager; the AI is the developer</strong>. You define the goal, context, and criteria; then approve and review. The AI, like an experienced developer, chooses tools, writes, tests, debugs, and self-corrects. Treating it as an expert (rather than a tool that needs micro-instructions) is what brings out its best.
         </p>
-<!-- SVG conceitual: divisão de papéis (#29) -->
+<!-- SVG conceitual: divisêo de papéis (#29) -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Dividing roles in prompting: the manager, who is you, defines the objective, context, and approval; the developer, who is the AI, chooses, writes, debugs, and self-corrects; you delegate the outcome, and it delivers while asking for feedback" class="w-full h-auto" role="img" viewbox="0 0 1000 190">
 <defs>
@@ -621,7 +621,7 @@ formato Y&gt;.
 
 Você decide a abordagem. Conforme for construindo, explique em 1 linha por que
 escolheu cada ferramenta ou estrutura importante, para eu aprender. Se eu
-estiver errado em alguma suposição, me corrija.</pre>
+estiver errado em alguma suposiçêo, me corrija.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the AI makes technical decisions and briefly explains them instead of asking you "which tool to use." You finish understanding why those choices were made.</p>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Key concepts</h3>
@@ -822,9 +822,9 @@ Ao final, teste com 2-3 inputs diferentes e me mostre os resultados.</pre>
         INEMA.registerCheck('modulo-3-1#q1', {
           answer: 1,
           explain: {
-            0: 'Não. Repetir mais alto não resolve contexto poluído — geralmente piora. O sinal de 3 correções é para recomeçar.',
+            0: 'Nêo. Repetir mais alto nêo resolve contexto poluído — geralmente piora. O sinal de 3 correções é para recomeçar.',
             1: 'Isso. Corrigir a mesma coisa 2+ vezes indica contexto inchado (context rot). /clear e um prompt melhor resolvem.',
-            2: 'Não. Mais MCP adiciona definições ao contexto já cheio — piora o problema em vez de resolver.'
+            2: 'Nêo. Mais MCP adiciona definições ao contexto já cheio — piora o problema em vez de resolver.'
           }
         });
       }

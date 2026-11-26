@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -308,7 +308,7 @@
 <h2 class="text-base font-semibold text-teal-400 mb-2 flex items-center"><span class="mr-2">🧰</span> Cómo usar este módulo</h2>
 <p class="text-neutral-300 text-sm">Es una compilación real. Cada bloque de código de abajo es un <strong>prompt para copiar y ejecutar</strong> en tu asistente (con n8n conectado vía MCP), siempre con <strong>🎯 objetivo</strong>, el bloque para copiar y <strong>✅ cómo verificar</strong>. Las partes entre <code class="text-teal-300">&lt;chaves&gt;</code> los reemplazas por tus valores. Requisitos previos: un asistente de código con el MCP de n8n conectado, una cuenta de correo electrónico y una clave de IA con embeddings (p. ej., OpenAI). Avanza por etapas: ejecuta un prompt, verifícalo y solo entonces continúa.</p>
 </div>
-<!-- SVG FUTURISTA (visão geral / arquitetura, #29) -->
+<!-- SVG FUTURISTA (visêo geral / arquitetura, #29) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">El plano del proyecto tiene <strong>dos máquinas</strong> que dividen el trabajo: una <em>aprende</em> las políticas una sola vez (el indexador), la otra <em>responde</em> cada vez que llega un correo electrónico (el agente). Se comunican a través de un lugar común: el <strong class="text-teal-400">vector store</strong>, donde el conocimiento se puede buscar.</p>
 <div class="rounded-2xl border border-teal-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -484,8 +484,8 @@ Anexei dois documentos na pasta do projeto:
 Resultado desejado:
 1. Use esses documentos como base de conhecimento da empresa.
 2. A cada e-mail novo, classifique se é uma dúvida de suporte técnico.
-3. Se for, rascunhe uma resposta APOIADA nos documentos (não invente nada).
-4. Se NÃO for suporte, ignore (não responda).
+3. Se for, rascunhe uma resposta APOIADA nos documentos (nêo invente nada).
+4. Se NêO for suporte, ignore (nêo responda).
 5. A resposta deve ficar como RASCUNHO no Gmail, nunca enviada automaticamente.
 
 Você decide como armazenar e buscar os documentos. Antes de construir,
@@ -541,7 +541,7 @@ me faça as perguntas que precisar e me mostre o plano dos workflows.</faq.pdf><
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-1-t4-p1">
           Con el plan aprobado, la IA construye los nodos. El <strong>Workflow 1 (indexador)</strong> queda así: activador manual → nodo de código con el texto de los documentos → inserción en el vector store (con data loader y text splitter por carácter). El <strong>Workflow 2 (agente)</strong> queda así: activador de Gmail (cada 15 min, solo los no leídos) → classifier (soporte vs. no relevante) → agente de IA con la herramienta de vector store → nodo de borrador en Gmail; la rama «no relevante» termina sin responder.
         </p>
-<!-- CODE BOX 2: ordem de execução -->
+<!-- CODE BOX 2: ordem de execuçêo -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-teal-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">cargar la base y activar el agente en el orden correcto.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">pasos (en orden)</span></div>
@@ -550,7 +550,7 @@ me faça as perguntas que precisar e me mostre o plano dos workflows.</faq.pdf><
    para popular o vector store com as políticas.
 3. Só depois, ATIVE o Workflow 2 (agente do e-mail).
 4. Se algum nó der erro, me copie a mensagem e diga em qual nó —
-   eu te devolvo a correção.</pre>
+   eu te devolvo a correçêo.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: el indexador debe finalizar sin errores y el vector store debe quedar poblado. Activa el agente solo <strong>después</strong> — de lo contrario, consulta una base vacía.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
@@ -646,9 +646,9 @@ me faça as perguntas que precisar e me mostre o plano dos workflows.</faq.pdf><
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">guion de prueba</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Envie 3 e-mails de teste para a caixa conectada:
 
-A) "Qual é o prazo para devolver um produto?"      → deve rascunhar a política de devolução
+A) "Qual é o prazo para devolver um produto?"      → deve rascunhar a política de devoluçêo
 B) "Meu aparelho parou; ainda está na garantia?"   → resposta deve bater com o PDF de garantia
-C) "Bora jantar amanhã às 20h?"                     → classificar como "não relevante", NÃO responder
+C) "Bora jantar amanhê às 20h?"                     → classificar como "nêo relevante", NêO responder
 
 Rode o agente e me diga: ele ancorou nas políticas?
 Algum número (ex.: "30 dias") confere com o documento?
@@ -728,9 +728,9 @@ Ele recusou o caso C sem inventar?</pre>
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-teal-400 font-semibold mb-1">🎯 Enhancement 1 — Fallback cuando no se encuentra: <span class="text-neutral-300 font-normal">si la base no tiene la respuesta, no inventes.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (cópialo y ejecútalo)</span></div>
-<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Quando a base de conhecimento NÃO tiver a resposta, o agente não deve inventar.
-Faça o agente emitir um marcador ("política encontrada" / "política não encontrada");
-um nó de código lê esse marcador, um nó IF ramifica, e no caso "não encontrada"
+<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Quando a base de conhecimento NêO tiver a resposta, o agente nêo deve inventar.
+Faça o agente emitir um marcador ("política encontrada" / "política nêo encontrada");
+um nó de código lê esse marcador, um nó IF ramifica, e no caso "nêo encontrada"
 crie um rascunho educado de "vamos pesquisar e retornamos em breve".
 Antes de mudar, me pergunte o limiar de match e o texto do fallback.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: envía una pregunta fuera de la base (p. ej.: «¿Hacen envíos al exterior?»). Debe pasar al borrador de investigación, no a una respuesta inventada.</p>
@@ -758,14 +758,14 @@ Antes de mudar, me pergunte o limiar de match e o texto do fallback.</pre>
     rascunho de "vamos pesquisar". Varie as despedidas.
 
 [5] Personalize com o nome do cliente: um nó de código extrai o nome da
-    assinatura ("Abraço, João" / "Obrigada, Sara") e usa na saudação,
-    com fallback "Olá" quando não houver assinatura.
+    assinatura ("Abraço, Joêo" / "Obrigada, Sara") e usa na saudaçêo,
+    com fallback "Olá" quando nêo houver assinatura.
 
 [6] Adicione um indicador de confiança (uso interno): o agente marca
     alto/médio/baixo conforme o match (alto &gt; 0.8, médio 0.6–0.8, baixo &lt; 0.6);
     um nó de código monta um selo HTML (verde/amarelo/vermelho) anexado ao
-    rascunho, só para revisão interna.</pre>
-<p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: el tono cambia en los dos borradores (respuesta y fallback); se responde a un correo firmado «Un abrazo, João» con «Hola, João»; el borrador muestra el sello de confianza. Prueba cada uno <strong>antes</strong> de pedir el siguiente.</p>
+    rascunho, só para revisêo interna.</pre>
+<p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: el tono cambia en los dos borradores (respuesta y fallback); se responde a un correo firmado «Un abrazo, Joêo» con «Hola, Joêo»; el borrador muestra el sello de confianza. Prueba cada uno <strong>antes</strong> de pedir el siguiente.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Por qué aprender</h3>
 <p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-1-t7-p2">Los enhancements muestran el <strong>stair-step</strong> real: cada mejora es una solicitud en portugués, probada de forma aislada. Observa cómo a veces la IA hace más de lo que pediste (reorganiza nodos, reescribe la rama falsa); por eso revisas cada paso. <strong>Ancla</strong> cada solicitud en el comportamiento deseado, no en la implementación.</p>
@@ -803,10 +803,10 @@ Antes de mudar, me pergunte o limiar de match e o texto do fallback.</pre>
 <p class="text-sm text-teal-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">confirmar que el proyecto está listo y guardar una copia de seguridad.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">lista de verificación + respaldo</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">[ ] O indexador popula o vector store sem erro.
-[ ] E-mails de suporte são classificados como suporte.
+[ ] E-mails de suporte sêo classificados como suporte.
 [ ] As respostas ancoram nas políticas (números conferem com o PDF).
-[ ] Fora de escopo NÃO é respondido (recusa inventar).
-[ ] Automáticos e antigos são ignorados (3 portões funcionando).
+[ ] Fora de escopo NêO é respondido (recusa inventar).
+[ ] Automáticos e antigos sêo ignorados (3 portões funcionando).
 [ ] Tom, nome e selo de confiança aparecem no rascunho.
 [ ] Tudo fica como RASCUNHO; humano aprova o envio.
 
@@ -902,9 +902,9 @@ Backup: "Exporte os dois workflows como JSON para eu guardar."</pre>
         INEMA.registerCheck('modulo-5-1#q1', {
           answer: 1,
           explain: {
-            0: 'Não. Inventar é exatamente o que evitamos — "verde ≠ correto" e a regra de ouro é não alucinar.',
+            0: 'Nêo. Inventar é exatamente o que evitamos — "verde ≠ correto" e a regra de ouro é nêo alucinar.',
             1: 'Isso. Sem match na base, o agente cai no fallback de pesquisa, sem inventar. É o que torna o projeto confiável.',
-            2: 'Não. O agente sempre rascunha; o humano aprova antes de enviar. Envio automático não faz parte do escopo.'
+            2: 'Nêo. O agente sempre rascunha; o humano aprova antes de enviar. Envio automático nêo faz parte do escopo.'
           }
         });
       }

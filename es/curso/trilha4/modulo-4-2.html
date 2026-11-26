@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -311,7 +311,7 @@
 <h2 class="text-base font-semibold text-amber-400 mb-2 flex items-center"><span class="mr-2">🔧</span> Antes de empezar</h2>
 <p class="text-neutral-300 text-sm">Una <strong>skill</strong> es un procedimiento reutilizable que enseñas una vez y llamas cuando quieras. En el módulo 4.1 viste la anatomía (el archivo <code>SKILL.md</code> con nombre, descripción e instrucciones). Aquí tú <strong>construye</strong>. No escribas el <code>SKILL.md</code> a mano: describe qué hace la skill y pídele al agente que la genere en el formato oficial. La misma mentalidad de vibe coding: describes el resultado y el agente hace el trabajo técnico.</p>
 </div>
-<!-- SVG FUTURISTA (visão geral: build-and-reuse loop, #29) -->
+<!-- SVG FUTURISTA (visêo geral: build-and-reuse loop, #29) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Toda skill nace del mismo ciclo: tú <strong>describe</strong> el workflow en lenguaje natural, el <strong class="text-cyan-400">el agente genera el SKILL.md</strong> en el formato oficial, se convierte en un <strong>slash command</strong> (p. ej., <code>/draft-email</code>), y a partir de ahí tú <strong>vuelve a usar</strong> — de preferencia con el contexto limpio, para que cada ejecución sea predecible.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -396,7 +396,7 @@ Quero uma skill que <descreva-o-workflow>.
 - Onde salvar: <ex.: do="" pasta="" projeto="" temporária="">
 
 Crie isso como um slash command seguindo o formato
-oficial de skill (SKILL.md com nome, descrição e
+oficial de skill (SKILL.md com nome, descriçêo e
 instruções). Me mostre o plano antes de gravar.</ex.:></ex.:></ex.:></descreva-o-workflow></pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: el agente responde con un <strong>plan</strong> (nombre del comando, descripción, instrucciones) y pregunta qué falta, en vez de crear archivos de inmediato. Apruébalo y guardará el <code>SKILL.md</code>.</p>
 </div>
@@ -560,7 +560,7 @@ Para escrever o e-mail, preciso de:
 2) Qual o tom? <ex.: amigável="" direto="" formal="">
 3) Quais pontos cobrir? <bullets>
 
-(a skill NÃO escreve nada até você responder)</bullets></ex.:></destinatário></pre>
+(a skill NêO escreve nada até você responder)</bullets></ex.:></destinatário></pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: si la skill ya genera un correo genérico sin preguntar, está trabajando a ciegas. Vuelve a <code>SKILL.md</code> y refuerza la regla «si falta información de entrada, PREGUNTA primero».</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceptos clave</h3>
@@ -662,14 +662,14 @@ bullets:
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">¿Qué es?</span><strong>Herramientas de Python</strong> — el agente ejecuta código Python para generar el archivo de diapositivas (la skill describe <em>qué</em>, el agente escribe el código). <strong>resources / outputs</strong> — convención de carpetas: las entradas en <code>resources</code>, resultados en <code>outputs</code>, para no mezclar.</p>
 </div>
-<!-- CODE BOX 5: prompt de criação doc->slides -->
+<!-- CODE BOX 5: prompt de criaçêo doc->slides -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-amber-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">crear la skill que convierte un documento en una presentación.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt de creación (pégalo en el chat)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Crie uma skill chamada <doc-to-slides> que:
 - Lê um documento de temporary/resources/<arquivo>
 - Extrai os pontos-chave do conteúdo
-- Cria uma apresentação profissional usando
+- Cria uma apresentaçêo profissional usando
   ferramentas Python
 - Salva o resultado em temporary/outputs/
 
@@ -935,9 +935,9 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
         INEMA.registerCheck('modulo-4-2#q1', {
           answer: 1,
           explain: {
-            0: 'Não. Conversa longa = contexto inchado: o tom e o destinatário antigos vazam para o novo e-mail. O resultado fica imprevisível.',
+            0: 'Nêo. Conversa longa = contexto inchado: o tom e o destinatário antigos vazam para o novo e-mail. O resultado fica imprevisível.',
             1: 'Isso. /clear zera o contexto e, com novas entradas, a skill aplica as mesmas regras do SKILL.md sobre uma página em branco — saída fresca e consistente.',
-            2: 'Não. O ponto de uma skill é não reescrever nada: você construiu o SKILL.md uma vez para reusar muitas. Só ajuste com feedback quando quiser melhorá-la.'
+            2: 'Nêo. O ponto de uma skill é nêo reescrever nada: você construiu o SKILL.md uma vez para reusar muitas. Só ajuste com feedback quando quiser melhorá-la.'
           }
         });
       }

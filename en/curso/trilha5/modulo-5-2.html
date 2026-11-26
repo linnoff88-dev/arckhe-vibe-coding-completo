@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -308,7 +308,7 @@
 <h2 class="text-base font-semibold text-teal-400 mb-2 flex items-center"><span class="mr-2">🧰</span> Prerequisites and how to use</h2>
 <p class="text-neutral-300 text-sm">Each box below is a <strong>prompt or command to copy and run</strong>, with <strong>🎯 goal</strong> e <strong>✅ how to verify</strong>. Replace what’s between <code class="text-teal-300">&lt;chaves&gt;</code>. Prerequisites: connected GitHub repository, connected Trigger.dev account, the <strong>Trigger.dev MCP</strong> e o <strong>Firecrawl MCP</strong> installed in the assistant (restart after installing), project initialized, and env vars in the dashboard. Build in layers: deploy → manual test → fix → repeat.</p>
 </div>
-<!-- SVG FUTURISTA (visão geral, #29) -->
+<!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">The difference between this module and the previous one is <em>who triggers it</em> the agent. Before, it was you. Now there are two different triggers: one <strong class="text-teal-400">clock</strong> (cron, on a schedule) and a <strong class="text-teal-400">doorbell</strong> (webhook, triggered by an event). Both run in the cloud — without you present.</p>
 <div class="rounded-2xl border border-teal-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -381,10 +381,10 @@ If not, configure it—the key is in my .env file.</pre>
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-teal-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">plan the scheduled research task.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (copy and run in Plan Mode)</span></div>
-<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Quero construir uma tarefa agendada que rode totalmente sozinha toda manhã.
+<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Quero construir uma tarefa agendada que rode totalmente sozinha toda manhê.
 Ela pega um tópico fixo (&lt;tópico&gt;), busca na web com Firecrawl,
 sintetiza os achados e grava uma linha no Google Sheets.
-Sem perguntas no meio da execução, trate erros sem quebrar e
+Sem perguntas no meio da execuçêo, trate erros sem quebrar e
 registre log em cada passo. Me ajude a planejar isso.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the spreadsheet should have a tab <code class="text-teal-300">Sheet1</code> with a header (date, topic, summary, sources, status). The task starts in a single file with the topic at the top.</p>
 </div>
@@ -428,7 +428,7 @@ registre log em cada passo. Me ajude a planejar isso.</pre>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt + command (fallback)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">O método pelo OAuth Playground deu "Access blocked: this app's request is invalid".
 Gere um script de terminal que use meu client ID e secret do .env para imprimir
-uma URL de autorização. Vou abrir no navegador, autorizar, e o terminal vai
+uma URL de autorizaçêo. Vou abrir no navegador, autorizar, e o terminal vai
 imprimir o refresh token. Aí eu colo no .env e nas env vars do painel.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the terminal prints a URL → you authorize it in the browser → it prints the refresh token. Paste it into the <code class="text-teal-300">.env</code> <strong>e</strong> in the platform’s env vars (dev and prod).</p>
 </div>
@@ -495,7 +495,7 @@ imprimir o refresh token. Aí eu colo no .env e nas env vars do painel.</pre>
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-teal-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">return the production error with context for the AI to fix.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (copy and run)</span></div>
-<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">O run falhou em produção. Aqui está o erro completo do trace:
+<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">O run falhou em produçêo. Aqui está o erro completo do trace:
 &lt;cole o erro do passo que ficou vermelho&gt;
 
 O Firecrawl retornou resultados, mas numa propriedade "web" em vez de "data",
@@ -539,7 +539,7 @@ Corrija o parsing e me diga o comando de redeploy.</pre>
           The second agent is triggered by <strong class="text-teal-400">event</strong>, not by the clock. It receives an <strong>payload</strong> JSON via webhook (with the fields: company name, sector, objective, challenge), generates a report in <strong>.docx</strong> and saves it to the <strong>Google Drive</strong>. The AI builds the report sections (executive summary, industry context, challenges) from just these four fields.
         </p>
 <div class="bg-dark-800 border border-teal-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-teal-500/20 text-teal-400 text-xs font-semibold mr-2">What is it?</span><strong>Payload</strong> — the data that arrives with the webhook request (e.g., <code class="text-teal-300">{ "company": "Acme", "industry": "Construção" }</code>). <strong>.docx</strong> — Microsoft Word document format. <strong>Folder ID</strong> — the identifier of a Drive folder, to organize the output (without it, the file lands in the root folder).</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-teal-500/20 text-teal-400 text-xs font-semibold mr-2">What is it?</span><strong>Payload</strong> — the data that arrives with the webhook request (e.g., <code class="text-teal-300">{ "company": "Acme", "industry": "Construçêo" }</code>). <strong>.docx</strong> — Microsoft Word document format. <strong>Folder ID</strong> — the identifier of a Drive folder, to organize the output (without it, the file lands in the root folder).</p>
 </div>
 <!-- CODE BOX 5: prompt webhook -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -558,7 +558,7 @@ Me ajude a planejar.</pre>
 <p class="text-sm text-teal-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">test locally BEFORE connecting any form.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (copy and run)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Suba o dev server e teste a tarefa de relatório com este payload:
-{ "company": "&lt;Acme&gt;", "industry": "&lt;Construção&gt;",
+{ "company": "&lt;Acme&gt;", "industry": "&lt;Construçêo&gt;",
   "goal": "&lt;dobrar leads&gt;", "challenge": "&lt;ciclo de venda longo&gt;" }</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the run appears, the .docx is generated, and the file is in Drive—all of this <strong>before</strong> of connecting the form. Testing locally first saves a debugging cycle.</p>
 </div>
@@ -652,7 +652,7 @@ Send Body:     ON  →  JSON
 2. HTTP Request: configurado como no tópico 5 (POST + Bearer + body payload).
 3. Mapeie cada campo do form para o payload.
 4. Execute o nó do form com dados de teste e confira o run no painel.
-5. Para o teste final: PUBLIQUE o form em produção e use a URL de produção.</pre>
+5. Para o teste final: PUBLIQUE o form em produçêo e use a URL de produçêo.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the run appears on the platform with the form payload, and the report lands in Drive. Note: some form tools fail on the API side—if yours does, switch to n8n.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
@@ -743,10 +743,10 @@ Repository Secrets → New Repository Secret
 <p class="text-sm text-teal-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">confirm that both agents are healthy and configure alerts.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">checklist + alerts prompt</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">[ ] Em Schedules, a tarefa morning-research aparece com o cron (ex.: 0 8 * * *)
-    e o próximo horário (amanhã, 8h).
+    e o próximo horário (amanhê, 8h).
 [ ] O último run está verde; o trace mostra cada passo.
 [ ] A linha apareceu no Google Sheets / o .docx no Drive.
-[ ] A tarefa está em PROD, não só em dev.
+[ ] A tarefa está em PROD, nêo só em dev.
 
 [prompt] Adicione retries com backoff exponencial (até 3, começando em 30s)
 para falhas transitórias, e configure um alerta por &lt;e-mail/Slack&gt; quando
@@ -844,8 +844,8 @@ um run ou deploy falhar.</pre>
           answer: 0,
           explain: {
             0: 'Isso. Retries com backoff resolvem falhas transitórias (timeout, instabilidade) sem mexer na lógica que já está correta.',
-            1: 'Não. A lógica está certa — reescrever não resolve um timeout intermitente e ainda arrisca quebrar o que funciona.',
-            2: 'Não. Timeouts importam, sim; sem retries o run falha à toa. Mas eles não consertam bugs de lógica.'
+            1: 'Nêo. A lógica está certa — reescrever nêo resolve um timeout intermitente e ainda arrisca quebrar o que funciona.',
+            2: 'Nêo. Timeouts importam, sim; sem retries o run falha à toa. Mas eles nêo consertam bugs de lógica.'
           }
         });
       }

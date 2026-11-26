@@ -6545,7 +6545,7 @@
 "b0dc43d1573d92e6": "✅ How to verify: the run appears, the .docx is generated, and the file is in Drive—all of this",
 "c2a117b0d1ec4e82": "✅ How to verify: the schedule shows the next run; a test run turns green; the alert fires on a run forced to fail. Remember: retries handle failures",
 "fc7623fc3e397918": "✅ How to verify: the terminal prints a URL → you authorize it in the browser → it prints the refresh token. Paste it into the",
-"d9cded013042f4e3": "✅ How to verify: the tone changes in both drafts (reply and fallback); an email signed \"Best, João\" gets a reply starting with \"Hi João\"; the confidence badge appears in the draft. Test each one",
+"d9cded013042f4e3": "✅ How to verify: the tone changes in both drafts (reply and fallback); an email signed \"Best, Joêo\" gets a reply starting with \"Hi Joêo\"; the confidence badge appears in the draft. Test each one",
 "8d2e58182721b6b2": "✅ How to verify: for [1], send a question outside the knowledge base and check that you get the \"let’s research this\" draft (not an invented answer). For [2]/[3], send exactly the type of input the filter should catch and confirm it’s rerouted.",
 "2b80f7cd5167d929": "✅ How to verify: ask Claude Code \"explain in English what this cron does\" and check that it matches your intent before scheduling it.",
 "fd3fe3430c34b0d6": "✅ How to verify: fill out the form (e.g., landing page / healthcare / 40 h / enterprise) → \"Generate quote\" → n8n runs → the quote appears in the app. Use the URL for",

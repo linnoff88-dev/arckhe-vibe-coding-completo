@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -311,7 +311,7 @@
 <h2 class="text-base font-semibold text-amber-400 mb-2 flex items-center"><span class="mr-2">🔧</span> Before you start</h2>
 <p class="text-neutral-300 text-sm">A <strong>skill</strong> is a reusable procedure that you teach once and call whenever you want. In module 4.1, you saw its anatomy (the file <code>SKILL.md</code> with a name, description, and instructions). Here you <strong>builds</strong>. Don’t write the <code>SKILL.md</code> by hand: describe what the skill does and ask the agent to generate it in the official format. Same vibe-coding mindset—you describe the result, and the agent does the technical work.</p>
 </div>
-<!-- SVG FUTURISTA (visão geral: build-and-reuse loop, #29) -->
+<!-- SVG FUTURISTA (visêo geral: build-and-reuse loop, #29) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Every skill starts with the same cycle: you <strong>describes</strong> the workflow in natural language, the <strong class="text-cyan-400">agent generates the SKILL.md</strong> in the official format, it becomes a <strong>slash command</strong> (e.g., <code>/draft-email</code>), and from there you <strong>reuse</strong> — preferably with a clean context, so each run is predictable.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -396,7 +396,7 @@ Quero uma skill que <descreva-o-workflow>.
 - Onde salvar: <ex.: do="" pasta="" projeto="" temporária="">
 
 Crie isso como um slash command seguindo o formato
-oficial de skill (SKILL.md com nome, descrição e
+oficial de skill (SKILL.md com nome, descriçêo e
 instruções). Me mostre o plano antes de gravar.</ex.:></ex.:></ex.:></descreva-o-workflow></pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the agent responds with a <strong>plan</strong> (command name, description, instructions) and asks for whatever is missing instead of creating files right away. Approve it, and it saves the <code>SKILL.md</code>.</p>
 </div>
@@ -560,7 +560,7 @@ Para escrever o e-mail, preciso de:
 2) Qual o tom? <ex.: amigável="" direto="" formal="">
 3) Quais pontos cobrir? <bullets>
 
-(a skill NÃO escreve nada até você responder)</bullets></ex.:></destinatário></pre>
+(a skill NêO escreve nada até você responder)</bullets></ex.:></destinatário></pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: if the skill already spits out a generic email without asking, it’s running blind. Go back to <code>SKILL.md</code> and reinforce the rule “if input is missing, ASK first.”</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Key concepts</h3>
@@ -662,14 +662,14 @@ bullets:
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">What is it?</span><strong>Python tools</strong> — the agent runs Python code to generate the slide file (the skill describes <em>what</em>, the agent writes the code). <strong>resources / outputs</strong> — folder convention: inputs in <code>resources</code>, results in <code>outputs</code>, to keep them separate.</p>
 </div>
-<!-- CODE BOX 5: prompt de criação doc->slides -->
+<!-- CODE BOX 5: prompt de criaçêo doc->slides -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-amber-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">create the skill that turns a document into a presentation.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">creation prompt (paste into the chat)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Crie uma skill chamada <doc-to-slides> que:
 - Lê um documento de temporary/resources/<arquivo>
 - Extrai os pontos-chave do conteúdo
-- Cria uma apresentação profissional usando
+- Cria uma apresentaçêo profissional usando
   ferramentas Python
 - Salva o resultado em temporary/outputs/
 
@@ -935,9 +935,9 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
         INEMA.registerCheck('modulo-4-2#q1', {
           answer: 1,
           explain: {
-            0: 'Não. Conversa longa = contexto inchado: o tom e o destinatário antigos vazam para o novo e-mail. O resultado fica imprevisível.',
+            0: 'Nêo. Conversa longa = contexto inchado: o tom e o destinatário antigos vazam para o novo e-mail. O resultado fica imprevisível.',
             1: 'Isso. /clear zera o contexto e, com novas entradas, a skill aplica as mesmas regras do SKILL.md sobre uma página em branco — saída fresca e consistente.',
-            2: 'Não. O ponto de uma skill é não reescrever nada: você construiu o SKILL.md uma vez para reusar muitas. Só ajuste com feedback quando quiser melhorá-la.'
+            2: 'Nêo. O ponto de uma skill é nêo reescrever nada: você construiu o SKILL.md uma vez para reusar muitas. Só ajuste com feedback quando quiser melhorá-la.'
           }
         });
       }

@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -308,7 +308,7 @@
 <h2 class="text-base font-semibold text-blue-400 mb-2 flex items-center"><span class="mr-2">🧭</span> Cómo leer este módulo</h2>
 <p class="text-neutral-300 text-sm">WAT es menos un software y más una <strong>forma de organizar</strong> cualquier proyecto agéntico. Verás las tres capas por separado (W, A, T), luego el ciclo que hace que todo mejore por sí solo, la estructura de carpetas recomendada y —algo importante— los casos en que montar WAT es exagerado. No necesitas saber programar: el agente escribe y corrige los scripts; tú solo necesitas entender el mapa.</p>
 </div>
-<!-- SVG FUTURISTA (visão geral, #29) -->
+<!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Antes de abrir cada capa, mira cómo encajan. Las <strong>instrucciones en markdown</strong> dicen qué hacer; el <strong>agente</strong> lee estas instrucciones, revisa las herramientas disponibles y decide cuál usar; las <strong>tools en Python</strong> hacen el trabajo de verdad. Y hay un detalle que lo cambia todo: cuando algo sale mal, el agente repara la tool <em>e</em> actualiza el workflow — así el sistema mejora con cada ejecución.</p>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -438,7 +438,7 @@ A planilha vendas.csv na pasta temporary/.
 
 ## Saída
 relatorio-AAAA-SS.pdf salvo em temporary/, com total,
-top 5 produtos e variação vs. semana anterior.
+top 5 produtos e variaçêo vs. semana anterior.
 
 ## Passos
 1. Ler vendas.csv com a tool ler_csv.py
@@ -712,7 +712,7 @@ top 5 produtos e variação vs. semana anterior.
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-blue-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (cópialo y ejecútalo)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">no Plan Mode, crie um CLAUDE.md na raiz usando o framework WAT,
 com as pastas workflows/ tools/ temporary/ e um arquivo .env.
-Descreva cada camada (W, A, T) e as regras de operação.</pre>
+Descreva cada camada (W, A, T) e as regras de operaçêo.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: comprueba que se hayan creado las carpetas workflows/ tools/ temporary/ y el .env, y que el CLAUDE.md mencione las 3 capas.</p>
 </div>
 <!-- code box #2 (árvore de pastas) -->
@@ -877,9 +877,9 @@ Descreva cada camada (W, A, T) e as regras de operação.</pre>
         INEMA.registerCheck('modulo-2-2#q1', {
           answer: 1,
           explain: {
-            0: 'Não. Os Workflows dizem O QUE fazer (são o manual), mas não decidem nada por si — quem lê e decide é o agente.',
+            0: 'Nêo. Os Workflows dizem O QUE fazer (sêo o manual), mas nêo decidem nada por si — quem lê e decide é o agente.',
             1: 'Isso. O Agent é o coordenador/cérebro: lê os workflows, enxerga as tools e escolhe qual usar e quando.',
-            2: 'Não. As Tools são as mãos que executam quando chamadas; elas não decidem — só fazem o trabalho que o agente delega.'
+            2: 'Nêo. As Tools sêo as mêos que executam quando chamadas; elas nêo decidem — só fazem o trabalho que o agente delega.'
           }
         });
       }

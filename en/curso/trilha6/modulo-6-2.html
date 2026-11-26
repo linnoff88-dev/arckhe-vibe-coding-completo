@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -314,7 +314,7 @@
 <h2 class="text-base font-semibold text-rose-400 mb-2 flex items-center"><span class="mr-2">🔐</span> The leap from “prototype” to “secure product”</h2>
 <p class="text-neutral-300 text-sm">An app on your machine can even have the key pasted into code that no one can see. But as soon as it goes up to GitHub and runs in the cloud, any lapse with secrets becomes a real problem — a leaked key costs you money, and exposed data becomes an incident. This module covers the habits that keep this under control: <strong>where</strong> secrets live, <strong>how</strong> the code reads them, and <strong>who</strong> can see what.</p>
 </div>
-<!-- SVG FUTURISTA (visão geral) -->
+<!-- SVG FUTURISTA (visêo geral) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Before the eight topics, take a look at the idea that ties them all together: the <strong>code</strong> is public (it goes to GitHub), but the <strong>secrets</strong> stay outside it, in a separate vault, and are injected only at runtime. One more layer — the database with <strong>RLS</strong> — ensures that even when the app is live, one user never sees another user’s data.</p>
 <div class="rounded-2xl border border-rose-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -342,7 +342,7 @@
 <text fill="#fb7185" font-family="Inter,sans-serif" font-size="15" font-weight="700" text-anchor="middle" x="510" y="112">🔐 Secrets vault</text>
 <text fill="#fecdd3" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="510" y="132">.env (local) · dashboard (cloud)</text>
 <text fill="#fecdd3" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="510" y="150">environment variables</text>
-<!-- injeção em runtime -->
+<!-- injeçêo em runtime -->
 <g fill="none" opacity="0.8" stroke="#fb7185" stroke-width="2.2"><path d="M400,126 L244,126" marker-end="url(#m62-ah)"></path></g>
 <text fill="#fda4af" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="320" y="116">injects at runtime</text>
 <!-- banco com RLS -->
@@ -501,7 +501,7 @@ SHEET_ID=</pre>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">// lê o valor do ambiente — o código fica sem segredo
 const key = process.env.ANTHROPIC_API_KEY;
 
-// falha rápido e claro se a chave não foi configurada
+// falha rápido e claro se a chave nêo foi configurada
 if (!key) {
   throw new Error("Faltou ANTHROPIC_API_KEY no ambiente (.env ou dashboard).");
 }</pre>
@@ -520,7 +520,7 @@ Faça, nesta ordem:
 2. garanta que .env está no .gitignore;
 3. crie um .env.example com as mesmas chaves SEM valores;
 4. ajuste o código para ler tudo de process.env (nada hard-coded).
-Não cole nenhuma chave real no chat.</pre>
+Nêo cole nenhuma chave real no chat.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: at the end, <code>git status</code> shows <code>.env.example</code> as a new file, but does NOT show <code>.env</code>. Search the code for “sk-” in quotes to make sure no key was hard-coded.</p>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
@@ -757,7 +757,7 @@ Verifique, item por item:
 4. RLS habilitado em todas as tabelas com dados de usuário.
 
 Liste o que FALHAR e, para cada falha, diga exatamente
-como corrigir. Não invente: se não der pra confirmar, diga.</pre>
+como corrigir. Nêo invente: se nêo der pra confirmar, diga.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: you get a list of actionable findings. Fix each issue and run the audit again until the list is empty — only then deploy to production.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -913,8 +913,8 @@ como corrigir. Não invente: se não der pra confirmar, diga.</pre>
         INEMA.registerCheck('modulo-6-2#q1', {
           answer: 2,
           explain: {
-            0: 'Não — o .env é justamente o lugar certo, desde que esteja no .gitignore. O segredo fica fora do código e nunca sobe.',
-            1: 'Não — o dashboard de Environment Variables é o lugar correto na nuvem; ele injeta o segredo em runtime, sem expô-lo.',
+            0: 'Nêo — o .env é justamente o lugar certo, desde que esteja no .gitignore. O segredo fica fora do código e nunca sobe.',
+            1: 'Nêo — o dashboard de Environment Variables é o lugar correto na nuvem; ele injeta o segredo em runtime, sem expô-lo.',
             2: 'Isso. Chave no chat da IA ou commitada no GitHub é a falha clássica: uma vez exposta, considere-a vazada e rotacione na hora.'
           }
         });

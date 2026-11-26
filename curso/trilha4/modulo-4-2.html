@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -243,7 +243,7 @@
 <span class="sm:hidden">T5</span><span class="hidden sm:inline">Projetos</span>
 </a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
-<span class="sm:hidden">T6</span><span class="hidden sm:inline">Produção</span>
+<span class="sm:hidden">T6</span><span class="hidden sm:inline">Produçêo</span>
 </a>
 <button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Minha jornada</span>
@@ -262,7 +262,7 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegação" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaçêo" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-amber-400" href="../../index.html">Início</a>
 <span>/</span>
@@ -309,13 +309,13 @@
 <!-- Dica de partida -->
 <div class="bg-amber-900/20 border border-amber-500/30 rounded-xl p-5 mb-10">
 <h2 class="text-base font-semibold text-amber-400 mb-2 flex items-center"><span class="mr-2">🔧</span> Antes de começar</h2>
-<p class="text-neutral-300 text-sm">Uma <strong>skill</strong> é um procedimento reutilizável que você ensina uma vez e chama quando quiser. No módulo 4.1 você viu a anatomia (o arquivo <code>SKILL.md</code> com nome, descrição e instruções). Aqui você <strong>constrói</strong>. Não escreva o <code>SKILL.md</code> à mão: descreva o que a skill faz e peça ao agente para gerá-la no formato oficial. Mesma mentalidade vibe coding — você descreve o resultado, o agente faz o trabalho técnico.</p>
+<p class="text-neutral-300 text-sm">Uma <strong>skill</strong> é um procedimento reutilizável que você ensina uma vez e chama quando quiser. No módulo 4.1 você viu a anatomia (o arquivo <code>SKILL.md</code> com nome, descriçêo e instruções). Aqui você <strong>constrói</strong>. Nêo escreva o <code>SKILL.md</code> à mêo: descreva o que a skill faz e peça ao agente para gerá-la no formato oficial. Mesma mentalidade vibe coding — você descreve o resultado, o agente faz o trabalho técnico.</p>
 </div>
-<!-- SVG FUTURISTA (visão geral: build-and-reuse loop, #29) -->
+<!-- SVG FUTURISTA (visêo geral: build-and-reuse loop, #29) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Toda skill nasce do mesmo ciclo: você <strong>descreve</strong> o workflow em linguagem natural, o <strong class="text-cyan-400">agente gera o SKILL.md</strong> no formato oficial, ele vira um <strong>slash command</strong> (ex.: <code>/draft-email</code>), e a partir daí você <strong>reusa</strong> — de preferência com o contexto limpo, para que cada execução seja previsível.</p>
+<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Toda skill nasce do mesmo ciclo: você <strong>descreve</strong> o workflow em linguagem natural, o <strong class="text-cyan-400">agente gera o SKILL.md</strong> no formato oficial, ele vira um <strong>slash command</strong> (ex.: <code>/draft-email</code>), e a partir daí você <strong>reusa</strong> — de preferência com o contexto limpo, para que cada execuçêo seja previsível.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
-<svg aria-label="O ciclo construir-e-reusar de uma skill: você descreve o workflow em linguagem natural; o agente gera o arquivo SKILL.md no formato oficial; isso vira um slash command como barra draft-email; você invoca o comando e ele entrega; com contexto limpo você reusa o mesmo comando com novas entradas e obtém uma saída fresca e consistente, fechando o laço de volta para a invocação" class="w-full h-auto" role="img" viewbox="0 0 1000 250">
+<svg aria-label="O ciclo construir-e-reusar de uma skill: você descreve o workflow em linguagem natural; o agente gera o arquivo SKILL.md no formato oficial; isso vira um slash command como barra draft-email; você invoca o comando e ele entrega; com contexto limpo você reusa o mesmo comando com novas entradas e obtém uma saída fresca e consistente, fechando o laço de volta para a invocaçêo" class="w-full h-auto" role="img" viewbox="0 0 1000 250">
 <defs>
 <lineargradient id="m42-grad" x1="0" x2="1" y1="0" y2="1">
 <stop offset="0" stop-color="#fbbf24"></stop><stop offset="1" stop-color="#f59e0b"></stop>
@@ -376,10 +376,10 @@
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t1-p1">
-          Construir uma skill começa por um bom pedido. Você <strong>descreve o workflow</strong> — quais são as <strong>entradas</strong>, qual o <strong>comportamento</strong> esperado, e <strong>onde salvar</strong> o resultado — e pede ao agente para transformar isso num <strong class="text-amber-400">slash command</strong> seguindo o formato oficial de skill. É a mesma mentalidade do vibe coding: você diz o "o quê", o agente escreve o <code>SKILL.md</code> (o "como").
+          Construir uma skill começa por um bom pedido. Você <strong>descreve o workflow</strong> — quais sêo as <strong>entradas</strong>, qual o <strong>comportamento</strong> esperado, e <strong>onde salvar</strong> o resultado — e pede ao agente para transformar isso num <strong class="text-amber-400">slash command</strong> seguindo o formato oficial de skill. É a mesma mentalidade do vibe coding: você diz o "o quê", o agente escreve o <code>SKILL.md</code> (o "como").
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-4">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Formato oficial</strong> — a estrutura padrão de uma skill: um arquivo <code>SKILL.md</code> com <em>nome</em>, <em>descrição</em> (quando usar) e <em>instruções</em>. <strong>Slash command</strong> — um atalho do tipo <code>/nome</code> que dispara a skill. <strong>Plan Mode</strong> — modo em que o agente planeja antes de mexer em arquivos; ótimo para revisar a skill antes de criá-la.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Formato oficial</strong> — a estrutura padrêo de uma skill: um arquivo <code>SKILL.md</code> com <em>nome</em>, <em>descriçêo</em> (quando usar) e <em>instruções</em>. <strong>Slash command</strong> — um atalho do tipo <code>/nome</code> que dispara a skill. <strong>Plan Mode</strong> — modo em que o agente planeja antes de mexer em arquivos; ótimo para revisar a skill antes de criá-la.</p>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t1-p2">
           Um pedido bom é específico nas três dimensões. Vago demais ("faz uma skill de e-mail") força o agente a adivinhar; específico demais nos passos técnicos ("crie um arquivo .md com YAML frontmatter contendo…") joga fora a vantagem de deixá-lo escolher. O ponto certo: descreva entradas, comportamento e destino — e deixe o resto com ele.
@@ -396,12 +396,12 @@ Quero uma skill que <descreva-o-workflow>.
 - Onde salvar: <ex.: do="" pasta="" projeto="" temporária="">
 
 Crie isso como um slash command seguindo o formato
-oficial de skill (SKILL.md com nome, descrição e
+oficial de skill (SKILL.md com nome, descriçêo e
 instruções). Me mostre o plano antes de gravar.</ex.:></ex.:></ex.:></descreva-o-workflow></pre>
-<p class="text-xs text-neutral-500 mt-3">✅ Como verificar: o agente responde com um <strong>plano</strong> (nome do comando, descrição, instruções) e pergunta o que estiver faltando, em vez de já criar arquivos. Aprove e ele grava o <code>SKILL.md</code>.</p>
+<p class="text-xs text-neutral-500 mt-3">✅ Como verificar: o agente responde com um <strong>plano</strong> (nome do comando, descriçêo, instruções) e pergunta o que estiver faltando, em vez de já criar arquivos. Aprove e ele grava o <code>SKILL.md</code>.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t1-p3">Um pedido no formato oficial garante que a skill nasça reutilizável — com nome, descrição e instruções que o agente vai reler toda vez que você invocar. Pedir em Plan Mode te dá um ponto de revisão: você corrige o escopo antes que vire arquivo.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t1-p3">Um pedido no formato oficial garante que a skill nasça reutilizável — com nome, descriçêo e instruções que o agente vai reler toda vez que você invocar. Pedir em Plan Mode te dá um ponto de revisêo: você corrige o escopo antes que vire arquivo.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
 <h4 class="font-bold text-amber-400 mb-4">✓ Bom pedido de skill</h4>
@@ -447,10 +447,10 @@ instruções). Me mostre o plano antes de gravar.</ex.:></ex.:></ex.:></descreva
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t2-p1">
-          Vamos construir a primeira skill de verdade: <strong class="text-amber-400">/draft-email</strong>. Ela recebe três entradas — os <strong>bullets</strong> do conteúdo, o <strong>destinatário</strong> e o <strong>tom</strong> — e escreve um e-mail polido, conciso, sem enrolação (<em>fluff</em>). O rascunho é salvo numa pasta temporária, e o procedimento inteiro vira o comando <code>/draft-email</code>.
+          Vamos construir a primeira skill de verdade: <strong class="text-amber-400">/draft-email</strong>. Ela recebe três entradas — os <strong>bullets</strong> do conteúdo, o <strong>destinatário</strong> e o <strong>tom</strong> — e escreve um e-mail polido, conciso, sem enrolaçêo (<em>fluff</em>). O rascunho é salvo numa pasta temporária, e o procedimento inteiro vira o comando <code>/draft-email</code>.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Bullets</strong> — os pontos crus que o e-mail precisa cobrir (você não escreve frases, só tópicos). <strong>Tom</strong> — o estilo da escrita (formal, amigável, direto). <strong>Sem fluff</strong> — sem frases de encheção; só o essencial, educado e claro.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Bullets</strong> — os pontos crus que o e-mail precisa cobrir (você nêo escreve frases, só tópicos). <strong>Tom</strong> — o estilo da escrita (formal, amigável, direto). <strong>Sem fluff</strong> — sem frases de encheçêo; só o essencial, educado e claro.</p>
 </div>
 <!-- CODE BOX 2: SKILL.md de draft-email -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -476,13 +476,13 @@ Se faltar alguma entrada, PERGUNTE antes de escrever.
 1. Escreva um e-mail conciso e polido, sem fluff.
 2. Respeite o tom pedido; assunto curto e claro.
 3. Salve o rascunho em <pasta-temporária>/email.md.</pasta-temporária></ex.:></pre>
-<p class="text-xs text-neutral-500 mt-3">✅ Como verificar: invoque <code>/draft-email</code> com um destinatário, um tom e 2-3 bullets. O agente deve devolver um e-mail enxuto, no tom certo, e salvar o arquivo. Leia: tem assunto? está sem encheção?</p>
+<p class="text-xs text-neutral-500 mt-3">✅ Como verificar: invoque <code>/draft-email</code> com um destinatário, um tom e 2-3 bullets. O agente deve devolver um e-mail enxuto, no tom certo, e salvar o arquivo. Leia: tem assunto? está sem encheçêo?</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
 <p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t2-p2">E-mail é o exemplo perfeito de tarefa repetitiva e padronizável: você faz dezenas por semana, todos seguem a mesma estrutura. Encapsular isso numa skill significa que o "como escrever bem" mora no <code>SKILL.md</code>, e você só fornece o conteúdo. Construa uma vez, ganhe tempo para sempre.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
-<p class="text-neutral-300 text-sm">Depois de construir, <strong>teste imediatamente</strong> com um caso real seu. Se o tom sair errado ou o e-mail ficar prolixo, não recomece: dê <strong>feedback</strong> ("ficou formal demais, deixe mais direto") e peça para ajustar o <code>SKILL.md</code>. A skill melhora a cada uso.</p>
+<p class="text-neutral-300 text-sm">Depois de construir, <strong>teste imediatamente</strong> com um caso real seu. Se o tom sair errado ou o e-mail ficar prolixo, nêo recomece: dê <strong>feedback</strong> ("ficou formal demais, deixe mais direto") e peça para ajustar o <code>SKILL.md</code>. A skill melhora a cada uso.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -511,14 +511,14 @@ Se faltar alguma entrada, PERGUNTE antes de escrever.
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t3-p1">
-          O teste de robustez de uma boa skill: chame <code>/draft-email</code> <strong>sem passar nenhum dado</strong>. Em vez de rodar no escuro e inventar um destinatário e um tom, a skill deve <strong class="text-amber-400">perguntar</strong> pelas entradas que faltam — destinatário, tom, bullets — antes de escrever uma única linha. Aquela instrução do <code>SKILL.md</code> ("se faltar alguma entrada, PERGUNTE") é o que garante isso.
+          O teste de robustez de uma boa skill: chame <code>/draft-email</code> <strong>sem passar nenhum dado</strong>. Em vez de rodar no escuro e inventar um destinatário e um tom, a skill deve <strong class="text-amber-400">perguntar</strong> pelas entradas que faltam — destinatário, tom, bullets — antes de escrever uma única linha. Aquela instruçêo do <code>SKILL.md</code> ("se faltar alguma entrada, PERGUNTE") é o que garante isso.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Rodar no escuro</strong> — quando o agente adivinha entradas que você não deu, e produz algo que não era o que você queria. <strong>Skill robusta</strong> — uma skill que se recusa a rodar com dados faltando; ela coleta primeiro, executa depois.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Rodar no escuro</strong> — quando o agente adivinha entradas que você nêo deu, e produz algo que nêo era o que você queria. <strong>Skill robusta</strong> — uma skill que se recusa a rodar com dados faltando; ela coleta primeiro, executa depois.</p>
 </div>
 <!-- SVG conceitual: sem args -> agente pergunta (#29) -->
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
-<svg aria-label="Você invoca o comando draft-email sem argumentos; em vez de rodar no escuro, o agente detecta que faltam destinatário, tom e bullets, e faz três perguntas; depois que você responde, ele então escreve o e-mail" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="Você invoca o comando draft-email sem argumentos; em vez de rodar no escuro, o agente detecta que faltam destinatário, tom e bullets, e faz três perguntas; depois que você responde, ele entêo escreve o e-mail" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <pattern height="32" id="m42b-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#f59e0b" opacity="0.1" r="1.3"></circle></pattern>
 <marker id="m42b-ah" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#fbbf24"></path></marker>
@@ -544,9 +544,9 @@ Se faltar alguma entrada, PERGUNTE antes de escrever.
 <rect fill="#0e2018" height="44" rx="11" stroke="#34d399" stroke-width="2" width="116" x="862" y="78"></rect><text fill="#9ee9c9" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="920" y="104">depois escreve</text>
 </svg>
 </div>
-<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — invocar sem dados não é erro: dispara a coleta. A skill só escreve depois de ter as três entradas.</p>
+<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — invocar sem dados nêo é erro: dispara a coleta. A skill só escreve depois de ter as três entradas.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t3-p2">Skills que perguntam antes de rodar evitam o pior pesadelo da automação: um resultado plausível mas errado, baseado em chutes. Quando a skill coleta o que falta, você controla a entrada — e nunca recebe um e-mail dirigido à pessoa errada no tom errado.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t3-p2">Skills que perguntam antes de rodar evitam o pior pesadelo da automaçêo: um resultado plausível mas errado, baseado em chutes. Quando a skill coleta o que falta, você controla a entrada — e nunca recebe um e-mail dirigido à pessoa errada no tom errado.</p>
 <!-- CODE BOX 3: invocar sem args -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-amber-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">ver a skill pedir as entradas em vez de adivinhar.</span></p>
@@ -560,13 +560,13 @@ Para escrever o e-mail, preciso de:
 2) Qual o tom? <ex.: amigável="" direto="" formal="">
 3) Quais pontos cobrir? <bullets>
 
-(a skill NÃO escreve nada até você responder)</bullets></ex.:></destinatário></pre>
+(a skill NêO escreve nada até você responder)</bullets></ex.:></destinatário></pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Como verificar: se a skill já cuspir um e-mail genérico sem perguntar, ela está rodando no escuro. Volte ao <code>SKILL.md</code> e reforce a regra "se faltar entrada, PERGUNTE primeiro".</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Pergunta primeiro</div><p class="text-xs text-neutral-400">Coleta o que falta.</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Nunca no escuro</div><p class="text-xs text-neutral-400">Não adivinha entradas.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Nunca no escuro</div><p class="text-xs text-neutral-400">Nêo adivinha entradas.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Robusta</div><p class="text-xs text-neutral-400">Lida com dados faltando.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Você controla</div><p class="text-xs text-neutral-400">A entrada é sua.</p></div>
 </div>
@@ -596,12 +596,12 @@ Para escrever o e-mail, preciso de:
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>/clear</strong> — comando que zera o contexto da conversa (o agente "esquece" o que foi dito antes). <strong>Contexto limpo</strong> — começar do zero, sem que rascunhos antigos influenciem o novo. <strong>Conversa inchada</strong> — quando o histórico acumulado faz o agente misturar pedidos e perder consistência.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t4-p2">Sem contexto limpo, o terceiro e-mail do dia pode herdar o tom do primeiro, ou citar o destinatário errado. Limpar antes de cada reuso torna cada execução <strong>previsível</strong> — a skill aplica sempre as mesmas regras, partindo sempre do mesmo ponto.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t4-p2">Sem contexto limpo, o terceiro e-mail do dia pode herdar o tom do primeiro, ou citar o destinatário errado. Limpar antes de cada reuso torna cada execuçêo <strong>previsível</strong> — a skill aplica sempre as mesmas regras, partindo sempre do mesmo ponto.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
 <h4 class="font-bold text-amber-400 mb-4">✓ Reusar certo (contexto limpo)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Dar <code>/clear</code> antes de cada nova execução.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Dar <code>/clear</code> antes de cada nova execuçêo.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Passar as <strong>novas</strong> entradas explicitamente.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Confiar nas mesmas regras do <code>SKILL.md</code> a cada vez.</span></li>
 </ul>
@@ -657,28 +657,28 @@ bullets:
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t5-p1">
-          Uma skill mais ambiciosa, mas montada do mesmo jeito: <strong class="text-amber-400">documento → slides</strong>. Ela lê um documento, extrai os <strong>pontos-chave</strong> e cria uma apresentação profissional usando <strong>ferramentas Python</strong>. O documento de entrada fica em <code>temporary/resources</code> e a apresentação gerada sai em <code>temporary/outputs</code> — pastas organizadas, entrada separada de saída.
+          Uma skill mais ambiciosa, mas montada do mesmo jeito: <strong class="text-amber-400">documento → slides</strong>. Ela lê um documento, extrai os <strong>pontos-chave</strong> e cria uma apresentaçêo profissional usando <strong>ferramentas Python</strong>. O documento de entrada fica em <code>temporary/resources</code> e a apresentaçêo gerada sai em <code>temporary/outputs</code> — pastas organizadas, entrada separada de saída.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Ferramentas Python</strong> — o agente roda código Python para gerar o arquivo de slides (a skill descreve <em>o quê</em>, o agente escreve o código). <strong>resources / outputs</strong> — convenção de pastas: entradas em <code>resources</code>, resultados em <code>outputs</code>, para não misturar.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Ferramentas Python</strong> — o agente roda código Python para gerar o arquivo de slides (a skill descreve <em>o quê</em>, o agente escreve o código). <strong>resources / outputs</strong> — convençêo de pastas: entradas em <code>resources</code>, resultados em <code>outputs</code>, para nêo misturar.</p>
 </div>
-<!-- CODE BOX 5: prompt de criação doc->slides -->
+<!-- CODE BOX 5: prompt de criaçêo doc->slides -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-<p class="text-sm text-amber-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">criar a skill que vira documento em apresentação.</span></p>
-<div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt de criação (cole no chat)</span></div>
+<p class="text-sm text-amber-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">criar a skill que vira documento em apresentaçêo.</span></p>
+<div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt de criaçêo (cole no chat)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Crie uma skill chamada <doc-to-slides> que:
 - Lê um documento de temporary/resources/<arquivo>
 - Extrai os pontos-chave do conteúdo
-- Cria uma apresentação profissional usando
+- Cria uma apresentaçêo profissional usando
   ferramentas Python
 - Salva o resultado em temporary/outputs/
 
 Faça no formato oficial (slash command). Se faltar
 o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
-<p class="text-xs text-neutral-500 mt-3">✅ Como verificar: coloque um documento em <code>temporary/resources</code>, invoque a skill e cheque <code>temporary/outputs</code> — deve existir um arquivo de apresentação com os pontos-chave do documento, não o texto cru copiado.</p>
+<p class="text-xs text-neutral-500 mt-3">✅ Como verificar: coloque um documento em <code>temporary/resources</code>, invoque a skill e cheque <code>temporary/outputs</code> — deve existir um arquivo de apresentaçêo com os pontos-chave do documento, nêo o texto cru copiado.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t5-p2">Essa skill mostra que o mesmo padrão escala: entradas claras, comportamento descrito, destino definido — agora com o agente escrevendo código Python por baixo. Você não precisa saber Python; precisa descrever o resultado. E a separação <code>resources</code>/<code>outputs</code> mantém o projeto limpo e a skill reusável com qualquer documento.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t5-p2">Essa skill mostra que o mesmo padrêo escala: entradas claras, comportamento descrito, destino definido — agora com o agente escrevendo código Python por baixo. Você nêo precisa saber Python; precisa descrever o resultado. E a separaçêo <code>resources</code>/<code>outputs</code> mantém o projeto limpo e a skill reusável com qualquer documento.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Lê documento</div><p class="text-xs text-neutral-400">Entrada em resources.</p></div>
@@ -706,14 +706,14 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t6-p1">
-          Skills <strong class="text-amber-400">se compõem</strong>. Em vez de descrever cada detalhe visual da sua apresentação, você <strong>empilha</strong> uma skill de design já existente sobre a skill <code>doc-to-slides</code>. A skill de design carrega as regras de tipografia, cores e espaçamento; a sua skill cuida do conteúdo. O resultado sobe de qualidade visual sem você virar designer.
+          Skills <strong class="text-amber-400">se compõem</strong>. Em vez de descrever cada detalhe visual da sua apresentaçêo, você <strong>empilha</strong> uma skill de design já existente sobre a skill <code>doc-to-slides</code>. A skill de design carrega as regras de tipografia, cores e espaçamento; a sua skill cuida do conteúdo. O resultado sobe de qualidade visual sem você virar designer.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Composição</strong> — combinar duas skills para que uma use a outra (conteúdo + design). <strong>Empilhar</strong> — adicionar uma skill ao fluxo sem reescrever a primeira; cada uma faz a sua parte. <strong>Skill de design pronta</strong> — uma skill já feita (sua ou da comunidade) que aplica um padrão visual.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Composiçêo</strong> — combinar duas skills para que uma use a outra (conteúdo + design). <strong>Empilhar</strong> — adicionar uma skill ao fluxo sem reescrever a primeira; cada uma faz a sua parte. <strong>Skill de design pronta</strong> — uma skill já feita (sua ou da comunidade) que aplica um padrêo visual.</p>
 </div>
 <!-- SVG conceitual: stack workflow + design skill (#29) -->
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
-<svg aria-label="Composição de skills: a skill de conteúdo documento para slides trata o que entra; empilhada sobre ela, a skill de design aplica tipografia, cores e layout; juntas produzem uma apresentação profissional, sem você descrever cada detalhe visual" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="Composiçêo de skills: a skill de conteúdo documento para slides trata o que entra; empilhada sobre ela, a skill de design aplica tipografia, cores e layout; juntas produzem uma apresentaçêo profissional, sem você descrever cada detalhe visual" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m42c-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fbbf24"></stop><stop offset="1" stop-color="#f59e0b"></stop></lineargradient>
 <pattern height="32" id="m42c-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#f59e0b" opacity="0.1" r="1.3"></circle></pattern>
@@ -735,18 +735,18 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <g fill="none" opacity="0.85" stroke="#fbbf24" stroke-width="2.4"><path d="M300,110 L432,110" marker-end="url(#m42c-ah)"></path></g>
 <text fill="#fde2a7" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="366" y="100">compõem</text>
 <rect fill="#0e2018" height="64" rx="15" stroke="#34d399" stroke-width="2.5" width="260" x="432" y="78"></rect>
-<text fill="#9ee9c9" font-family="Inter,sans-serif" font-size="15" font-weight="700" text-anchor="middle" x="562" y="106">✨ apresentação pro</text>
+<text fill="#9ee9c9" font-family="Inter,sans-serif" font-size="15" font-weight="700" text-anchor="middle" x="562" y="106">✨ apresentaçêo pro</text>
 <text fill="#7fd6b3" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="562" y="127">conteúdo certo + visual polido</text>
 <text fill="#94a3b8" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="830" y="106">sem descrever</text>
 <text fill="#94a3b8" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="830" y="124">cada detalhe</text>
 </svg>
 </div>
-<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — empilhar uma skill de design não substitui a sua; cada uma cobre uma responsabilidade, e juntas elevam o resultado.</p>
+<p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — empilhar uma skill de design nêo substitui a sua; cada uma cobre uma responsabilidade, e juntas elevam o resultado.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t6-p2">Composição é o que faz a sua biblioteca de skills valer mais que a soma das partes. Uma skill de design pronta vira um "tema" que você pluga em qualquer skill que gera artefato visual. Você reaproveita conhecimento de design que nem é seu — e o resultado parece feito por especialista.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t6-p2">Composiçêo é o que faz a sua biblioteca de skills valer mais que a soma das partes. Uma skill de design pronta vira um "tema" que você pluga em qualquer skill que gera artefato visual. Você reaproveita conhecimento de design que nem é seu — e o resultado parece feito por especialista.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
-<p class="text-neutral-300 text-sm">Mantenha skills <strong>pequenas e de responsabilidade única</strong> (uma faz conteúdo, outra faz design). Skills enxutas se compõem melhor — é mais fácil empilhar duas peças focadas do que desmontar uma skill gigante que tenta fazer tudo. Pense em peças de Lego, não num bloco maciço.</p>
+<p class="text-neutral-300 text-sm">Mantenha skills <strong>pequenas e de responsabilidade única</strong> (uma faz conteúdo, outra faz design). Skills enxutas se compõem melhor — é mais fácil empilhar duas peças focadas do que desmontar uma skill gigante que tenta fazer tudo. Pense em peças de Lego, nêo num bloco maciço.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -775,10 +775,10 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t7-p1">
-          Agora que você sabe construir, testar, invocar e reusar, o passo final é acumular: montar a sua <strong class="text-amber-400">biblioteca de skills</strong>. Cada skill é uma tarefa repetitiva sua, encapsulada uma vez. Abaixo, um catálogo de ideias prontas — não para copiar, mas para servir de <strong>ponto de partida</strong> da sua própria coleção.
+          Agora que você sabe construir, testar, invocar e reusar, o passo final é acumular: montar a sua <strong class="text-amber-400">biblioteca de skills</strong>. Cada skill é uma tarefa repetitiva sua, encapsulada uma vez. Abaixo, um catálogo de ideias prontas — nêo para copiar, mas para servir de <strong>ponto de partida</strong> da sua própria coleçêo.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Biblioteca de skills</strong> — o conjunto de slash commands que você foi criando, cada um automatizando uma tarefa que antes você fazia na mão. Quanto mais skills boas, mais alavancagem: você descreve uma vez, reusa por meses.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Biblioteca de skills</strong> — o conjunto de slash commands que você foi criando, cada um automatizando uma tarefa que antes você fazia na mêo. Quanto mais skills boas, mais alavancagem: você descreve uma vez, reusa por meses.</p>
 </div>
 <!-- Grid de ideias de skills -->
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Catálogo de pontos de partida</h3>
@@ -800,8 +800,8 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 </div>
 <div class="bg-dark-800 rounded-xl p-5 border border-dark-600">
 <div class="text-2xl mb-2">🗣️➡️📋</div>
-<div class="text-amber-400 font-semibold text-sm mb-1">resumo de reunião</div>
-<p class="text-xs text-neutral-400">Transcrição entra; saem decisões, pendências e próximos passos.</p>
+<div class="text-amber-400 font-semibold text-sm mb-1">resumo de reuniêo</div>
+<p class="text-xs text-neutral-400">Transcriçêo entra; saem decisões, pendências e próximos passos.</p>
 </div>
 <div class="bg-dark-800 rounded-xl p-5 border border-dark-600">
 <div class="text-2xl mb-2">🔍➡️🧾</div>
@@ -811,7 +811,7 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <div class="bg-dark-800 rounded-xl p-5 border border-dark-600">
 <div class="text-2xl mb-2">📄➡️🖥️</div>
 <div class="text-amber-400 font-semibold text-sm mb-1">documento → slides</div>
-<p class="text-xs text-neutral-400">A skill do tópico 5 — pontos-chave viram apresentação profissional.</p>
+<p class="text-xs text-neutral-400">A skill do tópico 5 — pontos-chave viram apresentaçêo profissional.</p>
 </div>
 </div>
 <!-- Timeline: ciclo de vida da skill -->
@@ -841,7 +841,7 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 </ol>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t7-p2">Uma biblioteca de skills é capital que rende juros: cada skill que você constrói economiza tempo em toda execução futura, e skills boas se compõem em fluxos maiores. Comece pequeno — uma ou duas skills das suas tarefas mais repetitivas — e deixe a coleção crescer com o uso.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t7-p2">Uma biblioteca de skills é capital que rende juros: cada skill que você constrói economiza tempo em toda execuçêo futura, e skills boas se compõem em fluxos maiores. Comece pequeno — uma ou duas skills das suas tarefas mais repetitivas — e deixe a coleçêo crescer com o uso.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Catálogo</div><p class="text-xs text-neutral-400">Ideias de partida.</p></div>
@@ -855,7 +855,7 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <div class="inema-check-options inema-check__options space-y-2">
 <button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Continuar a mesma conversa longa e ir empilhando novos e-mails.</button>
 <button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Dar /clear (contexto limpo) e chamar o comando de novo com as novas entradas.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Reescrever o SKILL.md do zero a cada execução.</button>
+<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Reescrever o SKILL.md do zero a cada execuçêo.</button>
 </div>
 <div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
 </div>
@@ -875,9 +875,9 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">/draft-email</strong><span class="text-neutral-400"> — recebe bullets, destinatário e tom; escreve um e-mail conciso sem fluff e salva na pasta temporária.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Invocar sem argumentos</strong><span class="text-neutral-400"> — uma skill robusta PERGUNTA pelas entradas faltantes antes de rodar; nunca trabalha no escuro.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Reutilizar com contexto limpo</strong><span class="text-neutral-400"> — /clear e chamar de novo com novas entradas → saída fresca, mesmas regras, runs previsíveis.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Documento → slides</strong><span class="text-neutral-400"> — lê um documento, extrai pontos-chave e gera apresentação com tools Python; resources entra, outputs sai.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Documento → slides</strong><span class="text-neutral-400"> — lê um documento, extrai pontos-chave e gera apresentaçêo com tools Python; resources entra, outputs sai.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Plugar skill de design</strong><span class="text-neutral-400"> — skills se compõem; empilhar uma skill de design pronta sobe a qualidade visual sem descrever cada detalhe.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Biblioteca de skills</strong><span class="text-neutral-400"> — acumule um catálogo (notas→ações, dados→PDF, e-mail, resumo de reunião, brief de pesquisa) como pontos de partida.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Biblioteca de skills</strong><span class="text-neutral-400"> — acumule um catálogo (notas→ações, dados→PDF, e-mail, resumo de reuniêo, brief de pesquisa) como pontos de partida.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-amber-400 mb-2">Próximo Módulo:</h3>
@@ -893,7 +893,7 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
 <nav aria-label="Índice da página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seção <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">7</span></span></p>
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">7</span></span></p>
 <ol class="space-y-1.5 text-sm">
 <li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-1">1. Pedir no formato oficial</a></li>
 <li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-2">2. /draft-email</a></li>
@@ -935,9 +935,9 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
         INEMA.registerCheck('modulo-4-2#q1', {
           answer: 1,
           explain: {
-            0: 'Não. Conversa longa = contexto inchado: o tom e o destinatário antigos vazam para o novo e-mail. O resultado fica imprevisível.',
+            0: 'Nêo. Conversa longa = contexto inchado: o tom e o destinatário antigos vazam para o novo e-mail. O resultado fica imprevisível.',
             1: 'Isso. /clear zera o contexto e, com novas entradas, a skill aplica as mesmas regras do SKILL.md sobre uma página em branco — saída fresca e consistente.',
-            2: 'Não. O ponto de uma skill é não reescrever nada: você construiu o SKILL.md uma vez para reusar muitas. Só ajuste com feedback quando quiser melhorá-la.'
+            2: 'Nêo. O ponto de uma skill é nêo reescrever nada: você construiu o SKILL.md uma vez para reusar muitas. Só ajuste com feedback quando quiser melhorá-la.'
           }
         });
       }

@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -240,7 +240,7 @@
 <span class="sm:hidden">T5</span><span class="hidden sm:inline">Projetos</span>
 </a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
-<span class="sm:hidden">T6</span><span class="hidden sm:inline">Produção</span>
+<span class="sm:hidden">T6</span><span class="hidden sm:inline">Produçêo</span>
 </a>
 <button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Minha jornada</span>
@@ -259,7 +259,7 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegação" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaçêo" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-amber-400" href="../../index.html">Início</a>
 <span>/</span>
@@ -303,9 +303,9 @@
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
 <main class="min-w-0" id="conteudo">
-<!-- SVG FUTURISTA (visão geral, #29) -->
+<!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Antes dos sete tópicos, veja o caminho que liga tudo: você escreve um <strong>workflow em markdown</strong>, ele passa a viver numa pasta (<code>.claude/skills</code>), e o agente o expõe como um <strong>slash command</strong> que pode chamar quando você (ou uma instrução) o invoca. Uma skill é, no fundo, um pedaço de processo embalado para reuso.</p>
+<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Antes dos sete tópicos, veja o caminho que liga tudo: você escreve um <strong>workflow em markdown</strong>, ele passa a viver numa pasta (<code>.claude/skills</code>), e o agente o expõe como um <strong>slash command</strong> que pode chamar quando você (ou uma instruçêo) o invoca. Uma skill é, no fundo, um pedaço de processo embalado para reuso.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Fluxo de uma skill: um arquivo de workflow em markdown é salvo na pasta .claude/skills; a partir dali o agente coordenador o expõe como um slash command que pode ser invocado e reutilizado a qualquer momento" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
 <defs>
@@ -366,20 +366,20 @@
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t1-p1">
-          Uma <strong class="text-amber-400">skill</strong> é, na essência, um <strong>arquivo markdown de instruções</strong> — conceitualmente idêntico à camada <strong>W (workflows)</strong> do framework <strong>WAT</strong>. A diferença em relação a um workflow que você só descreve no chat é <em>onde ele mora</em> e <em>como é acionado</em>: a skill fica salva numa pasta do projeto e é invocada por um comando, então pode ser executada da mesma forma quantas vezes você quiser, sem você reescrever o processo.
+          Uma <strong class="text-amber-400">skill</strong> é, na essência, um <strong>arquivo markdown de instruções</strong> — conceitualmente idêntico à camada <strong>W (workflows)</strong> do framework <strong>WAT</strong>. A diferença em relaçêo a um workflow que você só descreve no chat é <em>onde ele mora</em> e <em>como é acionado</em>: a skill fica salva numa pasta do projeto e é invocada por um comando, entêo pode ser executada da mesma forma quantas vezes você quiser, sem você reescrever o processo.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-4">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Workflow</strong> — uma sequência de passos que resolve uma tarefa (o "W" do WAT). <strong>Slash command</strong> — um comando que começa com <code>/</code> e dispara uma ação no agente (ex.: <code>/clear</code>). Uma skill é um workflow embalado e exposto como slash command.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Workflow</strong> — uma sequência de passos que resolve uma tarefa (o "W" do WAT). <strong>Slash command</strong> — um comando que começa com <code>/</code> e dispara uma açêo no agente (ex.: <code>/clear</code>). Uma skill é um workflow embalado e exposto como slash command.</p>
 </div>
 <p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-1-t1-p2">
-          O detalhe libertador: <strong>você não precisa saber escrever skills</strong>. Você descreve o workflow em linguagem natural — "toda vez que eu pedir, faça X, depois Y, depois salve em Z" — e pede ao agente para <em>transformar isso numa skill / slash command</em>. Ele cria o arquivo, e você passa a chamá-lo por um comando. É o mesmo princípio do vibe coding: descreve o resultado, a IA faz o trabalho pesado.
+          O detalhe libertador: <strong>você nêo precisa saber escrever skills</strong>. Você descreve o workflow em linguagem natural — "toda vez que eu pedir, faça X, depois Y, depois salve em Z" — e pede ao agente para <em>transformar isso numa skill / slash command</em>. Ele cria o arquivo, e você passa a chamá-lo por um comando. É o mesmo princípio do vibe coding: descreve o resultado, a IA faz o trabalho pesado.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m4-1-t1-p3">Skills resolvem quatro dores de uma vez. Sem elas, você reexplica o mesmo processo toda sessão, gasta tokens repetindo contexto e perde consistência. Embaladas numa skill, ganham:</p>
+<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m4-1-t1-p3">Skills resolvem quatro dores de uma vez. Sem elas, você reexplica o mesmo processo toda sessêo, gasta tokens repetindo contexto e perde consistência. Embaladas numa skill, ganham:</p>
 <ul class="space-y-2 text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Consistência:</strong> o mesmo processo roda igual toda vez, sem reexplicar.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Economia de tokens:</strong> a skill carrega <em>sob demanda</em>, só quando invocada — não fica ocupando o contexto o tempo todo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Economia de tokens:</strong> a skill carrega <em>sob demanda</em>, só quando invocada — nêo fica ocupando o contexto o tempo todo.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Compartilhável:</strong> é um arquivo — você passa para o time inteiro.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Confiável:</strong> embrulha passos complexos e fáceis de esquecer → você delega-e-esquece.</span></li>
 </ul>
@@ -391,7 +391,7 @@
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Transforme este workflow numa skill chamável (slash command).
 
 Nome desejado: &lt;nome-da-skill&gt;
-Quando deve ser usada: &lt;descreva o gatilho — ex.: "quando eu pedir um resumo de reunião"&gt;
+Quando deve ser usada: &lt;descreva o gatilho — ex.: "quando eu pedir um resumo de reuniêo"&gt;
 Argumentos que ela recebe: &lt;ex.: texto-bruto, formato-de-saida&gt;
 Passos do processo:
 1. &lt;passo 1&gt;
@@ -428,14 +428,14 @@ Crie o arquivo em .claude/skills/ e me diga como invocá-la.</pre>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t2-p1">
-          As skills vivem num diretório do projeto chamado <code class="text-amber-300">.claude/skills</code>. A organização é simples: <strong>cada skill fica na sua própria pasta</strong>, e dentro dela há um arquivo de skill que descreve o que ela faz. O agente varre essa pasta e <strong>expõe cada skill como um slash command</strong> — um comando que começa com <code>/</code> e que você digita para acioná-la.
+          As skills vivem num diretório do projeto chamado <code class="text-amber-300">.claude/skills</code>. A organizaçêo é simples: <strong>cada skill fica na sua própria pasta</strong>, e dentro dela há um arquivo de skill que descreve o que ela faz. O agente varre essa pasta e <strong>expõe cada skill como um slash command</strong> — um comando que começa com <code>/</code> e que você digita para acioná-la.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Diretório <code>.claude</code></strong> — uma pasta de configuração que o agente lê dentro do seu projeto. <strong>Built-in</strong> — um comando que já vem pronto (ex.: <code>/clear</code> limpa o contexto). Suas skills aparecem ao lado dos built-ins, na mesma lista de slash commands.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Diretório <code>.claude</code></strong> — uma pasta de configuraçêo que o agente lê dentro do seu projeto. <strong>Built-in</strong> — um comando que já vem pronto (ex.: <code>/clear</code> limpa o contexto). Suas skills aparecem ao lado dos built-ins, na mesma lista de slash commands.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t2-p2">
-          Entender o lugar e o mecanismo desfaz a mágica: skill não é um recurso oculto da IA, é <strong>um arquivo numa pasta</strong> que vira comando. Vale notar a unificação recente: <strong>os slash commands foram unificados em skills</strong> — ou seja, criar uma skill e criar um slash command viraram a mesma coisa. Por isso, comparar com built-ins como <code>/clear</code> ajuda: a diferença é só que os seus são definidos por você, no projeto.
+          Entender o lugar e o mecanismo desfaz a mágica: skill nêo é um recurso oculto da IA, é <strong>um arquivo numa pasta</strong> que vira comando. Vale notar a unificaçêo recente: <strong>os slash commands foram unificados em skills</strong> — ou seja, criar uma skill e criar um slash command viraram a mesma coisa. Por isso, comparar com built-ins como <code>/clear</code> ajuda: a diferença é só que os seus sêo definidos por você, no projeto.
         </p>
 <!-- TIMELINE: ciclo de vida de uma skill -->
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Ciclo de vida de uma skill</h3>
@@ -449,7 +449,7 @@ Crie o arquivo em .claude/skills/ e me diga como invocá-la.</pre>
 <li class="ml-6">
 <span class="absolute -left-[15px] flex items-center justify-center w-7 h-7 rounded-full bg-amber-500/20 text-amber-400 font-bold text-sm border border-amber-500/40">2</span>
 <p class="text-neutral-100 font-semibold text-sm">Agente gera o arquivo de skill</p>
-<p class="text-neutral-400 text-xs">Ele cria a pasta em <code>.claude/skills</code> com nome, descrição e passos.</p>
+<p class="text-neutral-400 text-xs">Ele cria a pasta em <code>.claude/skills</code> com nome, descriçêo e passos.</p>
 </li>
 <li class="ml-6">
 <span class="absolute -left-[15px] flex items-center justify-center w-7 h-7 rounded-full bg-amber-500/20 text-amber-400 font-bold text-sm border border-amber-500/40">3</span>
@@ -459,7 +459,7 @@ Crie o arquivo em .claude/skills/ e me diga como invocá-la.</pre>
 <li class="ml-6">
 <span class="absolute -left-[15px] flex items-center justify-center w-7 h-7 rounded-full bg-amber-500/20 text-amber-400 font-bold text-sm border border-amber-500/40">4</span>
 <p class="text-neutral-100 font-semibold text-sm">Reusar (e compartilhar)</p>
-<p class="text-neutral-400 text-xs">Mesma execução sempre; e por ser arquivo, vai junto no projeto para o time.</p>
+<p class="text-neutral-400 text-xs">Mesma execuçêo sempre; e por ser arquivo, vai junto no projeto para o time.</p>
 </li>
 </ol>
 </div>
@@ -490,10 +490,10 @@ Crie o arquivo em .claude/skills/ e me diga como invocá-la.</pre>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t3-p1">
-          Toda skill tem quatro partes essenciais: <strong class="text-amber-400">nome</strong> (como ela é chamada), <strong class="text-amber-400">descrição</strong> (o <em>gatilho</em> — ensina o agente <strong>QUANDO</strong> usar a skill), <strong class="text-amber-400">argumentos esperados</strong> (as entradas que ela recebe) e as <strong class="text-amber-400">instruções passo a passo</strong> (o que fazer). A peça mais subestimada é a descrição: ela não é decorativa — é o que faz o agente decidir, sozinho, que aquela skill é a certa para a situação.
+          Toda skill tem quatro partes essenciais: <strong class="text-amber-400">nome</strong> (como ela é chamada), <strong class="text-amber-400">descriçêo</strong> (o <em>gatilho</em> — ensina o agente <strong>QUANDO</strong> usar a skill), <strong class="text-amber-400">argumentos esperados</strong> (as entradas que ela recebe) e as <strong class="text-amber-400">instruções passo a passo</strong> (o que fazer). A peça mais subestimada é a descriçêo: ela nêo é decorativa — é o que faz o agente decidir, sozinho, que aquela skill é a certa para a situaçêo.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Gatilho (trigger)</strong> — a condição que faz a skill ser escolhida. Uma boa descrição diz "use isto QUANDO...". Se ela for vaga, o agente não saberá quando aplicar; se for precisa, ele acerta sozinho.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Gatilho (trigger)</strong> — a condiçêo que faz a skill ser escolhida. Uma boa descriçêo diz "use isto QUANDO...". Se ela for vaga, o agente nêo saberá quando aplicar; se for precisa, ele acerta sozinho.</p>
 </div>
 <!-- CODE BOX copy-run #30 (REQUERIDO) -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -513,18 +513,18 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 
 ## Passos
 1. Leia os &lt;bullets&gt; e o &lt;tom&gt;.
-2. Escreva um e-mail polido, conciso, sem enrolação.
+2. Escreva um e-mail polido, conciso, sem enrolaçêo.
 3. Salve em temporary/&lt;nome-arquivo&gt;.md</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Como verificar: rode <code>/&lt;nome-da-skill&gt;</code> — se a skill aparecer na lista de slash commands e pedir os argumentos que faltam, está registrada.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
 <p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-1-t3-p2">
-          Conhecer a anatomia te dá controle mesmo sem escrever: você sabe pedir uma descrição-gatilho boa ("use quando eu colar bullets de e-mail"), nomear argumentos claros e listar passos na ordem certa. E sabe revisar o que o agente gerou — se a descrição estiver fraca, é só pedir para deixá-la mais específica. A estrutura <strong>frontmatter (nome + descrição) + corpo (argumentos + passos)</strong> é o esqueleto de toda skill.
+          Conhecer a anatomia te dá controle mesmo sem escrever: você sabe pedir uma descriçêo-gatilho boa ("use quando eu colar bullets de e-mail"), nomear argumentos claros e listar passos na ordem certa. E sabe revisar o que o agente gerou — se a descriçêo estiver fraca, é só pedir para deixá-la mais específica. A estrutura <strong>frontmatter (nome + descriçêo) + corpo (argumentos + passos)</strong> é o esqueleto de toda skill.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Nome</div><p class="text-xs text-neutral-400">Como é chamada.</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Descrição</div><p class="text-xs text-neutral-400">O gatilho: QUANDO usar.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Descriçêo</div><p class="text-xs text-neutral-400">O gatilho: QUANDO usar.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Argumentos</div><p class="text-xs text-neutral-400">As entradas esperadas.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Passos</div><p class="text-xs text-neutral-400">As instruções em ordem.</p></div>
 </div>
@@ -548,14 +548,14 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t4-p1">
-          Uma skill não substitui as <strong class="text-amber-400">tools (ferramentas)</strong> — ela as <em>orquestra</em>. Dentro dos seus passos, uma skill ainda pode acionar tools: scripts em Python que fazem busca na web, raspagem de uma página, geração de um documento. Ou seja, o <strong>WAT permanece intacto por baixo</strong>: a skill é o <strong>W</strong> (workflow), a tool é o <strong>T</strong> (ferramenta), e o agente é quem decide quando rodar cada tool no meio do processo.
+          Uma skill nêo substitui as <strong class="text-amber-400">tools (ferramentas)</strong> — ela as <em>orquestra</em>. Dentro dos seus passos, uma skill ainda pode acionar tools: scripts em Python que fazem busca na web, raspagem de uma página, geraçêo de um documento. Ou seja, o <strong>WAT permanece intacto por baixo</strong>: a skill é o <strong>W</strong> (workflow), a tool é o <strong>T</strong> (ferramenta), e o agente é quem decide quando rodar cada tool no meio do processo.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Tool (ferramenta)</strong> — um pedaço de código que faz uma ação concreta no mundo (busca, raspagem, salvar arquivo). <strong>WAT</strong> — o framework Workflows + Agents + Tools: skills são os workflows, tools são as ferramentas, o agente costura tudo.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Tool (ferramenta)</strong> — um pedaço de código que faz uma açêo concreta no mundo (busca, raspagem, salvar arquivo). <strong>WAT</strong> — o framework Workflows + Agents + Tools: skills sêo os workflows, tools sêo as ferramentas, o agente costura tudo.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t4-p2">
-          Saber que skill ≈ W e tool ≈ T evita uma confusão comum: achar que adotar skills joga fora tudo o que você aprendeu sobre tools e MCP. Não joga. A skill apenas dá um <strong>roteiro</strong> reutilizável de quando e como usar as suas ferramentas. Uma skill de "pesquisa de mercado", por exemplo, pode dizer: <em>busque na web, raspe as três primeiras páginas, resuma e gere um documento</em> — chamando uma tool em cada passo.
+          Saber que skill ≈ W e tool ≈ T evita uma confusêo comum: achar que adotar skills joga fora tudo o que você aprendeu sobre tools e MCP. Nêo joga. A skill apenas dá um <strong>roteiro</strong> reutilizável de quando e como usar as suas ferramentas. Uma skill de "pesquisa de mercado", por exemplo, pode dizer: <em>busque na web, raspe as três primeiras páginas, resuma e gere um documento</em> — chamando uma tool em cada passo.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -584,7 +584,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t5-p1">
-          Nem tudo merece virar skill. A regra: <strong>crie uma skill quando o processo se repete, a consistência importa, as instruções são complexas ou esquecíveis, ou você quer compartilhar com o time</strong>. Para o resto — uma tarefa de uma frase, uma experimentação inicial, uma instrução simples — é mais rápido só digitar. Embalar uma tarefa trivial numa skill só adiciona cerimônia.
+          Nem tudo merece virar skill. A regra: <strong>crie uma skill quando o processo se repete, a consistência importa, as instruções sêo complexas ou esquecíveis, ou você quer compartilhar com o time</strong>. Para o resto — uma tarefa de uma frase, uma experimentaçêo inicial, uma instruçêo simples — é mais rápido só digitar. Embalar uma tarefa trivial numa skill só adiciona cerimônia.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Cerimônia</strong> — o esforço extra de formalizar algo (criar arquivo, nomear, documentar). Vale a pena quando você vai reusar; é desperdício para um pedido único.</p>
@@ -600,7 +600,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>O workflow se repete (você já fez isso 3+ vezes).</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>A consistência importa (mesmo formato/qualidade sempre).</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>As instruções são complexas ou fáceis de esquecer.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>As instruções sêo complexas ou fáceis de esquecer.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Você quer compartilhar o processo com o time.</span></li>
 </ul>
 </div>
@@ -609,14 +609,14 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>É uma tarefa de uma frase, pontual.</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Você ainda está experimentando / explorando o problema.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>A instrução é simples e não se repete.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>A instruçêo é simples e nêo se repete.</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Formalizar custaria mais do que só pedir de novo.</span></li>
 </ul>
 </div>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Repetição</div><p class="text-xs text-neutral-400">Se repete → skill.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Repetiçêo</div><p class="text-xs text-neutral-400">Se repete → skill.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Consistência</div><p class="text-xs text-neutral-400">Importa → skill.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">One-off</div><p class="text-xs text-neutral-400">Pontual → digitar.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">"Vou repetir?"</div><p class="text-xs text-neutral-400">A pergunta-chave.</p></div>
@@ -641,25 +641,25 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t6-p1">
-          A divisão de trabalho: o <strong class="text-amber-400">CLAUDE.md</strong> guarda só o que vale para <em>toda sessão</em> — propósito do projeto, objetivo, framework, regras gerais. Ele está <strong>sempre no contexto</strong>. Já o que é <strong>por-tarefa</strong> (per-task) vai para <strong class="text-amber-400">skills</strong>, que carregam <strong>sob demanda</strong> — só quando você invoca aquele comando. É a diferença entre "o que a IA precisa saber sempre" e "o que ela só precisa quando vai fazer X".
+          A divisêo de trabalho: o <strong class="text-amber-400">CLAUDE.md</strong> guarda só o que vale para <em>toda sessêo</em> — propósito do projeto, objetivo, framework, regras gerais. Ele está <strong>sempre no contexto</strong>. Já o que é <strong>por-tarefa</strong> (per-task) vai para <strong class="text-amber-400">skills</strong>, que carregam <strong>sob demanda</strong> — só quando você invoca aquele comando. É a diferença entre "o que a IA precisa saber sempre" e "o que ela só precisa quando vai fazer X".
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
-<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>CLAUDE.md</strong> — arquivo de memória que o agente lê no início de toda sessão. <strong>Contexto sob demanda</strong> — carregar informação só no momento em que ela é necessária, para não ocupar a "memória de trabalho" o tempo todo.</p>
+<p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>CLAUDE.md</strong> — arquivo de memória que o agente lê no início de toda sessêo. <strong>Contexto sob demanda</strong> — carregar informaçêo só no momento em que ela é necessária, para nêo ocupar a "memória de trabalho" o tempo todo.</p>
 </div>
 <!-- SVG #29: contraste CLAUDE.md (sempre) vs skills (sob demanda) -->
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
-<svg aria-label="Contraste: o CLAUDE.md fica sempre dentro do contexto, ocupando espaço em toda sessão; as skills ficam fora, na pasta, e só uma delas entra no contexto quando é invocada, mantendo o restante leve" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="Contraste: o CLAUDE.md fica sempre dentro do contexto, ocupando espaço em toda sessêo; as skills ficam fora, na pasta, e só uma delas entra no contexto quando é invocada, mantendo o restante leve" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <pattern height="32" id="m41b-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#f59e0b" opacity="0.1" r="1.3"></circle></pattern>
 <marker id="m41b-ah" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#fbbf24"></path></marker>
 <filter height="180%" id="m41b-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.4"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
 </defs>
 <rect fill="url(#m41b-grid)" height="220" width="1000" x="0" y="0"></rect>
-<!-- caixa "contexto da sessão" -->
+<!-- caixa "contexto da sessêo" -->
 <rect fill="#0e1b26" height="150" rx="16" stroke="#38bdf8" stroke-dasharray="6 4" stroke-width="2" width="430" x="40" y="40"></rect>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="13" font-weight="700" text-anchor="middle" x="255" y="64">CONTEXTO DA SESSÃO (espaço limitado)</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="13" font-weight="700" text-anchor="middle" x="255" y="64">CONTEXTO DA SESSêO (espaço limitado)</text>
 <g filter="url(#m41b-glow)"><rect fill="#2a1c05" height="44" rx="11" stroke="#fbbf24" stroke-width="2" width="370" x="70" y="86"></rect></g>
-<text fill="#fcd9a0" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="255" y="113">📌 CLAUDE.md — sempre presente (toda sessão)</text>
+<text fill="#fcd9a0" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="255" y="113">📌 CLAUDE.md — sempre presente (toda sessêo)</text>
 <rect fill="#13202b" height="34" opacity="0.85" rx="9" stroke="#38bdf8" stroke-width="1.4" width="175" x="70" y="142"></rect>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="157" y="164">skill ativa (1)</text>
 <text fill="#5b748a" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="357" y="164">espaço livre</text>
@@ -671,7 +671,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <rect fill="#2a1c05" height="30" rx="8" stroke="#fbbf24" stroke-width="1.4" width="120" x="560" y="96"></rect><text fill="#fcd9a0" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="620" y="116">/skill-d</text>
 <rect fill="#2a1c05" height="30" rx="8" stroke="#fbbf24" stroke-width="1.4" width="120" x="700" y="96"></rect><text fill="#fcd9a0" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="760" y="116">/skill-e</text>
 <rect fill="#1f1505" height="30" rx="8" stroke="#7a5a1e" stroke-width="1.4" width="120" x="840" y="96"></rect><text fill="#b58b46" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="900" y="116">+20…</text>
-<text fill="#d8a14a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="760" y="150">20–50 skills aqui NÃO incham o contexto</text>
+<text fill="#d8a14a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="760" y="150">20–50 skills aqui NêO incham o contexto</text>
 <g fill="none" opacity="0.85" stroke="#fbbf24" stroke-width="2.2"><path d="M558,71 C520,71 500,150 248,159" marker-end="url(#m41b-ah)"></path></g>
 <text fill="#d8a14a" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="430" y="200">só a skill invocada entra no contexto (sob demanda)</text>
 </svg>
@@ -679,12 +679,12 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — jogar tudo no CLAUDE.md enche o contexto fixo; manter o per-task em skills deixa dezenas de comandos disponíveis sem peso, porque só o invocado é carregado.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t6-p2">
-          O erro clássico do iniciante é <strong>jogar tudo no CLAUDE.md</strong> — toda instrução, todo workflow, todo detalhe. Isso <strong>estoura o contexto</strong>: o arquivo fica gigante, ocupa espaço em toda sessão e degrada a atenção da IA. A sacada das skills é exatamente essa: você pode ter <strong>20, 50 skills</strong> sem inchar nada, porque elas só carregam quando chamadas. CLAUDE.md enxuto + muitas skills sob demanda &gt; CLAUDE.md gigante.
+          O erro clássico do iniciante é <strong>jogar tudo no CLAUDE.md</strong> — toda instruçêo, todo workflow, todo detalhe. Isso <strong>estoura o contexto</strong>: o arquivo fica gigante, ocupa espaço em toda sessêo e degrada a atençêo da IA. A sacada das skills é exatamente essa: você pode ter <strong>20, 50 skills</strong> sem inchar nada, porque elas só carregam quando chamadas. CLAUDE.md enxuto + muitas skills sob demanda &gt; CLAUDE.md gigante.
         </p>
 <!-- COMPARISON GRID 2: CLAUDE.md vs skills -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">✓ No CLAUDE.md (toda sessão)</h4>
+<h4 class="font-bold text-amber-400 mb-4">✓ No CLAUDE.md (toda sessêo)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Propósito e objetivo do projeto.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>O framework / convenções gerais.</span></li>
@@ -692,7 +692,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ NÃO no CLAUDE.md → vai pra skill</h4>
+<h4 class="font-bold text-red-400 mb-4">✗ NêO no CLAUDE.md → vai pra skill</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Workflows específicos de uma tarefa só.</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Passo a passo longo e detalhado de um processo.</span></li>
@@ -702,14 +702,14 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
-<p class="text-neutral-300 text-sm">Antes de adicionar algo ao CLAUDE.md, pergunte: <em>"isto vale para toda sessão, ou só quando faço uma tarefa específica?"</em> Se for específico, vire skill. Seu CLAUDE.md deve caber numa olhada; o resto do conhecimento mora na pasta de skills, pronto para ser chamado.</p>
+<p class="text-neutral-300 text-sm">Antes de adicionar algo ao CLAUDE.md, pergunte: <em>"isto vale para toda sessêo, ou só quando faço uma tarefa específica?"</em> Se for específico, vire skill. Seu CLAUDE.md deve caber numa olhada; o resto do conhecimento mora na pasta de skills, pronto para ser chamado.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Sempre vs demanda</div><p class="text-xs text-neutral-400">CLAUDE.md x skill.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Regras gerais</div><p class="text-xs text-neutral-400">Ficam no CLAUDE.md.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Per-task</div><p class="text-xs text-neutral-400">Vira skill.</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Não incha</div><p class="text-xs text-neutral-400">20–50 skills, sem peso.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Nêo incha</div><p class="text-xs text-neutral-400">20–50 skills, sem peso.</p></div>
 </div>
 <div class="flex justify-start mt-6">
 <button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
@@ -731,27 +731,27 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
 <p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t7-p1">
-          Como uma skill é apenas <strong>um arquivo numa pasta</strong> do projeto, ela herda todas as vantagens de um arquivo de código: pode ser <strong class="text-amber-400">versionada no Git</strong> (histórico de mudanças, revisão, reverter), e <strong class="text-amber-400">compartilhada</strong> com qualquer pessoa que clone o projeto. O processo deixa de ser conhecimento preso na cabeça de uma pessoa e vira um <strong>ativo do time</strong>.
+          Como uma skill é apenas <strong>um arquivo numa pasta</strong> do projeto, ela herda todas as vantagens de um arquivo de código: pode ser <strong class="text-amber-400">versionada no Git</strong> (histórico de mudanças, revisêo, reverter), e <strong class="text-amber-400">compartilhada</strong> com qualquer pessoa que clone o projeto. O processo deixa de ser conhecimento preso na cabeça de uma pessoa e vira um <strong>ativo do time</strong>.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Git</strong> — o sistema que guarda o histórico de versões de arquivos. <strong>Versionar</strong> — registrar cada mudança de um arquivo ao longo do tempo, para poder ver, revisar e reverter. Como a skill é arquivo, ela entra nesse fluxo de graça.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
 <p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-1-t7-p2">
-          Esse é o salto de "truque pessoal" para "capacidade de equipe". Quando o seu melhor workflow vira uma skill versionada, qualquer colega passa a executar o mesmo processo, com a mesma qualidade, sem precisar te perguntar como. Erros corrigidos na skill beneficiam todo mundo na próxima invocação. É reuso de verdade: escreve uma vez, todo o time colhe.
+          Esse é o salto de "truque pessoal" para "capacidade de equipe". Quando o seu melhor workflow vira uma skill versionada, qualquer colega passa a executar o mesmo processo, com a mesma qualidade, sem precisar te perguntar como. Erros corrigidos na skill beneficiam todo mundo na próxima invocaçêo. É reuso de verdade: escreve uma vez, todo o time colhe.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">É arquivo</div><p class="text-xs text-neutral-400">Logo, versionável.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Git</div><p class="text-xs text-neutral-400">Histórico e reverter.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Compartilhável</div><p class="text-xs text-neutral-400">Clonou, já tem.</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Ativo do time</div><p class="text-xs text-neutral-400">Não preso numa cabeça.</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Ativo do time</div><p class="text-xs text-neutral-400">Nêo preso numa cabeça.</p></div>
 </div>
 <!-- Checagem leve -->
 <div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-4-1#q1">
 <p class="inema-check__q font-medium mb-4">Você tem um processo de 8 passos que repete toda semana e quer que um colega execute igual. Onde isso deve morar?</p>
 <div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">No CLAUDE.md, para carregar em toda sessão e ninguém esquecer.</button>
+<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">No CLAUDE.md, para carregar em toda sessêo e ninguém esquecer.</button>
 <button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Numa skill em .claude/skills, versionada no Git e invocada por slash command.</button>
 <button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Digitando os 8 passos no chat toda vez que precisar.</button>
 </div>
@@ -771,11 +771,11 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <div class="space-y-4 mb-8">
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">O que é uma skill</strong><span class="text-neutral-400"> — arquivo markdown de instruções; é a camada W do WAT, carrega sob demanda; você descreve, a IA escreve.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Onde vivem</strong><span class="text-neutral-400"> — em .claude/skills, uma pasta por skill, expostas como slash command (slash commands foram unificados em skills).</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Anatomia</strong><span class="text-neutral-400"> — nome, descrição (o gatilho: QUANDO usar), argumentos e passos. A descrição é o que mais importa.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Anatomia</strong><span class="text-neutral-400"> — nome, descriçêo (o gatilho: QUANDO usar), argumentos e passos. A descriçêo é o que mais importa.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Chamam tools</strong><span class="text-neutral-400"> — skill ≈ W, tool ≈ T; o WAT segue intacto e o agente decide quando rodar cada ferramenta.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Skill vs digitar</strong><span class="text-neutral-400"> — skill para repetição/consistência/complexidade/time; digitar para o pontual e simples.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Skills vs CLAUDE.md</strong><span class="text-neutral-400"> — regras de toda sessão no CLAUDE.md; per-task em skills sob demanda. 20–50 skills não incham o contexto.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Compartilhar e versionar</strong><span class="text-neutral-400"> — é um arquivo: versionável no Git e compartilhável; vira ativo do time, não conhecimento preso numa cabeça.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Skill vs digitar</strong><span class="text-neutral-400"> — skill para repetiçêo/consistência/complexidade/time; digitar para o pontual e simples.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Skills vs CLAUDE.md</strong><span class="text-neutral-400"> — regras de toda sessêo no CLAUDE.md; per-task em skills sob demanda. 20–50 skills nêo incham o contexto.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-neutral-100">Compartilhar e versionar</strong><span class="text-neutral-400"> — é um arquivo: versionável no Git e compartilhável; vira ativo do time, nêo conhecimento preso numa cabeça.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-amber-400 mb-2">Próximo Módulo:</h3>
@@ -791,7 +791,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
 <nav aria-label="Índice da página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seção <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">7</span></span></p>
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">7</span></span></p>
 <ol class="space-y-1.5 text-sm">
 <li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-1">1. O que é uma skill</a></li>
 <li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-2">2. Onde vivem / slash command</a></li>
@@ -832,9 +832,9 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
         INEMA.registerCheck('modulo-4-1#q1', {
           answer: 1,
           explain: {
-            0: 'Não. O CLAUDE.md é para regras de toda sessão; um processo de 8 passos específico incharia o contexto. Per-task vai em skill.',
+            0: 'Nêo. O CLAUDE.md é para regras de toda sessêo; um processo de 8 passos específico incharia o contexto. Per-task vai em skill.',
             1: 'Isso. Workflow repetido + consistência + compartilhar com o time = caso clássico de skill versionada e chamável por slash command.',
-            2: 'Não. Redigitar 8 passos toda semana perde consistência e tokens — é exatamente a dor que uma skill resolve.'
+            2: 'Nêo. Redigitar 8 passos toda semana perde consistência e tokens — é exatamente a dor que uma skill resolve.'
           }
         });
       }

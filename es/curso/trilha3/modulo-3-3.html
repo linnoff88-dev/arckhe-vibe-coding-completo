@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -370,13 +370,13 @@
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">crear el CLAUDE.md inicial del proyecto.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (cópialo y ejecútalo en Plan Mode, en la carpeta vacía del proyecto)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Crie um arquivo CLAUDE.md na raiz deste projeto. Ele é o system prompt
-persistente que você vai ler em toda sessão. Inclua estas seções:
+persistente que você vai ler em toda sessêo. Inclua estas seções:
 
 - Papel: você é &lt;ex.: um assistente de automações n8n&gt;.
 - Contexto: estou construindo &lt;ex.: workflows de IA para uma agência&gt;.
 - Como ajudar: me ajude a planejar, construir, depurar e otimizar.
 - Preferências: explicações concisas e diretas; português; descreva o resultado
-  e me pergunte quando faltar informação.
+  e me pergunte quando faltar informaçêo.
 - Regras: procure uma ferramenta existente antes de criar uma nova; quando algo
   falhar, diagnostique e aprenda; mantenha este arquivo atualizado; nunca peça
   para eu colar chaves no chat (use o .env).
@@ -421,17 +421,17 @@ Mantenha enxuto (poucas centenas de linhas). Depois, me mostre o arquivo.</pre>
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">instalar y conectar un MCP server con la clave en .env.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (cópialo y ejecútalo)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Instale o MCP server de &lt;ex.: Firecrawl, para busca/scraping na web&gt; neste
-projeto, com a configuração no NÍVEL DO PROJETO (não global).
+projeto, com a configuraçêo no NÍVEL DO PROJETO (nêo global).
 
 Passos:
-1. Use o comando de instalação para Claude Code da documentação oficial:
-   &lt;cole aqui o comando de instalação do provedor&gt;
+1. Use o comando de instalaçêo para Claude Code da documentaçêo oficial:
+   &lt;cole aqui o comando de instalaçêo do provedor&gt;
 2. Gere/atualize o .mcp.json com a entrada do server e um placeholder de API key.
-3. Garanta que a chave seja lida do arquivo .env — NÃO me peça para colar a
+3. Garanta que a chave seja lida do arquivo .env — NêO me peça para colar a
    chave aqui no chat. Apenas me diga o nome da variável a preencher no .env.
-4. Ao final, faça uma verificação de conexão (status do server).
+4. Ao final, faça uma verificaçêo de conexêo (status do server).
 
-Se o server não aparecer, me lembre de reiniciar o Claude Code.</pre>
+Se o server nêo aparecer, me lembre de reiniciar o Claude Code.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: ejecuta <code class="text-purple-400">/mcp</code> y confirma que el server aparezca en la lista con estado saludable. La clave está en el <code class="text-purple-400">.env</code> (que está en el <code class="text-purple-400">.gitignore</code>), no en el chat ni en el <code class="text-purple-400">.mcp.json</code>.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
@@ -478,14 +478,14 @@ técnico e rascunha uma resposta baseada nas nossas políticas. Anexei os docume
 &lt;ex.: politicas.pdf e faq.pdf&gt; na pasta do projeto.
 
 Requisitos:
-- Use as informações dos documentos como fonte da verdade; não invente.
-- E-mails que não forem de suporte devem ser ignorados.
-- Quando não houver resposta nos documentos, NÃO invente: avise que vamos
+- Use as informações dos documentos como fonte da verdade; nêo invente.
+- E-mails que nêo forem de suporte devem ser ignorados.
+- Quando nêo houver resposta nos documentos, NêO invente: avise que vamos
   pesquisar e retornar.
 
 Antes de construir: leia os documentos, decida como armazená-los e buscá-los
 (system prompt vs. vector store, escolha e justifique), me faça as perguntas de
-esclarecimento e proponha o plano com a lista de credenciais. Não construa até
+esclarecimento e proponha o plano com a lista de credenciais. Nêo construa até
 eu aprovar.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: la IA leyó la documentación, propuso una arquitectura justificada (p. ej., un vector store por escalabilidad), preguntó lo que faltaba y enumeró las credenciales. Aprueba solo cuando el plan tenga sentido.</p>
 </div>
@@ -532,8 +532,8 @@ eu aprovar.</pre>
 &lt;cole o erro / trecho do trace EXATAMENTE como apareceu&gt;
 """
 
-Diagnostique a causa raiz, explique POR QUE aconteceu, e aplique a correção
-mínima necessária. Não mude mais nada além disso. Depois, me diga exatamente
+Diagnostique a causa raiz, explique POR QUE aconteceu, e aplique a correçêo
+mínima necessária. Nêo mude mais nada além disso. Depois, me diga exatamente
 como reproduzir o teste para confirmar que foi resolvido.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: la IA señala la causa (p. ej., un formato de respuesta de la API distinto del esperado), aplica una corrección específica y te indica el paso de prueba. Vuelve a ejecutar; si aparece un error nuevo, repite la plantilla con el nuevo mensaje.</p>
 </div>
@@ -572,9 +572,9 @@ como reproduzir o teste para confirmar que foi resolvido.</pre>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompts (pega uno a la vez)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">No workflow existente "&lt;nome exato&gt;", aplique UMA melhoria por vez:
 
-[1] Fallback sem match: quando a busca na base não encontrar resposta, em vez de
+[1] Fallback sem match: quando a busca na base nêo encontrar resposta, em vez de
     inventar, gere um rascunho educado dizendo que vamos pesquisar e retornar.
-    Use um marcador de "encontrou/não encontrou" para decidir o caminho.
+    Use um marcador de "encontrou/nêo encontrou" para decidir o caminho.
 
 [2] Filtro por tempo: processe apenas entradas mais recentes que &lt;ex.: 10 minutos&gt;.
 
@@ -582,7 +582,7 @@ como reproduzir o teste para confirmar que foi resolvido.</pre>
     ausência/out-of-office, newsletters, notificações de entrega). Marque com um
     sinalizador e desvie para "ignorar".
 
-Edite ESTE workflow (não crie outro). Me explique o que muda antes de aplicar.</pre>
+Edite ESTE workflow (nêo crie outro). Me explique o que muda antes de aplicar.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: para [1], envía una pregunta fuera de la base y comprueba que aparezca el borrador «vamos a investigar» (no una respuesta inventada). Para [2]/[3], envía exactamente el tipo de entrada que debe detectar el filtro y confirma que se desvíe.</p>
 </div>
 <!-- copy-run: qualidade da saída -->
@@ -596,12 +596,12 @@ Edite ESTE workflow (não crie outro). Me explique o que muda antes de aplicar.<
     rascunho de fallback.
 
 [5] Nome do cliente: extraia o nome da assinatura/fechamento da mensagem
-    (padrões como "Abraços, João") e use na saudação; se não houver, use uma
-    saudação genérica como "Olá".
+    (padrões como "Abraços, Joêo") e use na saudaçêo; se nêo houver, use uma
+    saudaçêo genérica como "Olá".
 
 [6] Indicador de confiança: classifique a resposta como alta/média/baixa pela
     qualidade do match na base, e anexe um selo discreto (verde/amarelo/vermelho)
-    no rascunho, só para revisão interna.
+    no rascunho, só para revisêo interna.
 
 Edite ESTE workflow. Teste cada um com a entrada apropriada.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: [4] el borrador suena con el tono solicitado; [5] el saludo usa el nombre correcto (y recurre al genérico cuando no hay firma); [6] la etiqueta es coherente con qué tan bien respondió la base.</p>
@@ -645,12 +645,12 @@ Edite ESTE workflow. Teste cada um com a entrada apropriada.</pre>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Crie uma skill no formato oficial do Claude Code, chamável como slash command.
 
 Nome: &lt;ex.: draft-email&gt;
-O que faz: &lt;ex.: escrever um e-mail polido, conciso e sem enrolação&gt;.
+O que faz: &lt;ex.: escrever um e-mail polido, conciso e sem enrolaçêo&gt;.
 Argumentos esperados: &lt;ex.: bullets com os pontos-chave, destinatário, tom&gt;.
 Comportamento: se eu invocar sem argumentos, pergunte o que faltar antes de
 gerar. Salve a saída em &lt;ex.: temporary/&gt;.
 
-Crie a estrutura .claude/skills/&lt;nome&gt;/SKILL.md com nome, descrição, argumentos
+Crie a estrutura .claude/skills/&lt;nome&gt;/SKILL.md com nome, descriçêo, argumentos
 e passos. Depois me diga como invocá-la.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: existe <code class="text-purple-400">.claude/skills/&lt;nome&gt;/SKILL.md</code>. Limpia el contexto e invoca el slash command (p. ej., <code class="text-purple-400">/draft-email</code>) y confirma que solicite los datos de entrada y produzca la salida en el lugar correcto.</p>
 </div>
@@ -693,19 +693,19 @@ e passos. Depois me diga como invocá-la.</pre>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Entre em plan mode. Construa uma tarefa AGENDADA que roda sozinha, sem humano
 presente, todo dia às &lt;ex.: 8h&gt; (cron).
 
-O que ela faz a cada execução:
-1. Pesquisa na web o tópico fixo "&lt;ex.: novidades em automação com IA&gt;"
+O que ela faz a cada execuçêo:
+1. Pesquisa na web o tópico fixo "&lt;ex.: novidades em automaçêo com IA&gt;"
    (definido no topo do arquivo, fácil de trocar).
 2. Sintetiza os achados em um resumo curto.
 3. Escreve uma linha na planilha &lt;ex.: "Daily Research", aba Sheet1&gt; com as
    colunas: data, tópico, resumo, fontes, status.
 
-Requisitos para rodar sem supervisão (agentic gap):
-- Inputs FIXOS (sem me fazer perguntas no meio da execução).
+Requisitos para rodar sem supervisêo (agentic gap):
+- Inputs FIXOS (sem me fazer perguntas no meio da execuçêo).
 - Saída ESTRUTURADA e previsível.
 - Trate erros sem derrubar a tarefa; se uma etapa falhar, registre e siga,
   gravando ao menos uma linha parcial com status de erro.
-- Faça LOG claro em cada passo (mensagens específicas, não "falhou").
+- Faça LOG claro em cada passo (mensagens específicas, nêo "falhou").
 - Segredos vêm do ambiente, nunca do código nem do chat.
 
 Antes de construir, planeje, me pergunte o que faltar e liste as credenciais.</pre>
@@ -744,8 +744,8 @@ Antes de construir, planeje, me pergunte o que faltar e liste as credenciais.</p
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">generar un frontend con personalidad (no genérico).</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (frontend)</span></div>
-<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Crie o frontend para &lt;ex.: o app de qualificação de leads&gt;. USE a skill de
-design de frontend para que NÃO fique com a cara genérica de site gerado por IA.
+<pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Crie o frontend para &lt;ex.: o app de qualificaçêo de leads&gt;. USE a skill de
+design de frontend para que NêO fique com a cara genérica de site gerado por IA.
 
 Estrutura desejada: &lt;ex.: cabeçalho fixo com logo à esquerda e CTA à direita;
 hero com texto grande e direto; um formulário que envia os dados e mostra o
@@ -763,14 +763,14 @@ específico depois.</pre>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">Aja como um especialista em segurança e faça uma auditoria detalhada deste app.
 Verifique e me reporte achados + correções para cada item:
 
-- Rotas protegidas: existe rota que dispara o backend sem autenticação?
+- Rotas protegidas: existe rota que dispara o backend sem autenticaçêo?
 - Chaves expostas: alguma chave/segredo aparece no código do frontend?
-- Variáveis de ambiente: todos os segredos estão em env vars (e fora do git)?
+- Variáveis de ambiente: todos os segredos estêo em env vars (e fora do git)?
 - Isolamento de dados (RLS): um usuário consegue ver dados de outro mesmo com
   um bug no frontend?
 - Abuso/custo: alguém com a URL consegue rodar o workflow e gastar meus tokens?
 
-Liste os problemas por severidade e proponha a correção de cada um. Depois,
+Liste os problemas por severidade e proponha a correçêo de cada um. Depois,
 aplique as correções que eu aprovar.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: recibes una lista por nivel de gravedad. Ninguna clave en el frontend; las rutas que activan el backend requieren autenticación; los secretos solo en variables de entorno; RLS activa para aislar los datos por usuario. Corrige lo que falle y vuelve a auditar.</p>
 </div>
@@ -887,9 +887,9 @@ aplique as correções que eu aprovar.</pre>
         INEMA.registerCheck('modulo-3-3#q1', {
           answer: 1,
           explain: {
-            0: 'Não. Chave no frontend fica visível para qualquer visitante — é a falha que mais vaza segredo.',
+            0: 'Nêo. Chave no frontend fica visível para qualquer visitante — é a falha que mais vaza segredo.',
             1: 'Isso. Variável de ambiente mantém a chave fora do código e fora do git; injetada só em runtime.',
-            2: 'Não. Nunca cole chaves no chat — a regra de ouro de segurança. Use o .env / variáveis de ambiente.'
+            2: 'Nêo. Nunca cole chaves no chat — a regra de ouro de segurança. Use o .env / variáveis de ambiente.'
           }
         });
       }

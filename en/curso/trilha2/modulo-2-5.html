@@ -123,10 +123,10 @@
         { "id": "5-2", "title": "Projeto: Agentes Hospedados (Agendado + Webhook)", "topics": 8, "href": "curso/trilha5/modulo-5-2.html" },
         { "id": "5-3", "title": "Projeto: App Full-Stack (Lead Qualifier) + Frontend pra n8n", "topics": 8, "href": "curso/trilha5/modulo-5-3.html" }
       ]},
-      { "n": "6", "title": "Produção, Deploy & Segurança", "modules": [
+      { "n": "6", "title": "Produçêo, Deploy & Segurança", "modules": [
         { "id": "6-1", "title": "GitHub & Trigger.dev", "topics": 7, "href": "curso/trilha6/modulo-6-1.html" },
         { "id": "6-2", "title": "Secrets & Segurança", "topics": 8, "href": "curso/trilha6/modulo-6-2.html" },
-        { "id": "6-3", "title": "Confiabilidade & Monetização", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
+        { "id": "6-3", "title": "Confiabilidade & Monetizaçêo", "topics": 7, "href": "curso/trilha6/modulo-6-3.html" }
       ]}
     ]
   }
@@ -303,7 +303,7 @@
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
 <main class="min-w-0" id="conteudo">
-<!-- intro + SVG visão geral (pipeline RAG) -->
+<!-- intro + SVG visêo geral (pipeline RAG) -->
 <section class="mb-12">
 <p class="text-neutral-300 mb-4 inema-prose leading-relaxed">RAG has two halves that live in <strong>separate workflows</strong>. One prepares the foundation: you index the documents (break them into chunks, turn them into numbers, store them in a <em>vector store</em>). The other answers: the question goes through a <strong>classifier</strong> that decides whether it's worth using the agent; the agent searches the vector store for the relevant passage and responds <strong>grounded</strong> in this section — and, when it finds nothing, it falls back to a <em>fallback</em> be honest instead of making things up.</p>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
@@ -323,7 +323,7 @@
 <marker id="m25-ahc" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#38bdf8"></path></marker>
 </defs>
 <rect fill="url(#m25-grid)" height="250" width="1000" x="0" y="0"></rect>
-<!-- linha de cima: indexação -->
+<!-- linha de cima: indexaçêo -->
 <text fill="#60a5fa" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="40" y="40">Indexing — prepare the knowledge base (runs once / when updated)</text>
 <rect fill="#0e1b2e" height="36" rx="9" stroke="#60a5fa" stroke-width="1.8" width="120" x="40" y="52"></rect><text fill="#bfdbfe" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="100" y="75">documents</text>
 <g fill="none" opacity="0.7" stroke="#60a5fa" stroke-width="2"><path d="M160,70 L208,70" marker-end="url(#m25-ahb)"></path></g>
@@ -611,7 +611,7 @@
 <rect fill="#0e2533" height="44" rx="12" stroke="#38bdf8" stroke-width="2.5" width="170" x="482" y="30"></rect><text fill="#bae6fd" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="567" y="51">🤖 agent (expensive)</text><text fill="#7dd3fc" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="567" y="66">search the vector store</text>
 <g fill="none" opacity="0.7" stroke="#38bdf8" stroke-width="2"><path d="M652,52 L700,52" marker-end="url(#m25d-ahc)"></path></g>
 <rect fill="#0e1b2e" height="40" rx="10" stroke="#60a5fa" stroke-width="1.8" width="170" x="700" y="32"></rect><text fill="#bfdbfe" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="785" y="56">responds with citations</text>
-<!-- caminho não-relevante -->
+<!-- caminho nêo-relevante -->
 <g fill="none" opacity="0.7" stroke="#94a3b8" stroke-width="2"><path d="M368,112 C420,112 430,146 482,146" marker-end="url(#m25d-ahg)"></path></g>
 <text fill="#64748b" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="426" y="156">outside the scope</text>
 <rect fill="#181c24" height="40" rx="10" stroke="#64748b" stroke-width="1.8" width="200" x="482" y="124"></rect><text fill="#9aa6b5" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="582" y="148">for (doesn’t use up the agent)</text>
@@ -669,7 +669,7 @@
 <g fill="none" opacity="0.85" stroke="#60a5fa" stroke-width="2"><path d="M390,96 C440,96 450,58 502,58" marker-end="url(#m25e-ahb)"></path></g>
 <text fill="#93c5fd" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="446" y="50">yes (high)</text>
 <rect fill="#0e1b2e" height="44" rx="11" stroke="#60a5fa" stroke-width="1.8" width="240" x="502" y="36"></rect><text fill="#bfdbfe" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="622" y="57">draft a grounded response</text><text fill="#93c5fd" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="622" y="72">citing the source</text>
-<!-- ramo não achou -->
+<!-- ramo nêo achou -->
 <g fill="none" opacity="0.85" stroke="#f87171" stroke-width="2"><path d="M390,116 C440,116 450,154 502,154" marker-end="url(#m25e-ahr)"></path></g>
 <text fill="#fca5a5" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="446" y="164">no (downloads)</text>
 <rect fill="#2a1410" height="44" rx="11" stroke="#f87171" stroke-width="1.8" width="240" x="502" y="132"></rect><text fill="#fecaca" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="622" y="153">honest fallback</text><text fill="#fca5a5" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="622" y="168">"let's research and get back to you"</text>
@@ -696,7 +696,7 @@
 </ul>
 </div>
 </div>
-<!-- TIMELINE: sequência de construção do RAG -->
+<!-- TIMELINE: sequência de construçêo do RAG -->
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6">
 <h3 class="text-base font-semibold text-blue-400 mb-4">The RAG build sequence</h3>
 <ol class="space-y-4">
@@ -723,7 +723,7 @@
 <p class="text-sm text-blue-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">build the knowledge base (indexer) and the agent that queries it</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-blue-400"></span><span class="text-xs text-neutral-500 ml-2">prompt (copy and run)</span></div>
 <pre class="font-mono text-sm text-neutral-300 overflow-x-auto leading-relaxed">crie um indexador (trigger manual → ler &lt;meus-documentos&gt; → dividir em pedaços → embeddings → vector store)
-e um agente que classifica a pergunta, busca no vector store e, se não achar nada relevante,
+e um agente que classifica a pergunta, busca no vector store e, se nêo achar nada relevante,
 responde com um fallback honesto em vez de inventar.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: run the indexer once; ask an out-of-scope question and confirm that the agent falls back (doesn’t hallucinate).</p>
 </div>
@@ -735,7 +735,7 @@ responde com um fallback honesto em vez de inventar.</pre>
 
 se confianca &lt; 0.6:
     rota = "preciso pesquisar"                  // fallback honesto
-senão:
+senêo:
     rota = "rascunhar resposta"                 // responder ancorado
 
 // o nó IF usa "rota" para escolher o caminho do fluxo</pre>
@@ -836,9 +836,9 @@ senão:
         INEMA.registerCheck('modulo-2-5#q1', {
           answer: 1,
           explain: {
-            0: 'Não. Inventar uma resposta plausível é exatamente a alucinação que o RAG evita. Sem fonte, recue.',
+            0: 'Nêo. Inventar uma resposta plausível é exatamente a alucinaçêo que o RAG evita. Sem fonte, recue.',
             1: 'Isso. Sem trecho relevante, o bom agente cai num fallback honesto em vez de inventar — comportamento desejado.',
-            2: 'Não. Jogar a base inteira no system prompt não escala e custa contexto; e não resolve o caso de "não achei".'
+            2: 'Nêo. Jogar a base inteira no system prompt nêo escala e custa contexto; e nêo resolve o caso de "nêo achei".'
           }
         });
       }
