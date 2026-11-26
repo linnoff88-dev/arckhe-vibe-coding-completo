@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -198,8 +198,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #c084fc; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #7c3aed; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #c084fc; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #7c3aed; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre-wrap; word-break: break-word; }
@@ -211,8 +211,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha3/modulo-3-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha3/modulo-3-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha3/modulo-3-3.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-3-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha3/modulo-3-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha3/modulo-3-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha3/modulo-3-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha3/modulo-3-3.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha3/modulo-3-3.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-3-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha3/modulo-3-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha3/modulo-3-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-purple-600 focus:text-white focus:rounded-lg" href="#conteudo">Pular para o conteúdo</a>
 <!-- NAVIGATION (T3 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -224,7 +224,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -245,9 +245,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Produçêo</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Minha jornada</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -295,12 +295,12 @@
 <div class="text-xs text-neutral-400">Tipo</div>
 </div>
 </div>
-<div aria-label="Progresso do módulo 3.3" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:3-3" role="progressbar">
+<div aria-label="Progresso do módulo 3.3" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:3-3" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Progresso do módulo</span>
-<span class="text-purple-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 de 8</span></span>
+<span class="text-purple-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 de 8</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-purple-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-purple-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -313,7 +313,7 @@
 </div>
 <!-- SVG FUTURISTA (mapa da biblioteca, #29) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Os oito prompts cobrem o ciclo de vida de um projeto: você prepara o terreno (1-2), constrói e conserta (3-4), melhora (5), empacota o reuso (6) e leva para produçêo (7-8). É a biblioteca que você volta a consultar a cada novo build.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Os oito prompts cobrem o ciclo de vida de um projeto: você prepara o terreno (1-2), constrói e conserta (3-4), melhora (5), empacota o reuso (6) e leva para produçêo (7-8). É a biblioteca que você volta a consultar a cada novo build.</p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Mapa da biblioteca de prompts: preparar o terreno com setup e MCP, construir e consertar com workflow e debug, melhorar com os seis enhancements, empacotar com skill, e levar para produçêo com agente agendado e frontend mais auditoria de segurança" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
@@ -348,23 +348,23 @@
 <p class="text-xs text-neutral-500">Diagrama ilustrativo — o ciclo de vida coberto pelos oito prompts, do terreno à produçêo.</p>
 </section>
 <!-- TÓPICO 1 — Setup & CLAUDE.md -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">📄 Setup &amp; CLAUDE.md</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-3-t1-p1">O primeiro prompt de todo projeto: gerar o <strong>CLAUDE.md</strong>, o system prompt persistente que define quem a IA é, o que você está construindo e como ela deve te ajudar. É escrito em markdown e fica na raiz da pasta do projeto.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t1-p1">O primeiro prompt de todo projeto: gerar o <strong>CLAUDE.md</strong>, o system prompt persistente que define quem a IA é, o que você está construindo e como ela deve te ajudar. É escrito em markdown e fica na raiz da pasta do projeto.</p>
 <div class="bg-dark-800 border border-purple-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-purple-500/20 text-purple-400 text-xs font-semibold mr-2">O que é?</span><strong>CLAUDE.md</strong> — um arquivo de texto que a IA lê toda sessêo; funciona como uma "ficha de onboarding" com papel, contexto, regras e estilo. Mantenha-o enxuto (poucas centenas de linhas).</p>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m3-3-t1-p2">Sem CLAUDE.md, você reexplica o contexto a cada conversa. Com ele, a IA já sabe o objetivo do projeto e suas preferências desde a primeira mensagem — e você pode iterar o arquivo só conversando.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t1-p2">Sem CLAUDE.md, você reexplica o contexto a cada conversa. Com ele, a IA já sabe o objetivo do projeto e suas preferências desde a primeira mensagem — e você pode iterar o arquivo só conversando.</p>
 <!-- copy-run -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">criar o CLAUDE.md inicial do projeto.</span></p>
@@ -392,30 +392,30 @@ Mantenha enxuto (poucas centenas de linhas). Depois, me mostre o arquivo.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-semibold text-sm mb-1">Iterável</div><p class="text-xs text-neutral-400">Edite conversando.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 — Conectar uma ferramenta via MCP -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🔌 Conectar uma ferramenta via MCP</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-3-t2-p1">O prompt para dar "braços" à IA: instalar um <strong>MCP server</strong> que expõe um conjunto de ferramentas externas (raspar a web, ler bancos, falar com apps). A configuraçêo fica em <code class="text-purple-400">.mcp.json</code> no nível do projeto, e a chave de API vai no <code class="text-purple-400">.env</code> — você cola manualmente, nunca no chat.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t2-p1">O prompt para dar "braços" à IA: instalar um <strong>MCP server</strong> que expõe um conjunto de ferramentas externas (raspar a web, ler bancos, falar com apps). A configuraçêo fica em <code class="text-purple-400">.mcp.json</code> no nível do projeto, e a chave de API vai no <code class="text-purple-400">.env</code> — você cola manualmente, nunca no chat.</p>
 <div class="bg-dark-800 border border-purple-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-purple-500/20 text-purple-400 text-xs font-semibold mr-2">O que é?</span><strong>MCP (Model Context Protocol)</strong> — um protocolo em que uma conexêo expõe várias ferramentas; a IA decide qual usar e quando. <strong>.mcp.json</strong> — o arquivo de configuraçêo do server. <strong>/mcp</strong> — o comando que lista os servers conectados.</p>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m3-3-t2-p2">Sem MCP, a IA só lê e escreve arquivos. Com MCP, ela age no mundo. Configurar no nível do projeto (nêo global) evita avisos de segurança a cada reinício, e ler a chave do <code class="text-purple-400">.env</code> mantém o segredo fora do código.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t2-p2">Sem MCP, a IA só lê e escreve arquivos. Com MCP, ela age no mundo. Configurar no nível do projeto (nêo global) evita avisos de segurança a cada reinício, e ler a chave do <code class="text-purple-400">.env</code> mantém o segredo fora do código.</p>
 <!-- copy-run -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">instalar e conectar um MCP server com a chave no .env.</span></p>
@@ -446,27 +446,27 @@ Se o server nêo aparecer, me lembre de reiniciar o Claude Code.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-semibold text-sm mb-1">/mcp</div><p class="text-xs text-neutral-400">Verificar conexêo.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 — Criar um workflow do zero -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🧱 Criar um workflow do zero</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-3-t3-p1">O <strong>prompt de abertura abrangente</strong>: um único pedido que descreve o resultado, a fonte de dados e o destino, deixando a IA decidir a arquitetura (inclusive como armazenar/buscar documentos). É o "um prompt para reger todos" — começar certo aqui economiza muitas idas e vindas.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t3-p1">O <strong>prompt de abertura abrangente</strong>: um único pedido que descreve o resultado, a fonte de dados e o destino, deixando a IA decidir a arquitetura (inclusive como armazenar/buscar documentos). É o "um prompt para reger todos" — começar certo aqui economiza muitas idas e vindas.</p>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m3-3-t3-p2">Em vez de ditar "use um vector store", você descreve o problema e deixa a IA propor a melhor abordagem (system prompt para docs pequenos; vector store para escala). Ela pergunta o que faltar — e você aprova o plano antes do build.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t3-p2">Em vez de ditar "use um vector store", você descreve o problema e deixa a IA propor a melhor abordagem (system prompt para docs pequenos; vector store para escala). Ela pergunta o que faltar — e você aprova o plano antes do build.</p>
 <!-- copy-run -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">abrir um build completo com um prompt só (exemplo: agente de suporte por e-mail).</span></p>
@@ -497,27 +497,27 @@ eu aprovar.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-semibold text-sm mb-1">Aprovar</div><p class="text-xs text-neutral-400">Antes do build.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 — Debugar um erro -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🐞 Debugar um erro</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-3-t4-p1">O <strong>template de troubleshooting</strong> pronto: cole a mensagem de erro literal, diga onde ocorreu e o que você esperava, e peça causa + correçêo pontual. Funciona tanto para erros locais quanto para falhas que só aparecem em produçêo (em traces de execuçêo).</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t4-p1">O <strong>template de troubleshooting</strong> pronto: cole a mensagem de erro literal, diga onde ocorreu e o que você esperava, e peça causa + correçêo pontual. Funciona tanto para erros locais quanto para falhas que só aparecem em produçêo (em traces de execuçêo).</p>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m3-3-t4-p2">A IA conserta rápido quando recebe contexto, e devagar (ou erra) quando recebe só "deu erro". Este template padroniza o que ela precisa: o erro exato, o local e a expectativa.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t4-p2">A IA conserta rápido quando recebe contexto, e devagar (ou erra) quando recebe só "deu erro". Este template padroniza o que ela precisa: o erro exato, o local e a expectativa.</p>
 <!-- copy-run -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">um template reutilizável que faz a IA diagnosticar e corrigir.</span></p>
@@ -545,27 +545,27 @@ como reproduzir o teste para confirmar que foi resolvido.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-semibold text-sm mb-1">Correçêo mínima</div><p class="text-xs text-neutral-400">Sem mexer no resto.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 — Os 6 enhancements -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🎚️ Os 6 enhancements</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-3-t5-p1">Seis prompts de melhoria que transformam um agente de "funciona" em "funciona bem". Três sêo de <strong>erro/lógica</strong> (fallback sem match, filtro por tempo, filtro de automáticos) e três de <strong>qualidade da saída</strong> (tom de marca, nome do cliente, indicador de confiança). Aplique um por vez, ancorando o pedido no workflow existente, e teste cada um.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t5-p1">Seis prompts de melhoria que transformam um agente de "funciona" em "funciona bem". Três sêo de <strong>erro/lógica</strong> (fallback sem match, filtro por tempo, filtro de automáticos) e três de <strong>qualidade da saída</strong> (tom de marca, nome do cliente, indicador de confiança). Aplique um por vez, ancorando o pedido no workflow existente, e teste cada um.</p>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m3-3-t5-p2">Esses seis cobrem os casos de borda mais comuns de um agente real. Sempre <strong>nomeie o workflow</strong> no pedido — sem isso, a IA pode criar um workflow novo em vez de editar o seu. E para testar um filtro, você precisa enviar exatamente o tipo de entrada que ele deve pegar.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t5-p2">Esses seis cobrem os casos de borda mais comuns de um agente real. Sempre <strong>nomeie o workflow</strong> no pedido — sem isso, a IA pode criar um workflow novo em vez de editar o seu. E para testar um filtro, você precisa enviar exatamente o tipo de entrada que ele deve pegar.</p>
 <!-- copy-run: erro/lógica -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">enhancements 1-3 (erro/lógica), um por vez.</span></p>
@@ -614,30 +614,30 @@ Edite ESTE workflow. Teste cada um com a entrada apropriada.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-semibold text-sm mb-1">Testar o tipo certo</div><p class="text-xs text-neutral-400">Envie a entrada exata.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 — Criar uma skill -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🧩 Criar uma skill / slash command</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-3-t6-p1">O prompt para empacotar uma tarefa repetida como <strong>skill</strong>: um arquivo markdown (<code class="text-purple-400">SKILL.md</code>) com nome, descriçêo, argumentos e passos, que vive em <code class="text-purple-400">.claude/skills</code> e vira um <strong>slash command</strong> chamável (ex.: <code class="text-purple-400">/draft-email</code>).</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t6-p1">O prompt para empacotar uma tarefa repetida como <strong>skill</strong>: um arquivo markdown (<code class="text-purple-400">SKILL.md</code>) com nome, descriçêo, argumentos e passos, que vive em <code class="text-purple-400">.claude/skills</code> e vira um <strong>slash command</strong> chamável (ex.: <code class="text-purple-400">/draft-email</code>).</p>
 <div class="bg-dark-800 border border-purple-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-purple-500/20 text-purple-400 text-xs font-semibold mr-2">O que é?</span><strong>Skill</strong> — um workflow em markdown, chamável sob demanda. <strong>Slash command</strong> — o atalho que dispara a skill. Skills carregam só quando invocadas, entêo nêo pesam o contexto como um CLAUDE.md gigante.</p>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m3-3-t6-p2">Skill é o fim do "reexplicar": consistência (o mesmo processo toda vez), economia de contexto (carrega só quando chamada) e reuso (limpe a conversa e chame de novo com inputs novos). Se você invocar sem argumentos, a skill pergunta o que falta.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t6-p2">Skill é o fim do "reexplicar": consistência (o mesmo processo toda vez), economia de contexto (carrega só quando chamada) e reuso (limpe a conversa e chame de novo com inputs novos). Se você invocar sem argumentos, a skill pergunta o que falta.</p>
 <!-- copy-run -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">criar uma skill no formato oficial (exemplo: rascunhar e-mail).</span></p>
@@ -662,30 +662,30 @@ e passos. Depois me diga como invocá-la.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-semibold text-sm mb-1">Sob demanda</div><p class="text-xs text-neutral-400">Economiza contexto.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 — Criar um agente agendado -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">⏰ Criar um agente agendado</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-3-t7-p1">O prompt para um agente que roda <strong>sozinho</strong>, por agenda (<strong>cron</strong>): a cada manhê pesquisa um tópico fixo, sintetiza e escreve uma linha numa planilha. Como ninguém estará olhando, o prompt precisa endereçar o <strong>agentic gap</strong> desde o início: inputs fixos, saída estruturada, tratamento de erro e log em cada passo.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t7-p1">O prompt para um agente que roda <strong>sozinho</strong>, por agenda (<strong>cron</strong>): a cada manhê pesquisa um tópico fixo, sintetiza e escreve uma linha numa planilha. Como ninguém estará olhando, o prompt precisa endereçar o <strong>agentic gap</strong> desde o início: inputs fixos, saída estruturada, tratamento de erro e log em cada passo.</p>
 <div class="bg-dark-800 border border-purple-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-purple-500/20 text-purple-400 text-xs font-semibold mr-2">O que é?</span><strong>Cron</strong> — um padrêo de 5 campos (minuto, hora, dia do mês, mês, dia da semana) que define quando rodar; <code class="text-purple-400">0 7 * * *</code> = 7h todo dia. <strong>Agentic gap</strong> — em produçêo a IA nêo está observando para se auto-curar, entêo erro e log precisam estar previstos.</p>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m3-3-t7-p2">Um agente que roda sem você só é confiável se foi pensado para falhar com elegância: registrar cada passo (para você diagnosticar depois), tratar erros sem derrubar tudo, e produzir uma saída previsível. Pedir isso no primeiro prompt é mais barato que remendar depois.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t7-p2">Um agente que roda sem você só é confiável se foi pensado para falhar com elegância: registrar cada passo (para você diagnosticar depois), tratar erros sem derrubar tudo, e produzir uma saída previsível. Pedir isso no primeiro prompt é mais barato que remendar depois.</p>
 <!-- copy-run -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">construir uma tarefa agendada nêo-supervisionada (pesquisa diária → planilha).</span></p>
@@ -719,27 +719,27 @@ Antes de construir, planeje, me pergunte o que faltar e liste as credenciais.</p
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-semibold text-sm mb-1">Saída estruturada</div><p class="text-xs text-neutral-400">Previsível.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 8 — Frontend + auditoria de segurança -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-8" id="topico-8">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-8" id="topico-8">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">8</span>
 <h2 class="text-2xl font-bold">🛡️ Frontend + auditoria de segurança</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m3-3-t8-p1">Dois prompts que fecham o ciclo de produçêo: um para <strong>gerar um frontend</strong> com personalidade (usando a skill de design, para nêo ficar com cara de IA genérica) e outro para pedir uma <strong>auditoria de segurança</strong> rigorosa do app antes de abri-lo ao mundo.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t8-p1">Dois prompts que fecham o ciclo de produçêo: um para <strong>gerar um frontend</strong> com personalidade (usando a skill de design, para nêo ficar com cara de IA genérica) e outro para pedir uma <strong>auditoria de segurança</strong> rigorosa do app antes de abri-lo ao mundo.</p>
 <h3 class="text-lg font-semibold text-purple-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m3-3-t8-p2">Um app aberto sem auditoria é risco real: qualquer um com a URL pode disparar seu workflow e <strong>gastar seus tokens</strong> (você paga pelo uso dos outros). A auditoria verifica rotas protegidas, chaves nêo expostas, segredos só em variáveis de ambiente e isolamento de dados por usuário (RLS).</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m3-3-t8-p2">Um app aberto sem auditoria é risco real: qualquer um com a URL pode disparar seu workflow e <strong>gastar seus tokens</strong> (você paga pelo uso dos outros). A auditoria verifica rotas protegidas, chaves nêo expostas, segredos só em variáveis de ambiente e isolamento de dados por usuário (RLS).</p>
 <!-- copy-run: frontend -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-purple-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">gerar um frontend com personalidade (nêo genérico).</span></p>
@@ -800,19 +800,19 @@ aplique as correções que eu aprovar.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-semibold text-sm mb-1">RLS</div><p class="text-xs text-neutral-400">Isola dados.</p></div>
 </div>
 <!-- Checagem leve -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-3-3#q1">
-<p class="inema-check__q font-medium mb-4">Em qual desses lugares é seguro guardar a chave de API que o seu app usa?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Colada direto no código do frontend, para ser fácil de usar.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Numa variável de ambiente (env var), fora do código e fora do git.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Colada na conversa com a IA, para ela configurar tudo.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-3-3#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">Em qual desses lugares é seguro guardar a chave de API que o seu app usa?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Colada direto no código do frontend, para ser fácil de usar.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Numa variável de ambiente (env var), fora do código e fora do git.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Colada na conversa com a IA, para ela configurar tudo.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
@@ -843,24 +843,24 @@ aplique as correções que eu aprovar.</pre>
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Índice da página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">8</span></span></p>
+<nav aria-label="Índice da página" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">8</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-1">1. Setup &amp; CLAUDE.md</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-2">2. Conectar via MCP</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-3">3. Workflow do zero</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-4">4. Debugar um erro</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-5">5. Os 6 enhancements</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-6">6. Criar uma skill</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-7">7. Agente agendado</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-8">8. Frontend + segurança</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-1">1. Setup &amp; CLAUDE.md</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-2">2. Conectar via MCP</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-3">3. Workflow do zero</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-4">4. Debugar um erro</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-5">5. Os 6 enhancements</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-6">6. Criar uma skill</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-7">7. Agente agendado</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400 block" href="#topico-8">8. Frontend + segurança</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Domínio Completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Domínio Completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -876,15 +876,15 @@ aplique as correções que eu aprovar.</pre>
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-3-3#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-3-3#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. Chave no frontend fica visível para qualquer visitante — é a falha que mais vaza segredo.',

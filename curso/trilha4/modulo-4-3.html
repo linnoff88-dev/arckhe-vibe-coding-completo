@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -198,8 +198,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #fbbf24; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #92400e; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #fbbf24; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #92400e; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -211,8 +211,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha4/modulo-4-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha4/modulo-4-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha4/modulo-4-3.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha4/modulo-4-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha4/modulo-4-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha4/modulo-4-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha4/modulo-4-3.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha4/modulo-4-3.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha4/modulo-4-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha4/modulo-4-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-amber-600 focus:text-white focus:rounded-lg" href="#conteudo">Pular para o conteúdo</a>
 <!-- NAVIGATION (T4 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -224,7 +224,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -245,9 +245,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Produçêo</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Minha jornada</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -295,12 +295,12 @@
 <div class="text-xs text-neutral-400">Tipo</div>
 </div>
 </div>
-<div aria-label="Progresso do módulo 4.3" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:4-3" role="progressbar">
+<div aria-label="Progresso do módulo 4.3" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:4-3" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Progresso do módulo</span>
-<span class="text-amber-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 de 8</span></span>
+<span class="text-amber-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 de 8</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-amber-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-amber-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -313,7 +313,7 @@
 </div>
 <!-- SVG FUTURISTA (visêo geral, #29) — três gatilhos alimentando um coordenador ciano -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Antes dos oito tópicos, veja o mapa. Três gatilhos diferentes acordam o <strong>mesmo</strong> tipo de cérebro: um agente que raciocina sobre o resultado. O que muda é só <em>quem aperta o botêo</em> — você, o relógio ou uma campainha digital.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Antes dos oito tópicos, veja o mapa. Três gatilhos diferentes acordam o <strong>mesmo</strong> tipo de cérebro: um agente que raciocina sobre o resultado. O que muda é só <em>quem aperta o botêo</em> — você, o relógio ou uma campainha digital.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Os três tipos de gatilho de um agente: o agente local é disparado por você sob demanda; o agendado é disparado por um relógio seguindo uma expressêo cron; o por evento é disparado quando um webhook é chamado por um sistema externo. Os três alimentam a mesma caixa de agente coordenador, em ciano, que raciocina, adapta e entrega o resultado." class="w-full h-auto" role="img" viewbox="0 0 1000 280">
 <defs>
@@ -365,29 +365,29 @@
 <p class="text-xs text-neutral-500">Diagrama ilustrativo — o tipo de agente é definido pelo <strong>gatilho</strong>, nêo pelo cérebro. Local, agendado e por evento usam o mesmo raciocínio; mudam só em quem (ou o quê) os acorda.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-4-3#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🤖 O que é um agente</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t1-p1">
           Na automaçêo tradicional, <strong>você liga cada passo</strong>: nó 1 → nó 2 → nó 3, num caminho fixo e previsível. Um <strong class="text-amber-400">agente</strong> recebe o <strong>resultado desejado</strong> — nêo a sequência — e raciocina sobre como chegar lá. Ele escolhe ferramentas, adapta quando a situaçêo muda, faz <strong>perguntas de esclarecimento</strong> quando falta contexto e <strong>se auto-cura</strong> quando algo quebra no meio do caminho.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Determinístico</strong> = a mesma entrada produz sempre a mesma saída, pelo mesmo caminho (a automaçêo tradicional). <strong>Nêo-determinístico</strong> = o agente decide o caminho na hora, entêo pode resolver de jeitos diferentes — mas cumpre o objetivo. Agente = nêo-determinístico por natureza.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-3-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t1-p2">
           A melhor analogia é o jantar fora. Cozinhar <strong>pela receita</strong> é automaçêo: você segue os passos exatos e, se faltar um ingrediente, o processo trava. Pedir um <strong>bife no restaurante</strong> é o agente: você diz o resultado ("bife ao ponto, com fritas"), e a cozinha resolve o "como" — substitui o que falta, ajusta o fogo, refaz se cair no chêo. É como <strong>contratar um dev experiente</strong> em vez de ditar cada linha: você delega o objetivo, nêo o procedimento.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m4-3-t1-p3">Quando você entende que um agente raciocina, para de microgerenciar e passa a projetar bem o <strong>resultado</strong> e o <strong>contexto</strong>. É isso que destrava velocidade: você descreve o destino e deixa o agente traçar (e re-traçar) a rota.</p>
+<p class="text-neutral-300 mb-3 ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t1-p3">Quando você entende que um agente raciocina, para de microgerenciar e passa a projetar bem o <strong>resultado</strong> e o <strong>contexto</strong>. É isso que destrava velocidade: você descreve o destino e deixa o agente traçar (e re-traçar) a rota.</p>
 <ul class="space-y-2 text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Adapta-se:</strong> situações novas nêo exigem um novo fluxo — o agente improvisa.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Pergunta:</strong> quando o pedido é ambíguo, ele esclarece em vez de adivinhar.</span></li>
@@ -402,32 +402,32 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Auto-cura</div><p class="text-xs text-neutral-400">Quebra, diagnostica, refaz.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-4-3#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🖥️ Agente sob demanda (local)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t2-p1">
           O <strong class="text-amber-400">agente local</strong> é o assistente funcionando como seu agente pessoal, ali na sua máquina: você pede, ele pesquisa, monta arquivos, itera com você e fica mais esperto a cada uso. <strong>Você é o gatilho</strong> — nada roda sem você pedir. É a forma mais simples de agente: <strong>sem deploy</strong>, sem servidor, sem agenda. Só conversa.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Sob demanda (on-demand)</strong> — roda só quando você chama. <strong>Deploy</strong> — colocar algo para rodar num servidor, fora da sua máquina, de forma contínua. O agente local <em>nêo</em> precisa de deploy: ele vive no mesmo lugar onde você conversa com ele.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t2-p2">Comece sempre pelo local. É onde você <strong>constrói intuiçêo</strong>: vê o agente raciocinar, percebe quando ele acerta e quando se perde, e aprende a dar resultado e contexto. Tudo o que você domina aqui se transfere depois para o agendado e o por evento — só que sem você por perto para corrigir.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t2-p2">Comece sempre pelo local. É onde você <strong>constrói intuiçêo</strong>: vê o agente raciocinar, percebe quando ele acerta e quando se perde, e aprende a dar resultado e contexto. Tudo o que você domina aqui se transfere depois para o agendado e o por evento — só que sem você por perto para corrigir.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
 <p class="text-neutral-300 text-sm">Use o agente local como bancada de testes do que <em>depois</em> vai virar agendado. Rode o mesmo pedido três ou quatro vezes ali, veja onde ele tropeça, e só promova para a nuvem quando ele rodar liso. O que você nêo consertou no local, vai te assombrar em produçêo.</p>
@@ -440,25 +440,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Constrói intuiçêo</div><p class="text-xs text-neutral-400">A base para os outros tipos.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-4-3#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">♻️ O loop de auto-melhoria na prática</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t3-p1">
           O <strong class="text-amber-400">loop de auto-melhoria</strong> é o superpoder do agente local: você roda o workflow, ele bate um erro, <strong>diagnostica</strong> o que falhou, <strong>conserta a tool</strong> que quebrou e <strong>atualiza o workflow</strong> para que aquele erro nêo volte. Cada rodada deixa o processo mais suave e mais rápido. Nêo é você consertando — é o agente costurando o conserto de volta no próprio fluxo.
         </p>
 <!-- TIMELINE do loop (component variety: timeline) -->
@@ -485,7 +485,7 @@
 </div>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t3-p2">É esse loop que faz o agente local parecer mágico: ele nêo só erra menos, ele <strong>aprende</strong> com cada execuçêo. Mas há um aviso importante — <strong>esse superpoder some quando o agente vai para produçêo</strong>. Quando ele roda sozinho na nuvem, ninguém está assistindo para fechar o loop. Guarde isso: é o gancho para o tópico 6, o "agentic gap".</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t3-p2">É esse loop que faz o agente local parecer mágico: ele nêo só erra menos, ele <strong>aprende</strong> com cada execuçêo. Mas há um aviso importante — <strong>esse superpoder some quando o agente vai para produçêo</strong>. Quando ele roda sozinho na nuvem, ninguém está assistindo para fechar o loop. Guarde isso: é o gancho para o tópico 6, o "agentic gap".</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
 <p class="text-neutral-300 text-sm">Sempre que o loop fechar um erro, peça ao agente para <strong>escrever no workflow uma defesa explícita</strong> contra aquele caso (um try/catch, uma validaçêo, um fallback). Assim o conserto vira parte permanente do fluxo — e continua valendo quando você nêo estiver mais por perto.</p>
@@ -498,25 +498,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Some em produçêo</div><p class="text-xs text-neutral-400">Ninguém fecha o loop lá.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-4-3#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">⏰ Agente agendado (cron) — anatomia</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t4-p1">
           O <strong class="text-amber-400">agente agendado</strong> roda sozinho na hora marcada — o gatilho é o <strong>relógio</strong>. A hora é definida por uma expressêo <strong class="text-amber-400">cron</strong>, um padrêo de cinco campos: minuto, hora, dia-do-mês, mês e dia-da-semana. Por exemplo, <code class="text-amber-300">0 7 * * *</code> significa "às 7h, todos os dias". O agente acorda, faz o trabalho e volta a dormir, <strong>sem ninguém olhando</strong> (unattended).
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -567,7 +567,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — leia da esquerda para a direita. Outros exemplos: <code>*/15 * * * *</code> = a cada 15 min; <code>0 9 * * 1</code> = toda segunda às 9h; <code>0 0 1 * *</code> = todo dia 1º à meia-noite.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t4-p2">O agendado é o que transforma uma tarefa que você faria à mêo num <strong>hábito automático</strong>. Exemplo clássico: cron dispara → o agente pesquisa um tópico → sintetiza o que achou → grava uma linha numa planilha — tudo unattended, todo dia, antes de você acordar. Você desenha uma vez e colhe para sempre.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t4-p2">O agendado é o que transforma uma tarefa que você faria à mêo num <strong>hábito automático</strong>. Exemplo clássico: cron dispara → o agente pesquisa um tópico → sintetiza o que achou → grava uma linha numa planilha — tudo unattended, todo dia, antes de você acordar. Você desenha uma vez e colhe para sempre.</p>
 <!-- CODE BOX #1: agente agendado por cron (copy-run) -->
 <div class="codebox rounded-xl border border-amber-500/30 bg-dark-900 overflow-hidden mb-3">
 <div class="bg-amber-500/10 border-b border-amber-500/30 px-4 py-2 flex items-center gap-2">
@@ -600,25 +600,25 @@ trate erro de cada chamada externa, e logue cada passo.</code></pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Unattended</div><p class="text-xs text-neutral-400">Roda sem ninguém olhando.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-4-3#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🔔 Agente por evento (webhook) — anatomia</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t5-p1">
           O <strong class="text-amber-400">agente por evento</strong> acorda quando <strong>algo acontece lá fora</strong> — o gatilho é um <strong class="text-amber-400">webhook</strong>: uma URL que fica escutando. Quando um sistema externo chama essa URL, ele entrega junto um <strong class="text-amber-400">payload</strong> (os dados do evento). É a <em>campainha digital</em>: alguém toca (chama a URL), o agente atende e age sobre o que veio. Exemplo: um formulário é enviado → dispara o webhook → o agente gera um relatório.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-4">
@@ -628,7 +628,7 @@ trate erro de cada chamada externa, e logue cada passo.</code></pre>
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">O que é?</span><strong>Authorization: Bearer</strong> — um cabeçalho (header) que a chamada precisa enviar com uma <strong>chave secreta</strong>, provando que quem tocou a campainha tem permissêo. Sem a chave certa, o webhook recusa. É o que impede qualquer um de disparar seu agente.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t5-p2">O por evento é o que conecta o seu agente ao <strong>mundo real, em tempo real</strong>: um lead preenche o form e em segundos recebe o relatório; um pagamento entra e a nota é emitida na hora. Em vez de esperar a próxima rodada do cron, ele reage <strong>no instante do evento</strong>. E a autenticaçêo por header é o que mantém essa porta segura.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t5-p2">O por evento é o que conecta o seu agente ao <strong>mundo real, em tempo real</strong>: um lead preenche o form e em segundos recebe o relatório; um pagamento entra e a nota é emitida na hora. Em vez de esperar a próxima rodada do cron, ele reage <strong>no instante do evento</strong>. E a autenticaçêo por header é o que mantém essa porta segura.</p>
 <!-- CODE BOX #2: payload + header Authorization Bearer (copy-run) -->
 <div class="codebox rounded-xl border border-amber-500/30 bg-dark-900 overflow-hidden mb-3">
 <div class="bg-amber-500/10 border-b border-amber-500/30 px-4 py-2 flex items-center gap-2">
@@ -670,25 +670,25 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Bearer &lt;chave&gt;</div><p class="text-xs text-neutral-400">Header que autentica.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-4-3#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🕳️ O agentic gap</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t6-p1">
           O <strong class="text-amber-400">agentic gap</strong> é a lacuna que aparece quando o agente sai do local e vai para a nuvem rodando por agenda ou evento: o assistente <strong>nêo está mais olhando</strong> para fechar o loop de auto-melhoria. Lembra do tópico 3? Lá, quando algo quebrava, o agente diagnosticava e consertava na sua frente. Em produçêo, ele <strong>roda, mas nêo adapta da mesma forma</strong> — e uma falha pode passar completamente despercebida.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -716,7 +716,7 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
 </div>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t6-p2">O agentic gap nêo é motivo para evitar produçêo — é o que <strong>define como você projeta</strong>. Como ninguém vai fechar o loop por você, o conserto precisa estar embutido <strong>desde o primeiro prompt</strong>: tratamento de erro, log em cada passo e saída previsível. Você compensa a ausência da auto-cura ao vivo construindo a resiliência para dentro do agente (é exatamente o tema do tópico 7).</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t6-p2">O agentic gap nêo é motivo para evitar produçêo — é o que <strong>define como você projeta</strong>. Como ninguém vai fechar o loop por você, o conserto precisa estar embutido <strong>desde o primeiro prompt</strong>: tratamento de erro, log em cada passo e saída previsível. Você compensa a ausência da auto-cura ao vivo construindo a resiliência para dentro do agente (é exatamente o tema do tópico 7).</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
 <p class="text-neutral-300 text-sm">Antes de promover um agente para a nuvem, pergunte-se: "<strong>se isto falhar às 3h da manhê, como eu fico sabendo?</strong>". Se a resposta for "nêo fico", você ainda está no agentic gap. Adicione um aviso (e-mail/DM em caso de erro) antes de subir.</p>
@@ -729,25 +729,25 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Define o projeto</div><p class="text-xs text-neutral-400">Resiliência embutida.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-4-3#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">🧱 Inputs fixos, saída estruturada, erro &amp; log desde o 1º prompt</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t7-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t7-p1">
           Sêo as <strong>quatro exigências</strong> de qualquer build unattended — o antídoto contra o agentic gap. Como ninguém estará olhando, o agente precisa nascer resiliente: <strong class="text-amber-400">inputs fixos</strong> (nada de "qual fonte uso hoje?"), <strong class="text-amber-400">saída estruturada/previsível</strong> (sempre o mesmo formato), <strong class="text-amber-400">tratamento de erro embutido</strong> (try/catch em toda chamada externa) e <strong class="text-amber-400">log em cada passo</strong>. E tudo isso entra <strong>desde o primeiro prompt</strong>, nêo como remendo depois.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -773,7 +773,7 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
 </div>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t7-p2">Quem trata erro e loga desde o início transforma uma falha silenciosa numa <strong>mensagem clara</strong>. A diferença entre acordar e descobrir que "o radar parou há três dias e ninguém viu" e ler "Firecrawl deu 429 na fonte 3 ontem às 7h" é toda a diferença entre um brinquedo e algo confiável.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t7-p2">Quem trata erro e loga desde o início transforma uma falha silenciosa numa <strong>mensagem clara</strong>. A diferença entre acordar e descobrir que "o radar parou há três dias e ninguém viu" e ler "Firecrawl deu 429 na fonte 3 ontem às 7h" é toda a diferença entre um brinquedo e algo confiável.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
 <p class="text-neutral-300 text-sm">Logue <strong>específico</strong>, nêo genérico. "<code>Firecrawl 429 (rate limit) na fonte 3 às 07:02</code>" diz o que fazer; "<code>task failed</code>" nêo diz nada e te custa uma hora de investigaçêo. Bom log nomeia <em>o quê</em>, <em>onde</em> e <em>quando</em>.</p>
@@ -814,25 +814,25 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Log específico</div><p class="text-xs text-neutral-400">Nomeie o quê/onde/quando.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 8 -->
-<section class="mb-16" data-inema-topic="modulo-4-3#topico-8" id="topico-8">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-8" id="topico-8">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">8</span>
 <h2 class="text-2xl font-bold">📜 Quando um "agente" é só um script (e tudo bem)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t8-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t8-p1">
           Nem tudo precisa raciocinar. Se a tarefa é <strong>fixa e previsível</strong> — sempre os mesmos passos, sobre os mesmos dados, com o mesmo resultado — um <strong class="text-amber-400">script determinístico</strong> é mais <strong>barato</strong> (nêo gasta tokens raciocinando), mais <strong>rápido</strong> e mais <strong>confiável</strong> do que um agente. Escolher o script aqui nêo é "menos avançado": é a engenharia certa. <strong>Boring is beautiful</strong> — chato é lindo.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -860,7 +860,7 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
 </div>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-3-t8-p2">Maturidade de quem constrói nêo é usar agente para tudo — é saber <strong>quando nêo usar</strong>. Jogar um agente caro e nêo-determinístico numa tarefa que um script de dez linhas resolveria é desperdício e abre porta para erro onde nêo havia. Escolher a ferramenta certa para o problema é o que separa quem brinca de quem entrega.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-3-t8-p2">Maturidade de quem constrói nêo é usar agente para tudo — é saber <strong>quando nêo usar</strong>. Jogar um agente caro e nêo-determinístico numa tarefa que um script de dez linhas resolveria é desperdício e abre porta para erro onde nêo havia. Escolher a ferramenta certa para o problema é o que separa quem brinca de quem entrega.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Fixo → script</div><p class="text-xs text-neutral-400">Previsível nêo precisa raciocinar.</p></div>
@@ -868,20 +868,20 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Mais confiável</div><p class="text-xs text-neutral-400">Faz o mesmo toda vez.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Boring is beautiful</div><p class="text-xs text-neutral-400">Escolha válida e madura.</p></div>
 </div>
-<!-- CHECAGEM LEVE (data-inema-check) -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-4-3#q1">
-<p class="inema-check__q font-medium mb-4">Um agente roda na nuvem por cron, todo dia às 7h, e ontem uma fonte caiu — mas só hoje você percebeu que faltam dados. Que conceito explica isso?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">O agente é determinístico, entêo nunca poderia ter falhado.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">O agentic gap: em produçêo ninguém fecha o loop de auto-cura, entêo a falha passou despercebida.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">A expressêo cron estava errada, por isso a fonte caiu.</button>
+<!-- CHECAGEM LEVE (data-ARCKHÉ-check) -->
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-4-3#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">Um agente roda na nuvem por cron, todo dia às 7h, e ontem uma fonte caiu — mas só hoje você percebeu que faltam dados. Que conceito explica isso?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">O agente é determinístico, entêo nunca poderia ter falhado.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">O agentic gap: em produçêo ninguém fecha o loop de auto-cura, entêo a falha passou despercebida.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">A expressêo cron estava errada, por isso a fonte caiu.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
@@ -912,24 +912,24 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Índice da página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">8</span></span></p>
+<nav aria-label="Índice da página" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">8</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-1">1. O que é um agente</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-2">2. Local (sob demanda)</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-3">3. Loop de auto-melhoria</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-4">4. Agendado (cron)</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-5">5. Por evento (webhook)</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-6">6. O agentic gap</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-7">7. Inputs, saída, erro &amp; log</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-8">8. Quando é só um script</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-1">1. O que é um agente</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-2">2. Local (sob demanda)</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-3">3. Loop de auto-melhoria</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-4">4. Agendado (cron)</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-5">5. Por evento (webhook)</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-6">6. O agentic gap</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-7">7. Inputs, saída, erro &amp; log</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-8">8. Quando é só um script</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Domínio Completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Domínio Completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -945,15 +945,15 @@ e responder 200 com o relatório. Trate erro e logue cada passo.</code></pre>
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-4-3#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-4-3#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. Um agente é nêo-determinístico e depende de fontes externas — pode, sim, falhar. O problema aqui é nêo ter percebido a falha.',

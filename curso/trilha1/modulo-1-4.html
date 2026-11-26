@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -200,8 +200,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #34d399; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #059669; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #34d399; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #059669; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -216,8 +216,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha1/modulo-1-4.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha1/modulo-1-4.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha1/modulo-1-4.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-4.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha1/modulo-1-4.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha1/modulo-1-4.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg" href="#conteudo">Pular para o conteúdo</a>
 <!-- NAVIGATION (T1 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -229,7 +229,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html">
@@ -250,9 +250,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Produçêo</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Minha jornada</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -300,12 +300,12 @@
 <div class="text-xs text-neutral-400">Tipo</div>
 </div>
 </div>
-<div aria-label="Progresso do módulo 1.4" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:1-4" role="progressbar">
+<div aria-label="Progresso do módulo 1.4" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:1-4" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Progresso do módulo</span>
-<span class="text-emerald-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 de 6</span></span>
+<span class="text-emerald-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 de 6</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-emerald-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-emerald-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -318,7 +318,7 @@
 </div>
 <!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Os seis clusters seguem o caminho de "tirar da sua máquina e botar no mundo": primeiro a linguagem do que é <strong class="text-emerald-300">agêntico</strong>, depois como a IA responde com seus dados (<strong class="text-emerald-300">RAG</strong>), onde o código mora (versionamento), como ele roda sozinho (execuçêo hospedada), como vira um site (app/frontend) e como se protege e cobra (segurança &amp; pagamento).</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Os seis clusters seguem o caminho de "tirar da sua máquina e botar no mundo": primeiro a linguagem do que é <strong class="text-emerald-300">agêntico</strong>, depois como a IA responde com seus dados (<strong class="text-emerald-300">RAG</strong>), onde o código mora (versionamento), como ele roda sozinho (execuçêo hospedada), como vira um site (app/frontend) e como se protege e cobra (segurança &amp; pagamento).</p>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Os seis clusters da Parte 2 em sequência: vocabulário agêntico, RAG, versionamento na nuvem, execuçêo hospedada, app e frontend, e segurança e pagamento; cada caixa agrupa os termos daquele tema, do conceito agêntico até proteger e monetizar" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
@@ -343,21 +343,21 @@
 <p class="text-xs text-neutral-500">Diagrama ilustrativo — a Parte 2 do glossário, do conceito agêntico até proteger e cobrar. Cada caixa é um tópico abaixo.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-1-4#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-4#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🧬 Agêntico</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t1-p1">
           Um <strong class="text-emerald-400">agente</strong> é um sistema que recebe um objetivo e <em>raciocina, se adapta e se auto-corrige</em> para alcançá-lo — em vez de seguir passos fixos. <strong class="text-emerald-400">Agêntico</strong> é o adjetivo: descreve esse comportamento de "decidir o caminho". Para construir agentes de forma organizada existe o <strong class="text-emerald-400">WAT</strong> (Workflows / Agent / Tools): <strong>W</strong> sêo as instruções em markdown (o "manual"), <strong>A</strong> é o agente coordenador (o "cérebro"), <strong>T</strong> sêo as ferramentas/scripts que fazem o trabalho.
         </p>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m1-4-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t1-p2">
           O que torna o agente poderoso é o <strong class="text-emerald-400">loop de auto-melhoria</strong>: ele roda, bate num erro, diagnostica, conserta a ferramenta e atualiza o manual — para o erro nêo voltar. Mas há uma armadilha: o <strong class="text-emerald-400">agentic gap</strong> ("lacuna agêntica") — quando o agente roda sozinho na nuvem, ninguém está olhando para se auto-curar, entêo a confiabilidade vira responsabilidade sua.
         </p>
 <!-- SVG conceitual (#29) -->
@@ -394,7 +394,7 @@
 </dl>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t1-p3">Essas palavras explicam a diferença entre "rodou na minha frente" e "roda sozinho com segurança". O loop de auto-melhoria é o que faz o agente ficar melhor com o uso; o agentic gap é o motivo de você ter que pensar em confiabilidade <strong>desde o primeiro prompt</strong> quando vai hospedar.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t1-p3">Essas palavras explicam a diferença entre "rodou na minha frente" e "roda sozinho com segurança". O loop de auto-melhoria é o que faz o agente ficar melhor com o uso; o agentic gap é o motivo de você ter que pensar em confiabilidade <strong>desde o primeiro prompt</strong> quando vai hospedar.</p>
 <h3 class="text-lg font-semibold text-emerald-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">Agente</div><p class="text-xs text-neutral-400">Raciocina e se adapta.</p></div>
@@ -403,28 +403,28 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">Agentic gap</div><p class="text-xs text-neutral-400">Sem auto-cura na nuvem.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-1-4#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-4#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🔎 RAG</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t2-p1">
 <strong class="text-emerald-400">RAG</strong> (Retrieval-Augmented Generation, "geraçêo aumentada por recuperaçêo") é a técnica de fazer a IA <em>buscar</em> a informaçêo certa nos seus documentos antes de responder — em vez de chutar pela memória. Os documentos formam a <strong class="text-emerald-400">knowledge base</strong> ("base de conhecimento"). O ato de procurar e trazer o trecho relevante é o <strong class="text-emerald-400">retrieval</strong> ("recuperaçêo").
         </p>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m1-4-t2-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t2-p2">
           Para o agente saber o quanto pode confiar no que achou, ele pode emitir um <strong class="text-emerald-400">confidence score</strong> ("nota de confiança"): alta, média ou baixa, conforme o quêo bem a base bateu com a pergunta. Se a confiança é baixa (ou nêo achou nada), o agente <strong>recusa inventar</strong> e cai num plano B educado ("vou pesquisar e retorno") — o oposto de alucinar.
         </p>
 <!-- glossário inline (#31) -->
@@ -438,7 +438,7 @@
 </dl>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t2-p3">RAG é o que transforma um chatbot genérico num agente que responde sobre o <em>seu</em> negócio com fatos verificáveis. E o confidence score é a peça de segurança: ele faz o agente dizer "nêo sei" em vez de mentir com confiança — exatamente o comportamento que você verifica no "trust but verify".</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t2-p3">RAG é o que transforma um chatbot genérico num agente que responde sobre o <em>seu</em> negócio com fatos verificáveis. E o confidence score é a peça de segurança: ele faz o agente dizer "nêo sei" em vez de mentir com confiança — exatamente o comportamento que você verifica no "trust but verify".</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
 <h4 class="font-bold text-emerald-400 mb-4">✓ RAG bem feito</h4>
@@ -465,28 +465,28 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">Confiança</div><p class="text-xs text-neutral-400">Nêo sabe? nêo inventa.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-1-4#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-4#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🐙 Versionamento na nuvem</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t3-p1">
 <strong class="text-emerald-400">GitHub</strong> é um armazenamento de código na nuvem: o lugar onde o código mora, acessível de qualquer máquina, com histórico completo para voltar atrás. Cada projeto fica num <strong class="text-emerald-400">repo (repositório)</strong> — a pasta do projeto dentro do GitHub. Você salva mudanças em <strong class="text-emerald-400">commits</strong> (fotografias do projeto com uma descriçêo) e envia esses commits para a nuvem com um <strong class="text-emerald-400">push</strong>.
         </p>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m1-4-t3-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t3-p2">
           Para o assistente operar o GitHub pelo terminal, usa-se a <strong class="text-emerald-400">gh CLI</strong> ("interface de linha de comando do GitHub"): a ferramenta que conecta sua máquina à sua conta. E lembre da regra de ouro: o <code class="text-cyan-300">.env</code> (com as chaves) <strong>nunca</strong> entra num commit — o <code>.gitignore</code> garante isso.
         </p>
 <!-- glossário inline (#31) -->
@@ -501,7 +501,7 @@
 </dl>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t3-p3">GitHub é a base de tudo que roda hospedado: o código precisa estar na nuvem para um serviço de execuçêo puxá-lo e rodar. O histórico de commits também é seu seguro — se algo quebra, você volta para uma versêo que funcionava. E entender commit/push/repo te deixa acompanhar o que o assistente faz, em vez de só aprovar às cegas.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t3-p3">GitHub é a base de tudo que roda hospedado: o código precisa estar na nuvem para um serviço de execuçêo puxá-lo e rodar. O histórico de commits também é seu seguro — se algo quebra, você volta para uma versêo que funcionava. E entender commit/push/repo te deixa acompanhar o que o assistente faz, em vez de só aprovar às cegas.</p>
 <h3 class="text-lg font-semibold text-emerald-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">GitHub</div><p class="text-xs text-neutral-400">Código na nuvem.</p></div>
@@ -510,28 +510,28 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">.env fora</div><p class="text-xs text-neutral-400">Segredo nunca sobe.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-1-4#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-4#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">☁️ Execuçêo hospedada</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t4-p1">
 <strong class="text-emerald-400">Trigger.dev</strong> é um motor de execuçêo na nuvem: roda suas tarefas de forma confiável, sem timeout, com retries e logs — como um assistente que faz o trabalho na hora certa. Ele dispara tarefas por <strong class="text-emerald-400">cron</strong> (um relógio de agendamento — um padrêo de 5 campos como <code class="text-cyan-300">0 7 * * *</code> = "7h todo dia") ou por <strong class="text-emerald-400">webhook</strong> (uma "campainha digital": uma URL que, ao receber dados, acorda a tarefa).
         </p>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m1-4-t4-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t4-p2">
           Os dados que chegam pelo webhook sêo o <strong class="text-emerald-400">payload</strong> ("carga"). Você constrói e testa num ambiente de <strong class="text-emerald-400">dev (desenvolvimento)</strong> antes de promover para <strong class="text-emerald-400">prod (produçêo)</strong>, o ao-vivo. Cada execuçêo deixa um <strong class="text-emerald-400">trace</strong> (rastro passo a passo); falhas podem disparar <strong class="text-emerald-400">retries</strong> (novas tentativas) e <strong class="text-emerald-400">alerts</strong> (avisos por e-mail/Slack).
         </p>
 <!-- glossário inline (#31) -->
@@ -547,7 +547,7 @@
 </dl>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t4-p3">Este é o vocabulário que fecha o agentic gap. Sem ninguém olhando, sêo os <strong>traces</strong> que te mostram o que aconteceu, os <strong>retries</strong> que resolvem falhas passageiras e os <strong>alerts</strong> que te avisam antes do usuário. Cuidado: retry conserta erro temporário (de rede/tempo), nêo bug de lógica — saber a diferença evita "tentar de novo" para sempre.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t4-p3">Este é o vocabulário que fecha o agentic gap. Sem ninguém olhando, sêo os <strong>traces</strong> que te mostram o que aconteceu, os <strong>retries</strong> que resolvem falhas passageiras e os <strong>alerts</strong> que te avisam antes do usuário. Cuidado: retry conserta erro temporário (de rede/tempo), nêo bug de lógica — saber a diferença evita "tentar de novo" para sempre.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
 <p class="text-neutral-300 text-sm">Construa e teste sempre em <strong>dev</strong>; só promova para <strong>prod</strong> quando estiver pronto. E configure <strong>alertas de falha</strong> em toda tarefa hospedada — assim você descobre que algo quebrou antes que um usuário descubra por você.</p>
@@ -560,28 +560,28 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">Trace/retry/alert</div><p class="text-xs text-neutral-400">Visibilidade na nuvem.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-1-4#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-4#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🖥️ App / Frontend</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t5-p1">
           O <strong class="text-emerald-400">frontend</strong> é tudo o que o usuário vê e toca: botões, formulários, textos, layout — roda no navegador da pessoa. O <strong class="text-emerald-400">backend</strong> é o que roda no servidor: a lógica, as chamadas de API, o banco de dados — invisível ao usuário. Os dois conversam num ciclo de <strong class="text-emerald-400">request/response</strong> ("pedido/resposta"): o usuário clica → um pedido vai ao servidor → ele processa → a resposta volta → a tela atualiza.
         </p>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m1-4-t5-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t5-p2">
           Para publicar um frontend na internet usa-se a <strong class="text-emerald-400">Vercel</strong>: um serviço de hospedagem de sites — você dá um push no GitHub e ele coloca o site no ar, acessível de qualquer lugar. E os segredos do app (como a chave que liga o frontend ao backend) ficam em <strong class="text-emerald-400">env vars</strong> (variáveis de ambiente): valores injetados em tempo de execuçêo, fora do código.
         </p>
 <!-- SVG conceitual (#29) -->
@@ -614,7 +614,7 @@
 </dl>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t5-p3">A separaçêo frontend/backend é o modelo mental que destrava entender qualquer app. É também o que conecta seu workflow ao mundo: trocando o gatilho de formulário por um webhook, qualquer pessoa com a URL pode usar sua automaçêo por um site bonito — frontend na Vercel falando com o backend.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t5-p3">A separaçêo frontend/backend é o modelo mental que destrava entender qualquer app. É também o que conecta seu workflow ao mundo: trocando o gatilho de formulário por um webhook, qualquer pessoa com a URL pode usar sua automaçêo por um site bonito — frontend na Vercel falando com o backend.</p>
 <h3 class="text-lg font-semibold text-emerald-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">Frontend</div><p class="text-xs text-neutral-400">O que se vê.</p></div>
@@ -623,28 +623,28 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">Env var</div><p class="text-xs text-neutral-400">Segredo em runtime.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-1-4#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-4#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🔐 Segurança &amp; pagamento</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t6-p1">
           Quando o app tem usuários, você precisa proteger dados e cobrar. O <strong class="text-emerald-400">Supabase</strong> é um serviço de banco de dados + login (autenticaçêo). Dentro dele, o <strong class="text-emerald-400">RLS</strong> (Row-Level Security, "segurança por linha") sêo regras que vivem <em>no próprio banco</em> para que um usuário nunca veja os dados de outro — uma camada extra, mesmo se houver bug no frontend. Mudanças na estrutura do banco sêo <strong class="text-emerald-400">migrations</strong> (scripts que criam/alteram tabelas).
         </p>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m1-4-t6-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t6-p2">
           Para receber pagamentos há o <strong class="text-emerald-400">Stripe</strong>. O usuário paga numa página de <strong class="text-emerald-400">checkout</strong> ("finalizar compra"); cada plano tem um <strong class="text-emerald-400">price ID</strong> (o identificador do preço). O Stripe avisa seu app sobre eventos (assinou, cancelou) por webhook, validado por um <strong class="text-emerald-400">webhook secret</strong> (a senha que confirma que o aviso veio mesmo do Stripe). Um modelo comum é o <strong class="text-emerald-400">freemium</strong>: um nível grátis limitado + um pago ilimitado.
         </p>
 <!-- glossário inline (#31) -->
@@ -660,7 +660,7 @@
 </dl>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m1-4-t6-p3">Estes termos fecham o ciclo "ideia → app que dá dinheiro com segurança". Sem autenticaçêo e RLS, qualquer um com a URL usa (e gasta) seu app; sem RLS, um bug pode vazar dados de um usuário para outro. E o freemium com Stripe é o que transforma um workflow num produto que se paga.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m1-4-t6-p3">Estes termos fecham o ciclo "ideia → app que dá dinheiro com segurança". Sem autenticaçêo e RLS, qualquer um com a URL usa (e gasta) seu app; sem RLS, um bug pode vazar dados de um usuário para outro. E o freemium com Stripe é o que transforma um workflow num produto que se paga.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
 <h4 class="font-bold text-emerald-400 mb-4">✓ App protegido</h4>
@@ -680,14 +680,14 @@
 </div>
 </div>
 <!-- Checagem leve opcional -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-1-4#q1">
-<p class="inema-check__q font-medium mb-4">Seu app tem login, mas você quer garantir que <strong>um usuário nunca veja os dados de outro</strong>, mesmo com um bug no frontend. Qual peça resolve isso?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">O cron — porque agenda quando o dado é lido.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">O RLS — regras no próprio banco que isolam os dados por usuário.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">O price ID — porque identifica o plano do usuário.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-4#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">Seu app tem login, mas você quer garantir que <strong>um usuário nunca veja os dados de outro</strong>, mesmo com um bug no frontend. Qual peça resolve isso?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">O cron — porque agenda quando o dado é lido.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">O RLS — regras no próprio banco que isolam os dados por usuário.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">O price ID — porque identifica o plano do usuário.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <h3 class="text-lg font-semibold text-emerald-400 mb-3 mt-8">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -697,9 +697,9 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-semibold text-sm mb-1">Freemium</div><p class="text-xs text-neutral-400">Grátis + pago.</p></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
@@ -728,22 +728,22 @@
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Índice da página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">6</span></span></p>
+<nav aria-label="Índice da página" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-1">1. Agêntico</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-2">2. RAG</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-3">3. Versionamento</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-4">4. Execuçêo hospedada</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-5">5. App / Frontend</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-6">6. Segurança &amp; pagamento</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-1">1. Agêntico</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-2">2. RAG</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-3">3. Versionamento</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-4">4. Execuçêo hospedada</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-5">5. App / Frontend</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400 block" href="#topico-6">6. Segurança &amp; pagamento</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Domínio Completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Domínio Completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -759,15 +759,15 @@
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-1-4#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-1-4#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. Cron é agendamento por relógio — nêo tem nada a ver com isolar dados entre usuários.',

@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -195,8 +195,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #fbbf24; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #92400e; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #fbbf24; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #92400e; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -208,8 +208,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha4/modulo-4-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha4/modulo-4-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha4/modulo-4-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha4/modulo-4-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha4/modulo-4-1.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha4/modulo-4-1.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-amber-600 focus:text-white focus:rounded-lg" href="#conteudo">Skip to content</a>
 <!-- NAVIGATION (T4 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -221,7 +221,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -242,9 +242,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Production</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>My journey</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Toggle light/dark theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -292,12 +292,12 @@
 <div class="text-xs text-neutral-400">Type</div>
 </div>
 </div>
-<div aria-label="Module 4.1 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:4-1" role="progressbar">
+<div aria-label="Module 4.1 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:4-1" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Module progress</span>
-<span class="text-amber-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 of 7</span></span>
+<span class="text-amber-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 of 7</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-amber-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-amber-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -305,7 +305,7 @@
 <main class="min-w-0" id="conteudo">
 <!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Before the seven topics, take a look at the path that connects everything: you write a <strong>workflow in Markdown</strong>, it starts living in a folder (<code>.claude/skills</code>), and the agent exposes it as a <strong>slash command</strong> that it can call when you (or an instruction) invoke it. A skill is essentially a reusable piece of process.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Before the seven topics, take a look at the path that connects everything: you write a <strong>workflow in Markdown</strong>, it starts living in a folder (<code>.claude/skills</code>), and the agent exposes it as a <strong>slash command</strong> that it can call when you (or an instruction) invoke it. A skill is essentially a reusable piece of process.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Skill workflow: a workflow file in Markdown is saved in the .claude/skills folder; from there, the coordinating agent exposes it as a slash command that can be invoked and reused at any time" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
 <defs>
@@ -354,29 +354,29 @@
 <p class="text-xs text-neutral-500">Illustrative diagram — a skill starts as a workflow described in text; once saved, the agent offers it as a command and reuses it consistently whenever invoked.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">📦 What a skill is</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t1-p1">
           A <strong class="text-amber-400">skill</strong> is, in essence, a <strong>instruction markdown file</strong> — conceptually identical to the layer <strong>W (workflows)</strong> of the framework <strong>WAT</strong>. The difference from a workflow you only describe in chat is <em>where it lives</em> e <em>how it’s triggered</em>: the skill is saved in a project folder and invoked with a command, so it can be run the same way as many times as you like, without you having to rewrite the process.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">What is it?</span><strong>Workflow</strong> — a sequence of steps that solves a task (the “W” in WAT). <strong>Slash command</strong> — a command that starts with <code>/</code> and trigger an action in the agent (e.g., <code>/clear</code>). A skill is a packaged workflow exposed as a slash command.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-1-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t1-p2">
           The liberating detail: <strong>you don’t need to know how to write skills</strong>. You describe the workflow in natural language—"every time I ask, do X, then Y, then save to Z"—and ask the agent to <em>turn this into a skill / slash command</em>. It creates the file, and then you can call it with a command. It’s the same principle as vibe coding: describe the result, and AI does the heavy lifting.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Why learn</h3>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m4-1-t1-p3">Skills solve four problems at once. Without them, you re-explain the same process every session, spend tokens repeating context, and lose consistency. Packaged as a skill, they provide:</p>
+<p class="text-neutral-300 mb-3 ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t1-p3">Skills solve four problems at once. Without them, you re-explain the same process every session, spend tokens repeating context, and lose consistency. Packaged as a skill, they provide:</p>
 <ul class="space-y-2 text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Consistency:</strong> the same process runs the same way every time, without re-explaining.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span><strong>Token efficiency:</strong> the skill loads <em>on demand</em>, only when invoked—it doesn’t take up context all the time.</span></li>
@@ -409,32 +409,32 @@ Crie o arquivo em .claude/skills/ e me diga como invocá-la.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">You describe</div><p class="text-xs text-neutral-400">AI writes the skill.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">📁 Where they live and how they become slash commands</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t2-p1">
           Skills live in a project directory called <code class="text-amber-300">.claude/skills</code>. The organization is simple: <strong>each skill has its own folder</strong>, and inside it is a skill file that describes what it does. The agent scans that folder and <strong>exposes each skill as a slash command</strong> — a command that starts with <code>/</code> and what you type to trigger it.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">What is it?</span><strong>Directory <code>.claude</code></strong> — a configuration folder that the agent reads inside your project. <strong>Built-in</strong> — a command that’s ready to use (e.g., <code>/clear</code> clears the context). Your skills appear alongside the built-ins in the same slash command list.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t2-p2">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t2-p2">
           Understanding the place and the mechanism demystifies it: a skill isn’t a hidden AI feature, it’s <strong>a file in a folder</strong> that becomes a command. Note the recent unification: <strong>slash commands have been unified into skills</strong> — in other words, creating a skill and creating a slash command have become the same thing. That’s why comparing them with built-ins like <code>/clear</code> help: the only difference is that yours are defined by you, in the project.
         </p>
 <!-- TIMELINE: ciclo de vida de uma skill -->
@@ -471,25 +471,25 @@ Crie o arquivo em .claude/skills/ e me diga como invocá-la.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Unified</div><p class="text-xs text-neutral-400">Slash commands = skills.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🧬 Anatomy of SKILL.md</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t3-p1">
           Every skill has four essential parts: <strong class="text-amber-400">name</strong> (how it's called), <strong class="text-amber-400">description</strong> (o <em>trigger</em> — teaches the agent <strong>WHEN</strong> use the skill), <strong class="text-amber-400">expected arguments</strong> (the inputs it receives) and the <strong class="text-amber-400">step-by-step instructions</strong> (what to do). The most underrated piece is the description: it isn’t decorative—it’s what lets the agent decide on its own that this is the right skill for the situation.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -518,7 +518,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: run <code>/&lt;nome-da-skill&gt;</code> — if the skill appears in the slash commands list and asks for any missing arguments, it's registered.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-1-t3-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t3-p2">
           Understanding the anatomy gives you control even without writing code: you know how to request a good trigger description (“use when I paste email bullets”), name clear arguments, and list steps in the right order. And you know how to review what the agent generated—if the description is weak, just ask it to make it more specific. The structure <strong>frontmatter (name + description) + body (arguments + steps)</strong> is the skeleton of every skill.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Key concepts</h3>
@@ -529,32 +529,32 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Steps</div><p class="text-xs text-neutral-400">The instructions in order.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🔧 Skills can call tools</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t4-p1">
           A skill doesn’t replace the <strong class="text-amber-400">tools (tools)</strong> — it <em>orchestrates</em>. Within your steps, a skill can still trigger tools: Python scripts that search the web, scrape a page, or generate a document. In other words, the <strong>WAT remains intact underneath</strong>: the skill is the <strong>W</strong> (workflow), the tool is the <strong>T</strong> (tool), and the agent decides when to run each tool during the process.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">What is it?</span><strong>Tool (utility)</strong> — a piece of code that performs a concrete action in the world (search, scraping, saving a file). <strong>WAT</strong> — the Workflows + Agents + Tools framework: skills are the workflows, tools are the tools, and the agent ties everything together.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t4-p2">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t4-p2">
           Knowing that skill ≈ W and tool ≈ T avoids a common confusion: thinking that adopting skills throws away everything you’ve learned about tools and MCP. It doesn’t. A skill simply gives you a <strong>outline</strong> reusable guide to when and how to use your tools. A "market research" skill, for example, might say: <em>search the web, scrape the first three pages, summarize them, and generate a document</em> — calling a tool at each step.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Key concepts</h3>
@@ -565,32 +565,32 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Agent decides</div><p class="text-xs text-neutral-400">When to run each tool.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">⚖️ When to use a skill vs. type</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t5-p1">
           Not everything deserves to become a skill. The rule: <strong>create a skill when the process repeats, consistency matters, the instructions are complex or easy to forget, or you want to share it with the team</strong>. For everything else—a one-sentence task, an initial experiment, a simple instruction—it’s faster to just type. Packaging a trivial task into a skill only adds ceremony.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">What is it?</span><strong>Ceremony</strong> — the extra effort of formalizing something (creating a file, naming it, documenting it). It’s worth it when you’ll reuse it; it’s wasteful for a one-off request.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t5-p2">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t5-p2">
           The criteria avoid both extremes: never using skills (and re-explaining everything every time) or turning anything into a skill (and cluttering the folder with commands you use only once). The key question is simple: <em>"will I repeat this?"</em> If so, and consistency matters, a skill is worthwhile. If it’s a one-off, type it.
         </p>
 <!-- COMPARISON GRID 1: skill vs digitar -->
@@ -622,25 +622,25 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">"Will I repeat this?"</div><p class="text-xs text-neutral-400">The key question.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🪶 Skills vs CLAUDE.md (on-demand context)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t6-p1">
           The division of labor: the <strong class="text-amber-400">CLAUDE.md</strong> stores only what applies to <em>every session</em> — the project's purpose, goal, framework, general rules. It is <strong>always in context</strong>. What is <strong>task-based</strong> (per-task) goes to <strong class="text-amber-400">skills</strong>, which carry <strong>on demand</strong> — only when you invoke that command. It’s the difference between “what the AI always needs to know” and “what it only needs when doing X.”
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -678,7 +678,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 </div>
 <p class="text-xs text-neutral-500 mb-6">Illustrative diagram — putting everything in CLAUDE.md fills up the fixed context; keeping per-task instructions in skills makes dozens of commands available without adding weight, because only the one you invoke is loaded.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t6-p2">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t6-p2">
           The classic beginner mistake is <strong>put everything in CLAUDE.md</strong> — every instruction, every workflow, every detail. This <strong>exceeds the context</strong>: the file gets huge, takes up space in every session, and degrades the AI’s attention. That’s exactly the point of skills: you can have <strong>20, 50 skills</strong> without making anything bloated, because they only load when called. A concise CLAUDE.md + many on-demand skills &gt; a giant CLAUDE.md.
         </p>
 <!-- COMPARISON GRID 2: CLAUDE.md vs skills -->
@@ -712,32 +712,32 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Doesn't bloat</div><p class="text-xs text-neutral-400">20–50 skills, no overhead.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">🤝 Share and version</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-1-t7-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t7-p1">
           Since a skill is just <strong>a file in a folder</strong> of the project, it inherits all the advantages of a code file: it can be <strong class="text-amber-400">versioned in Git</strong> (change history, review, rollback), and <strong class="text-amber-400">shared</strong> with anyone who clones the project. The process stops being knowledge trapped in one person’s head and becomes a <strong>team asset</strong>.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">What is it?</span><strong>Git</strong> — the system that tracks file version history. <strong>Version control</strong> — track every change to a file over time so you can view, review, and revert it. Since a skill is a file, it fits right into this workflow.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-1-t7-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-1-t7-p2">
           This is the leap from "personal trick" to "team capability." When your best workflow becomes a versioned skill, any colleague can run the same process, with the same quality, without having to ask you how. Fixes to the skill benefit everyone the next time it's invoked. This is real reuse: write it once, and the whole team benefits.
         </p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Key concepts</h3>
@@ -748,19 +748,19 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Team asset</div><p class="text-xs text-neutral-400">Not stuck in one mind.</p></div>
 </div>
 <!-- Checagem leve -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-4-1#q1">
-<p class="inema-check__q font-medium mb-4">You have an 8-step process you repeat every week and want a colleague to carry out the same way. Where should it live?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">In CLAUDE.md, so it loads in every session and no one forgets.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">In a skill in .claude/skills, versioned in Git and invoked with a slash command.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Typing the 8 steps into the chat every time you need them.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-4-1#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">You have an 8-step process you repeat every week and want a colleague to carry out the same way. Where should it live?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">In CLAUDE.md, so it loads in every session and no one forgets.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">In a skill in .claude/skills, versioned in Git and invoked with a slash command.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Typing the 8 steps into the chat every time you need them.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
@@ -790,23 +790,23 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Page index" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> of <span class="inema-toc-total">7</span></span></p>
+<nav aria-label="Page index" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">7</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-1">1. What a skill is</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-2">2. Where they live / slash command</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-3">3. Anatomy of SKILL.md</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-4">4. Skills call tools</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-5">5. Skill vs. typing</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-6">6. Skills vs. CLAUDE.md</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-7">7. Share and version</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-1">1. What a skill is</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-2">2. Where they live / slash command</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-3">3. Anatomy of SKILL.md</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-4">4. Skills call tools</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-5">5. Skill vs. typing</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-6">6. Skills vs. CLAUDE.md</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-7">7. Share and version</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Complete Mastery · Original course <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Complete Mastery · Original course <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -822,14 +822,14 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-4-1#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-4-1#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. O CLAUDE.md é para regras de toda sessêo; um processo de 8 passos específico incharia o contexto. Per-task vai em skill.',
@@ -838,7 +838,7 @@ description: &lt;quando-acionar — ex.: rascunhar um e-mail a partir de bullets
           }
         });
       }
-      window.INEMA.init();
+      window.ARCKHÉ.init();
     }
   </script>
 </body>

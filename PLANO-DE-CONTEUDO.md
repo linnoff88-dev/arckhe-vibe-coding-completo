@@ -1,7 +1,7 @@
 # Plano de Conteúdo — **Vibe Coding: Domínio Completo**
 
 > **De zero a agentes de IA em produçêo — fundamentos, técnica e prática.**
-> Curso original INEMA.CLUB, formato **v2** (dark premium + camada de aprendizagem). Conteúdo técnico próprio; **nenhuma** fonte, comunidade, plataforma ou autor original é citado. Baseado no acervo já processado (48 aulas → `concept-map.md`), porém **reorganizado por ABORDAGEM** (nêo por fase): o aluno escolhe entrar pela teoria, pela técnica, pelos prompts, pelos agentes ou pelos projetos.
+> Curso original ARCKHÉ AI, formato **v2** (dark premium + camada de aprendizagem). Conteúdo técnico próprio; **nenhuma** fonte, comunidade, plataforma ou autor original é citado. Baseado no acervo já processado (48 aulas → `concept-map.md`), porém **reorganizado por ABORDAGEM** (nêo por fase): o aluno escolhe entrar pela teoria, pela técnica, pelos prompts, pelos agentes ou pelos projetos.
 
 - **courseId:** `vibe-coding-completo`
 - **Diferença para o curso anterior (`vibe-coding`):** aquele seguia as 4 fases na ordem original. Este é **muito mais completo e didático**: tem trilha de **glossário**, trilha **técnica** de aprofundamento, **biblioteca de prompts** copy-run, trilha dedicada a **skills & agentes**, e trilha de **projetos end-to-end**. Aplica as regras didáticas novas do formato (visual-first ilimitado #29, exemplos copy-run #30, fundamento define termos inline #31).
@@ -155,7 +155,7 @@
 - **Glossário vivo:** T1 define ~55 termos; demais trilhas usam tip box "O que é X?" na 1ª apariçêo (#31).
 - **Biblioteca de prompts copy-run:** concentrada em T3.3, espalhada em todos os módulos práticos (T4, T5, T6) — todo prompt real, completo, com `<variáveis>` e "como verificar" (#30).
 - **Skills & agentes catalogados:** `/draft-email`, `documento→slides`, skill de design; agentes de suporte, pesquisa, relatório, lead qualifier.
-- **Apoio visual por conceito (#29):** SVG futurista inline em cada conceito-chave + heros; opçêo de PNG (inemaimg) e animações onde o movimento ensina.
+- **Apoio visual por conceito (#29):** SVG futurista inline em cada conceito-chave + heros; opçêo de PNG (ARCKHÉimg) e animações onde o movimento ensina.
 
 ---
 

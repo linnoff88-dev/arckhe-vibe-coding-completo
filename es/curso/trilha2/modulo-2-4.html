@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -201,8 +201,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #60a5fa; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #2563eb; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #60a5fa; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #2563eb; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -214,8 +214,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha2/modulo-2-4.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha2/modulo-2-4.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha2/modulo-2-4.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha2/modulo-2-4.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha2/modulo-2-4.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha2/modulo-2-4.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <!-- NAVIGATION (T2 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -227,7 +227,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -248,9 +248,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Producción</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Mi recorrido</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Alternar tema claro/oscuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -298,12 +298,12 @@
 <div class="text-xs text-neutral-400">Tipo</div>
 </div>
 </div>
-<div aria-label="Progreso del módulo 2.4" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:2-4" role="progressbar">
+<div aria-label="Progreso del módulo 2.4" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:2-4" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Progreso del módulo</span>
-<span class="text-blue-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 de 6</span></span>
+<span class="text-blue-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 de 6</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-blue-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-blue-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -311,7 +311,7 @@
 <main class="min-w-0" id="conteudo">
 <!-- intro + SVG visêo geral -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Piensa en la <strong>ventana de contexto</strong> como el tanque de combustible de la sesión. Cada mensaje tuyo, cada respuesta del agente, cada archivo leído y cada herramienta cargada ocupa <strong class="text-blue-400">tokens</strong> — fragmentos de texto que el modelo tiene que «mantener en la cabeza» al mismo tiempo. El tanque tiene una capacidad fija. A medida que se llena, la calidad no cae de repente: se va degradando. Alrededor de <strong>~60%</strong> de uso, los errores empiezan a aparecer. La buena noticia: tienes dos pedales — <code class="text-blue-400">/compact</code> e <code class="text-blue-400">/clear</code> — para recuperar el aliento antes de que el tanque se desborde.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Piensa en la <strong>ventana de contexto</strong> como el tanque de combustible de la sesión. Cada mensaje tuyo, cada respuesta del agente, cada archivo leído y cada herramienta cargada ocupa <strong class="text-blue-400">tokens</strong> — fragmentos de texto que el modelo tiene que «mantener en la cabeza» al mismo tiempo. El tanque tiene una capacidad fija. A medida que se llena, la calidad no cae de repente: se va degradando. Alrededor de <strong>~60%</strong> de uso, los errores empiezan a aparecer. La buena noticia: tienes dos pedales — <code class="text-blue-400">/compact</code> e <code class="text-blue-400">/clear</code> — para recuperar el aliento antes de que el tanque se desborde.</p>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Medidor de contexto a lo largo de una sesión: la barra se llena de izquierda a derecha a medida que crece la conversación; hasta alrededor del 60 por ciento, la calidad se mantiene alta; después del 60 por ciento, empieza a bajar; cerca del 70 por ciento, la acción recomendada es compactar con la barra compact, y por encima del 85 por ciento, reiniciar con la barra clear" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
 <defs>
@@ -349,29 +349,29 @@
 <p class="text-xs text-neutral-500">Diagrama ilustrativo — el tanque se llena con el historial de la conversación; empieza a «leer el medidor» y usa <code>/compact</code> alrededor del 70% y <code>/clear</code> por encima del 85% para que la calidad no se desplome.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-2-4#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🍂 Context rot — degradación después de ~60%</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t1-p1">
 <strong class="text-blue-400">Context rot</strong> ("deterioro del contexto") es la degradación gradual de la calidad de las respuestas cuanto más larga se vuelve una <strong>única sesión</strong>. No es un bug ni un modelo «cansado»: es una consecuencia de cómo la <strong class="text-blue-400">atención</strong> del modelo funciona. Cuanto más texto hay en la ventana, más cosas tiene que ponderar la IA a la vez; y, pasado cierto punto (en la práctica, alrededor de <strong>~60%</strong> de uso), los errores empiezan a aparecer.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">¿Qué es?</span><strong>Ventana de contexto</strong> — todo lo que el modelo «ve» ahora: tus mensajes, las respuestas, los archivos leídos y las instrucciones. <strong>Token</strong> — el fragmento de texto que cuenta el modelo (una palabra suele equivaler a entre 1 y 3 tokens). La ventana tiene un límite de tokens.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-4-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t1-p2">
           El mecanismo es fácil de visualizar: a medida que la conversación crece, la ventana se llena de <strong>historial ruidoso</strong> — intentos fallidos, archivos que ya no usas, idas y vueltas. Los mensajes recientes (que muchas veces <em>no</em> son las más importantes) empiezan a «ahogar» las reglas centrales del principio. El agente empieza a olvidar instrucciones, repetir lo que ya hizo o mezclar cosas: síntomas clásicos de un contexto inflado.
         </p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6 mb-6">
-<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m2-4-t1-p3">Quien no conoce el context rot culpa al modelo («la IA se volvió tonta»), cuando el problema es que la sesión se alargó demasiado. Reconocer el patrón lo cambia todo: en vez de pelearte con el agente, tú <strong>vacía el tanque</strong> y la calidad vuelve.</p>
+<p class="text-neutral-300 mb-3 ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t1-p3">Quien no conoce el context rot culpa al modelo («la IA se volvió tonta»), cuando el problema es que la sesión se alargó demasiado. Reconocer el patrón lo cambia todo: en vez de pelearte con el agente, tú <strong>vacía el tanque</strong> y la calidad vuelve.</p>
 <ul class="space-y-2 text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Diagnóstico correcto:</strong> "está mal" se convierte en "el contexto está lleno", que tiene solución.</span></li>
 <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Calidad estable:</strong> intervienes antes de llegar al ~60%, no después del daño.</span></li>
@@ -386,25 +386,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Atención limitada</div><p class="text-xs text-neutral-400">Raíz del fenómeno.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-2-4#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🚥 Los umbrales (0-50 / 50-70 / 70-85 / 85%+)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t2-p1">
           En lugar de tratar el uso de la ventana como "llena o vacía", divídelo en <strong>cuatro niveles</strong> con acciones diferentes. Piensa en un semáforo: <strong class="text-blue-400">0-50%</strong> es una zona segura: trabaja con libertad; <strong class="text-blue-400">50-70%</strong> es el amarillo: empieza a pensar en compactar; <strong class="text-blue-400">70-85%</strong> es naranja: ejecuta <code class="text-blue-300">/compact</code> proactivamente; <strong class="text-blue-400">85%+</strong> es la zona crítica: dale <code class="text-blue-300">/clear</code> y empieza de cero.
         </p>
 <!-- SVG limiares -->
@@ -444,7 +444,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — los números son guías prácticas, no reglas exactas. El hábito que importa es: mira el medidor y actúa <strong>antes</strong> de llegar a la franja crítica.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-4-t2-p2">Los umbrales convierten una sensación vaga («creo que se está volviendo confuso») en una rutina objetiva. Dejas de reaccionar ante el desastre y empiezas a actuar de forma preventiva: al llegar al 70%, compactar ya es un reflejo; al superar el 85%, reiniciar es automático. Es la diferencia entre conducir mirando el tablero y conducir hasta que el auto se detenga en la carretera.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t2-p2">Los umbrales convierten una sensación vaga («creo que se está volviendo confuso») en una rutina objetiva. Dejas de reaccionar ante el desastre y empiezas a actuar de forma preventiva: al llegar al 70%, compactar ya es un reflejo; al superar el 85%, reiniciar es automático. Es la diferencia entre conducir mirando el tablero y conducir hasta que el auto se detenga en la carretera.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Consejo práctico</h3>
 <p class="text-neutral-300 text-sm">Trata el umbral de <strong>70%</strong> como un «checkpoint»: es el momento natural de pausar, ejecutar <code>/compact</code> y reevaluar si todavía tiene sentido continuar con la misma tarea. No esperes a que el agente empiece a equivocarse para mirar el medidor: para entonces ya será tarde.</p>
@@ -457,25 +457,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">85%+ /clear</div><p class="text-xs text-neutral-400">Reinicia y vuelve a empezar.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-2-4#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🧹 /clear vs /compact</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t3-p1">
           Son los dos comandos para gestionar el tanque. <strong class="text-blue-400">/clear</strong> é o <strong>reinicio total</strong>: borra toda la conversación y empieza desde cero, con el contexto vacío: úsalo cuando sea <em>cambiar de tarea</em> o cuando la calidad ya se haya deteriorado por completo. <strong class="text-blue-400">/compact</strong> é o <strong>resumen inteligente</strong>: el agente condensa la conversación, guarda lo que importa (decisiones, estado actual, reglas) y comprime el resto — usa <em>a mitad de una tarea larga</em>, cuando el contexto está al límite pero todavía necesitas el historial.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -518,7 +518,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — <code>/clear</code> cero; <code>/compact</code> comprime manteniendo decisiones y estado. Elige según tu intención: cambiar de tarea o continuar con la misma, pero con menos carga.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t3-p2">Usar el comando equivocado cuesta caro: dar <code>/clear</code> a mitad de una tarea larga borra el estado que todavía necesitabas (y reconstruyes todo a mano); dar <code>/compact</code> creer que va a "resumir" un cambio de tema deja residuos de la tarea anterior que contaminan la nueva. Saber cuál usar y cuándo es lo que distingue a quien mantiene la calidad de quien lucha con el agente.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t3-p2">Usar el comando equivocado cuesta caro: dar <code>/clear</code> a mitad de una tarea larga borra el estado que todavía necesitabas (y reconstruyes todo a mano); dar <code>/compact</code> creer que va a "resumir" un cambio de tema deja residuos de la tarea anterior que contaminan la nueva. Saber cuál usar y cuándo es lo que distingue a quien mantiene la calidad de quien lucha con el agente.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
 <h4 class="font-bold text-blue-400 mb-4">✓ /clear cuando…</h4>
@@ -552,25 +552,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">¿La misma tarea?</div><p class="text-xs text-neutral-400">/compact a mitad de ella.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-2-4#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">1️⃣ Una tarea por sesión</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t4-p1">
           La regla de higiene más simple y poderosa: <strong class="text-blue-400">una tarea por sesión</strong>. Te enfocas en un objetivo, lo terminas y das <code class="text-blue-300">/clear</code> y solo entonces empieza la siguiente. No reutilices una conversación saturada de una tarea anterior para hacer algo sin relación: ese es el camino más rápido hacia el deterioro del contexto.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -602,7 +602,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — una tarea empieza limpia, se compacta a mitad de camino cuando pesa y termina en un <code>/clear</code> antes de que empiece la siguiente. Sesión corta = calidad alta.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t4-p2">El contexto limpio es precisión. Cuando la sesión solo tiene lo que importa para la tarea actual, el agente acierta más, alucina menos y gasta menos tokens, porque no vuelve a procesar el historial irrelevante en cada respuesta. Mezclar tareas en una misma conversación produce el efecto contrario: diluye el enfoque y quema tokens innecesariamente.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t4-p2">El contexto limpio es precisión. Cuando la sesión solo tiene lo que importa para la tarea actual, el agente acierta más, alucina menos y gasta menos tokens, porque no vuelve a procesar el historial irrelevante en cada respuesta. Mezclar tareas en una misma conversación produce el efecto contrario: diluye el enfoque y quema tokens innecesariamente.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Consejo práctico</h3>
 <p class="text-neutral-300 text-sm">Antes de <code>/clear</code>, pídele al agente un <strong>resumen de lo decidido</strong> y pega lo esencial en el <code>CLAUDE.md</code> o en una nota. Así, la siguiente sesión empieza limpia <em>e</em> con el contexto correcto ya cargado — sin arrastrar la basura de la conversación anterior.</p>
@@ -615,32 +615,32 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Resume antes</div><p class="text-xs text-neutral-400">Guarda lo esencial y /clear.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-2-4#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🏁 Definir "listo" (evita el loop)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t5-p1">
 <strong class="text-blue-400">Definir "listo"</strong> es darle al agente un criterio explícito para saber cuándo parar: una <em>definition of done</em>. Sin esto, un agente diligente sigue trabajando "para asegurarse": busca más, vuelve a hacer las cosas, amplía y consume tokens (y contexto) en un ciclo sin fin. Con un objetivo claro como <em>"exactamente 75 perfiles"</em>, sabe cuál es la meta y se detiene al alcanzarla.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">¿Qué es?</span><strong>Definición de terminado</strong> — la condición objetiva que indica «terminado» (una cantidad, un formato, un archivo generado). <strong>Loop</strong> — cuando el agente repite pasos sin avanzar, generalmente porque no sabe cuándo es suficiente.</p>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t5-p2">Un loop no solo es lento: <strong>llena el tanque</strong>. Cada búsqueda extra, cada «déjame verificar de nuevo» acumula tokens en la ventana y acelera la degradación del contexto. Definir «listo» elimina el problema de raíz: el agente se detiene en el objetivo, la sesión es breve y no desperdicias tokens ni calidad. Es la forma más barata de proteger el contexto: prevenir el trabajo innecesario antes de que ocurra.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t5-p2">Un loop no solo es lento: <strong>llena el tanque</strong>. Cada búsqueda extra, cada «déjame verificar de nuevo» acumula tokens en la ventana y acelera la degradación del contexto. Definir «listo» elimina el problema de raíz: el agente se detiene en el objetivo, la sesión es breve y no desperdicias tokens ni calidad. Es la forma más barata de proteger el contexto: prevenir el trabajo innecesario antes de que ocurra.</p>
 <!-- code box #2 (definition of done) -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-blue-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">dar un criterio de detención explícito para evitar bucles y el gasto de tokens</span></p>
@@ -661,25 +661,25 @@ pare ao atingir 75 e me devolva a lista.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Ahorra tokens</div><p class="text-xs text-neutral-400">Trabajo innecesario = cero.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-2-4#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-4#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">💰 Ahorrar: skills, desactivar MCP, CLAUDE.md conciso</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t6-p1">
           Incluso antes del primer mensaje, parte del tanque ya está ocupada por cosas que cargan <strong>al empezar</strong>: o <code class="text-blue-300">CLAUDE.md</code>, las definiciones de cada servidor <strong class="text-blue-400">MCP</strong>, instrucciones de sistema. Ahorrar contexto consiste en accionar tres palancas: usar <strong class="text-blue-400">skills</strong> (que se cargan bajo demanda, solo cuando se activan, en vez de estar siempre en CLAUDE.md), <strong class="text-blue-400">desactivar MCP</strong> que no usas (cada servidor inyecta definiciones de herramientas en el contexto), y mantener el <strong class="text-blue-400">CLAUDE.md conciso</strong> (menos de ~500 líneas, solo lo que sirve para todas las sesiones).
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -721,7 +721,7 @@ pare ao atingir 75 e me devolva a lista.</pre>
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — cada palanca libera espacio en la ventana. Combina las tres (más «una tarea por sesión») y tendrás una rutina de <strong>higiene del contexto</strong>.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-4-t6-p2">El contexto que gastas al inicio es contexto que <em>no</em> queda para la tarea. Un CLAUDE.md de 1.500 líneas y cinco MCP conectados pueden consumir una parte importante de la capacidad antes de que escribas la primera palabra, y te acercan mucho más rápido al umbral de ~60 %. Mantener el contexto limpio no es un detalle avanzado: es lo que hace que tus sesiones sean largas, económicas y precisas.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-4-t6-p2">El contexto que gastas al inicio es contexto que <em>no</em> queda para la tarea. Un CLAUDE.md de 1.500 líneas y cinco MCP conectados pueden consumir una parte importante de la capacidad antes de que escribas la primera palabra, y te acercan mucho más rápido al umbral de ~60 %. Mantener el contexto limpio no es un detalle avanzado: es lo que hace que tus sesiones sean largas, económicas y precisas.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
 <h4 class="font-bold text-blue-400 mb-4">✓ Higiene del contexto</h4>
@@ -750,19 +750,19 @@ pare ao atingir 75 e me devolva a lista.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Higiene = rutina</div><p class="text-xs text-neutral-400">Combina todas las palancas.</p></div>
 </div>
 <!-- Checagem leve -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-2-4#q1">
-<p class="inema-check__q font-medium mb-4">Al cerrar el módulo: tu medidor de contexto superó <strong>85%</strong> y vas a empezar una <strong>tarea nueva</strong>. ¿Qué comando usar?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">/compact — para guardar el resumen de la conversación anterior.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">/clear — para borrar el contexto y empezar la tarea nueva desde cero.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Ninguno: solo tienes que seguir escribiendo en la misma conversación.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-2-4#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">Al cerrar el módulo: tu medidor de contexto superó <strong>85%</strong> y vas a empezar una <strong>tarea nueva</strong>. ¿Qué comando usar?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">/compact — para guardar el resumen de la conversación anterior.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">/clear — para borrar el contexto y empezar la tarea nueva desde cero.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Ninguno: solo tienes que seguir escribiendo en la misma conversación.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
@@ -791,22 +791,22 @@ pare ao atingir 75 e me devolva a lista.</pre>
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Índice de la página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Sección <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">6</span></span></p>
+<nav aria-label="Índice de la página" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Sección <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-1">1. Context rot (~60%)</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-2">2. Los umbrales</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-3">3. /clear vs /compact</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-4">4. Una tarea por sesión</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-5">5. Definir "listo"</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-6">6. Ahorro de contexto</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-1">1. Context rot (~60%)</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-2">2. Los umbrales</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-3">3. /clear vs /compact</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-4">4. Una tarea por sesión</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-5">5. Definir "listo"</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-6">6. Ahorro de contexto</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Dominio completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Dominio completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -822,15 +822,15 @@ pare ao atingir 75 e me devolva a lista.</pre>
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-2-4#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-2-4#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. /compact resume mantendo o histórico — mas você vai TROCAR de tarefa, entêo nêo quer o histórico antigo. Use /clear.',

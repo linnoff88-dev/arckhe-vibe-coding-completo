@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -195,8 +195,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #2dd4bf; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #0d9488; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #2dd4bf; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #0d9488; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre-wrap; word-break: break-word; }
@@ -208,8 +208,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha5/modulo-5-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha5/modulo-5-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha5/modulo-5-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha5/modulo-5-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-5-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha5/modulo-5-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha5/modulo-5-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha5/modulo-5-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha5/modulo-5-2.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha5/modulo-5-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-5-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha5/modulo-5-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-teal-600 focus:text-white focus:rounded-lg" href="#conteudo">Skip to content</a>
 <!-- NAVIGATION (T5 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -221,7 +221,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -242,9 +242,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Production</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>My journey</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Toggle light/dark theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -292,12 +292,12 @@
 <div class="text-xs text-neutral-400">Type</div>
 </div>
 </div>
-<div aria-label="Module 5.2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:5-2" role="progressbar">
+<div aria-label="Module 5.2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:5-2" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Module progress</span>
-<span class="text-teal-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 of 8</span></span>
+<span class="text-teal-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 of 8</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-teal-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-teal-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -310,7 +310,7 @@
 </div>
 <!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">The difference between this module and the previous one is <em>who triggers it</em> the agent. Before, it was you. Now there are two different triggers: one <strong class="text-teal-400">clock</strong> (cron, on a schedule) and a <strong class="text-teal-400">doorbell</strong> (webhook, triggered by an event). Both run in the cloud — without you present.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">The difference between this module and the previous one is <em>who triggers it</em> the agent. Before, it was you. Now there are two different triggers: one <strong class="text-teal-400">clock</strong> (cron, on a schedule) and a <strong class="text-teal-400">doorbell</strong> (webhook, triggered by an event). Both run in the cloud — without you present.</p>
 <div class="rounded-2xl border border-teal-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Two agents hosted on the same cloud platform. The scheduled agent is triggered by a cron clock every morning, searches the web with Firecrawl, synthesizes the results, and writes a row in Google Sheets. The webhook agent is triggered by an external request with a payload, generates a docx document, and saves it to Google Drive." class="w-full h-auto" role="img" viewbox="0 0 1000 270">
 <defs>
@@ -352,18 +352,18 @@
 <p class="text-xs text-neutral-500">Illustrative diagram — same cloud platform (the “coordinator” in cyan), two triggers: the clock wakes the first; an external request wakes the second.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-5-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🔁 Scheduled research agent</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-2-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t1-p1">
           The first agent is a <strong class="text-teal-400">scheduled task</strong> that runs on its own every morning: through a trigger <strong>cron</strong>, it takes a fixed topic, searches the web for content with <strong class="text-teal-400">Firecrawl</strong>, synthesize with AI and write a structured row to the <strong>Google Sheets</strong> — without you present. The entire task fits in a single file, <code class="text-teal-300">morning-research.ts</code>, with the topic at the top (easy to change and version).
         </p>
 <div class="bg-dark-800 border border-teal-500/30 rounded-xl p-4 mb-6">
@@ -389,7 +389,7 @@ registre log em cada passo. Me ajude a planejar isso.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the spreadsheet should have a tab <code class="text-teal-300">Sheet1</code> with a header (date, topic, summary, sources, status). The task starts in a single file with the topic at the top.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-2-t1-p2">This is the first agent that "lives on its own"—it closes the <strong>agentic gap</strong> between running locally and being in production. Note that you embed <strong>error handling and logging from the very first prompt</strong>: a hosted agent doesn't have you nearby to fix things right away, so it needs to be robust from the start.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t1-p2">This is the first agent that "lives on its own"—it closes the <strong>agentic gap</strong> between running locally and being in production. Note that you embed <strong>error handling and logging from the very first prompt</strong>: a hosted agent doesn't have you nearby to fix things right away, so it needs to be robust from the start.</p>
 <h3 class="text-lg font-semibold text-teal-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Cron</div><p class="text-xs text-neutral-400">Schedule in 5 fields.</p></div>
@@ -398,25 +398,25 @@ registre log em cada passo. Me ajude a planejar isso.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Robust already</div><p class="text-xs text-neutral-400">Error + log in the first prompt.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-5-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🔐 OAuth refresh token (and the terminal fallback)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-2-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t2-p1">
           In the cloud, there’s no login window for the agent to click. Instead, it uses a <strong class="text-teal-400">refresh token</strong>: a long-lived credential that automatically renews access (access token). For Google, you need four values in the <code class="text-teal-300">.env</code> and in the dashboard: <strong>client ID, client secret, refresh token</strong> e o <strong>sheet ID</strong>.
         </p>
 <div class="bg-dark-800 border border-teal-500/30 rounded-xl p-4 mb-6">
@@ -437,7 +437,7 @@ imprimir o refresh token. Aí eu colo no .env e nas env vars do painel.</pre>
 <p class="text-neutral-300 text-sm">Client ID and secret: Google Cloud Console → APIs &amp; Services → Credentials (create an OAuth2 client ID and a new client secret). Sheet ID: in the spreadsheet URL, between the slashes after <code class="text-teal-300">/d/</code>. Firecrawl key: in the firecrawl.dev dashboard → API Keys. <strong>Use OAuth, not a service account</strong> — tell the AI this so it can adjust the fields in the <code class="text-teal-300">.env</code>.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-2-t2-p2">The refresh token is the classic friction point when hosting agents—and the “official” path (OAuth Playground) sometimes simply fails. Get to know the <strong>terminal fallback</strong> unblocks the deploy when you need it most, instead of leaving you stuck on an error screen.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t2-p2">The refresh token is the classic friction point when hosting agents—and the “official” path (OAuth Playground) sometimes simply fails. Get to know the <strong>terminal fallback</strong> unblocks the deploy when you need it most, instead of leaving you stuck on an error screen.</p>
 <h3 class="text-lg font-semibold text-teal-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Refresh token</div><p class="text-xs text-neutral-400">Renews without logging in.</p></div>
@@ -446,25 +446,25 @@ imprimir o refresh token. Aí eu colo no .env e nas env vars do painel.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">OAuth ≠ service acct</div><p class="text-xs text-neutral-400">Notify the AI.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-5-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🐛 A bug that only appears in production</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-2-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t3-p1">
           After the deploy, you <strong>triggers a manual test in the dashboard</strong> (you can’t wait for the scheduled time) and reads traces in real time. Production errors have a reality of their own: in this project, Firecrawl returned <code class="text-teal-300">success: false</code> but <em>with</em> results — but under the ownership <code class="text-teal-300">web</code> instead of <code class="text-teal-300">data</code>. The actual response format differed from what the code assumed.
         </p>
 <!-- SVG: loop humano de debug (#29) -->
@@ -508,7 +508,7 @@ Corrija o parsing e me diga o comando de redeploy.</pre>
 <p class="text-neutral-300 text-sm">Even when Firecrawl failed, the task <strong>didn’t break</strong>: it even recorded a <strong>partial row</strong> in Sheets (data, topic, summary, no sources, status=partial) — exactly what the prompt asked for. It’s proof that “handle errors without breaking” pays off from the very first prompt.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-2-t3-p2">Production is where theory meets reality: response formats change, timeouts happen, env vars disappear. The core skill isn’t “never make mistakes,” it’s the <strong>human debugging loop</strong> — read the trace, copy the full error (not your summary), return it with context, and redeploy.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t3-p2">Production is where theory meets reality: response formats change, timeouts happen, env vars disappear. The core skill isn’t “never make mistakes,” it’s the <strong>human debugging loop</strong> — read the trace, copy the full error (not your summary), return it with context, and redeploy.</p>
 <h3 class="text-lg font-semibold text-teal-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Manual test</div><p class="text-xs text-neutral-400">Don't wait for cron.</p></div>
@@ -517,25 +517,25 @@ Corrija o parsing e me diga o comando de redeploy.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Don't break</div><p class="text-xs text-neutral-400">A partial line is okay.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-5-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">📄 Webhook report (payload → .docx → Drive)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-2-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t4-p1">
           The second agent is triggered by <strong class="text-teal-400">event</strong>, not by the clock. It receives an <strong>payload</strong> JSON via webhook (with the fields: company name, sector, objective, challenge), generates a report in <strong>.docx</strong> and saves it to the <strong>Google Drive</strong>. The AI builds the report sections (executive summary, industry context, challenges) from just these four fields.
         </p>
 <div class="bg-dark-800 border border-teal-500/30 rounded-xl p-4 mb-6">
@@ -563,7 +563,7 @@ Me ajude a planejar.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the run appears, the .docx is generated, and the file is in Drive—all of this <strong>before</strong> of connecting the form. Testing locally first saves a debugging cycle.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-2-t4-p2">This agent teaches you how to trigger <strong>event-based</strong>: it responds to an external request, not a clock. It’s the pattern that connects any source (form, another system, a button) to an agent that produces an artifact—and testing locally first is the discipline that keeps you from debugging two problems (your form and your task) at the same time.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t4-p2">This agent teaches you how to trigger <strong>event-based</strong>: it responds to an external request, not a clock. It’s the pattern that connects any source (form, another system, a button) to an agent that produces an artifact—and testing locally first is the discipline that keeps you from debugging two problems (your form and your task) at the same time.</p>
 <h3 class="text-lg font-semibold text-teal-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Payload</div><p class="text-xs text-neutral-400">Request data.</p></div>
@@ -572,25 +572,25 @@ Me ajude a planejar.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Test locally first</div><p class="text-xs text-neutral-400">Before the form.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-5-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🔔 Webhook as a "digital doorbell" + Bearer auth</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-2-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t5-p1">
           A <strong class="text-teal-400">webhook</strong> is a “digital doorbell”: a URL that listens for data; when someone “rings” it (makes a request), it wakes up the task and passes the payload along. Since the URL can be shared (it can go on a website or in an email), you protect it with a header <strong class="text-teal-400">Authorization: Bearer</strong> + your secret key.
         </p>
 <div class="bg-dark-800 border border-teal-500/30 rounded-xl p-4 mb-6">
@@ -611,7 +611,7 @@ Send Body:     ON  →  JSON
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: be careful with the <strong>space after "Bearer"</strong> (common error). Without the correct token, the task rejects the request. With it, the run appears in the panel with the payload visible.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-2-t5-p2">The webhook URL is public by nature—anyone who discovers it can “ring the doorbell” and use your resources. The Bearer is the basic lock: without the right key, the request is rejected. It’s the first line of security for any agent that accepts external triggers.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t5-p2">The webhook URL is public by nature—anyone who discovers it can “ring the doorbell” and use your resources. The Bearer is the basic lock: without the right key, the request is rejected. It’s the first line of security for any agent that accepts external triggers.</p>
 <h3 class="text-lg font-semibold text-teal-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Trigger URL</div><p class="text-xs text-neutral-400">The digital doorbell.</p></div>
@@ -620,25 +620,25 @@ Send Body:     ON  →  JSON
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Workspace!</div><p class="text-xs text-neutral-400">"Bearer " + key.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-5-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">📋 No-code form → webhook</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-2-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t6-p1">
           To give the agent a human face, you build a <strong>no-code form</strong> that, when sent, makes the request to the webhook with the payload. In n8n, it's just two nodes: one <strong class="text-teal-400">Form Submission</strong> (the four fields + submit button), and the <strong class="text-teal-400">HTTP Request</strong> from the previous topic. The form tool is interchangeable—any tool that accepts a webhook/API will work.
         </p>
 <div class="bg-dark-800 border border-teal-500/30 rounded-xl p-4 mb-6">
@@ -656,7 +656,7 @@ Send Body:     ON  →  JSON
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the run appears on the platform with the form payload, and the report lands in Drive. Note: some form tools fail on the API side—if yours does, switch to n8n.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-2-t6-p2">The form connects a real person to the agent without you having to write a frontend yet — that comes in module 5.3. It’s the fastest way to give an automation an interface and prove the end-to-end workflow with a real submission.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t6-p2">The form connects a real person to the agent without you having to write a frontend yet — that comes in module 5.3. It’s the fastest way to give an automation an interface and prove the end-to-end workflow with a real submission.</p>
 <h3 class="text-lg font-semibold text-teal-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Two nodes</div><p class="text-xs text-neutral-400">Form + HTTP Request.</p></div>
@@ -665,25 +665,25 @@ Send Body:     ON  →  JSON
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Switchable</div><p class="text-xs text-neutral-400">Any form with an API.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-5-2#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">🐙 GitHub pipeline → automatic deploy</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-2-t7-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t7-p1">
           Instead of deploying manually for every change, you connect the repository <strong class="text-teal-400">GitHub</strong> to the hosting platform: each <code class="text-teal-300">push</code> triggers the deploy automatically. That way, the code in the repository is the source of truth, and iterating with AI publishes the latest version. The manual step is a <strong>repository secret</strong> that gives GitHub permission to deploy.
         </p>
 <div class="bg-dark-800 border border-teal-500/30 rounded-xl p-4 mb-6">
@@ -705,7 +705,7 @@ Repository Secrets → New Repository Secret
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: make a small change, push it, and see the deployment run automatically. The <code class="text-teal-300">.env</code> must not appear in the repository (check that it’s in the <code class="text-teal-300">.gitignore</code>).</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-2-t7-p2">Manual deployment is an easy step to forget and get wrong. Automating it means that "what’s in the repository is what’s live" — and that iterating takes only a conversation with the AI and a push. It’s the habit that separates a prototype from a maintained system. (Track 6 covers GitHub and Trigger.dev in more depth.)</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t7-p2">Manual deployment is an easy step to forget and get wrong. Automating it means that "what’s in the repository is what’s live" — and that iterating takes only a conversation with the AI and a push. It’s the habit that separates a prototype from a maintained system. (Track 6 covers GitHub and Trigger.dev in more depth.)</p>
 <h3 class="text-lg font-semibold text-teal-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">Deploy on push</div><p class="text-xs text-neutral-400">Push = publish.</p></div>
@@ -714,25 +714,25 @@ Repository Secrets → New Repository Secret
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-semibold text-sm mb-1">.gitignore</div><p class="text-xs text-neutral-400">.env never gets uploaded.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 8 -->
-<section class="mb-16" data-inema-topic="modulo-5-2#topico-8" id="topico-8">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-8" id="topico-8">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">8</span>
 <h2 class="text-2xl font-bold">📊 Check runs, traces, and the schedule</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m5-2-t8-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t8-p1">
           Since the agent runs without you, the <strong>dashboard</strong> it’s how you know it’s healthy. Learn to read: the list of <strong class="text-teal-400">runs</strong> (runs), the <strong class="text-teal-400">trace</strong> for each one (each row is one step), the <strong class="text-teal-400">schedules</strong> (the active cron job + the next scheduled time) and the separation <strong>dev vs. prod</strong>. Also check the actual row that appeared in Sheets.
         </p>
 <div class="bg-dark-800 border border-teal-500/30 rounded-xl p-4 mb-6">
@@ -754,21 +754,21 @@ um run ou deploy falhar.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: the schedule shows the next run; a test run turns green; the alert fires on a run forced to fail. Remember: retries handle failures <strong>transient</strong>, not logic bugs.</p>
 </div>
 <h3 class="text-lg font-semibold text-teal-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m5-2-t8-p2">Observability is what makes a hosted agent reliable: when you're not there, runs, traces, schedules, and alerts are your eyes. A common mistake is to leave the task only in <strong>dev</strong> and assume it's live—always confirm the environment. And alerts close the loop: you only act when something actually fails.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m5-2-t8-p2">Observability is what makes a hosted agent reliable: when you're not there, runs, traces, schedules, and alerts are your eyes. A common mistake is to leave the task only in <strong>dev</strong> and assume it's live—always confirm the environment. And alerts close the loop: you only act when something actually fails.</p>
 <!-- Checagem leve -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-5-2#q1">
-<p class="inema-check__q font-medium mb-4">An external call occasionally fails due to a timeout, but the logic is correct. What’s the right remedy?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Retries with exponential backoff (e.g., up to 3, starting at 30s).</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Rewrite all the logic from scratch.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Ignore it — timeouts don’t matter in production.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-5-2#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">An external call occasionally fails due to a timeout, but the logic is correct. What’s the right remedy?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Retries with exponential backoff (e.g., up to 3, starting at 30s).</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Rewrite all the logic from scratch.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Ignore it — timeouts don’t matter in production.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:bg-teal-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
@@ -799,24 +799,24 @@ um run ou deploy falhar.</pre>
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Page index" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> of <span class="inema-toc-total">8</span></span></p>
+<nav aria-label="Page index" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">8</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-1">1. Scheduled agent</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-2">2. OAuth refresh token</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-3">3. Debug in production</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-4">4. Report by webhook</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-5">5. Webhook + Bearer</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-6">6. No-code form</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-7">7. GitHub → deploy</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-8">8. Runs, traces, schedule</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-1">1. Scheduled agent</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-2">2. OAuth refresh token</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-3">3. Debug in production</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-4">4. Report by webhook</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-5">5. Webhook + Bearer</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-6">6. No-code form</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-7">7. GitHub → deploy</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400 block" href="#topico-8">8. Runs, traces, schedule</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Complete Mastery · Original course <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Complete Mastery · Original course <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -832,15 +832,15 @@ um run ou deploy falhar.</pre>
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-5-2#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-5-2#q1', {
           answer: 0,
           explain: {
             0: 'Isso. Retries com backoff resolvem falhas transitórias (timeout, instabilidade) sem mexer na lógica que já está correta.',

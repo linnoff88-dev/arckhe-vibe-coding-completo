@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -198,8 +198,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #fbbf24; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #92400e; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #fbbf24; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #92400e; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -211,8 +211,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha4/modulo-4-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha4/modulo-4-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha4/modulo-4-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha4/modulo-4-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-4-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha4/modulo-4-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha4/modulo-4-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha4/modulo-4-2.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha4/modulo-4-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-4-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-amber-600 focus:text-white focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <!-- NAVIGATION (T4 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -224,7 +224,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -245,9 +245,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Producción</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Mi recorrido</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Alternar tema claro/oscuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -295,12 +295,12 @@
 <div class="text-xs text-neutral-400">Tipo</div>
 </div>
 </div>
-<div aria-label="Progreso del módulo 4.2" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:4-2" role="progressbar">
+<div aria-label="Progreso del módulo 4.2" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:4-2" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Progreso del módulo</span>
-<span class="text-amber-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 de 7</span></span>
+<span class="text-amber-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 de 7</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-amber-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-amber-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -313,7 +313,7 @@
 </div>
 <!-- SVG FUTURISTA (visêo geral: build-and-reuse loop, #29) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Toda skill nace del mismo ciclo: tú <strong>describe</strong> el workflow en lenguaje natural, el <strong class="text-cyan-400">el agente genera el SKILL.md</strong> en el formato oficial, se convierte en un <strong>slash command</strong> (p. ej., <code>/draft-email</code>), y a partir de ahí tú <strong>vuelve a usar</strong> — de preferencia con el contexto limpio, para que cada ejecución sea predecible.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Toda skill nace del mismo ciclo: tú <strong>describe</strong> el workflow en lenguaje natural, el <strong class="text-cyan-400">el agente genera el SKILL.md</strong> en el formato oficial, se convierte en un <strong>slash command</strong> (p. ej., <code>/draft-email</code>), y a partir de ahí tú <strong>vuelve a usar</strong> — de preferencia con el contexto limpio, para que cada ejecución sea predecible.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="El ciclo de construir y reutilizar una skill: describes el workflow en lenguaje natural; el agente genera el archivo SKILL.md en el formato oficial; eso se convierte en un slash command como barra draft-email; invocas el comando y lo entrega; con el contexto limpio reutilizas el mismo comando con nuevas entradas y obtienes una salida nueva y consistente, cerrando el ciclo de vuelta a la invocación" class="w-full h-auto" role="img" viewbox="0 0 1000 250">
 <defs>
@@ -364,24 +364,24 @@
 <p class="text-xs text-neutral-500">Diagrama ilustrativo — el recuadro azul es el agente escribiendo el <code>SKILL.md</code>. Construir se hace una vez; reutilizar, para siempre. El lazo punteado representa la reutilización con <code>/clear</code> entre ejecuciones.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-4-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">📝 Pedir una skill en el formato oficial</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t1-p1">
           Crear una skill comienza con una buena solicitud. Tú <strong>describe el workflow</strong> — cuáles son las <strong>entradas</strong>, cuál es el <strong>comportamiento</strong> esperado, y <strong>dónde guardar</strong> el resultado —y le pide al agente que lo convierta en un <strong class="text-amber-400">slash command</strong> siguiendo el formato oficial de skill. Es la misma mentalidad del vibe coding: tú dices el «qué» y el agente escribe el <code>SKILL.md</code> (el «cómo»).
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">¿Qué es?</span><strong>Formato oficial</strong> — la estructura estándar de una skill: un archivo <code>SKILL.md</code> con <em>nombre</em>, <em>descripción</em> (cuándo usarla) y <em>instrucciones</em>. <strong>Comando slash</strong> — un atajo del tipo <code>/nome</code> que activa la skill. <strong>Plan Mode</strong> — modo en el que el agente planifica antes de modificar archivos; es ideal para revisar la skill antes de crearla.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t1-p2">
           Una buena solicitud es específica en las tres dimensiones. Si es demasiado vaga («haz una skill de correo electrónico»), obliga al agente a adivinar; si es demasiado específica sobre los pasos técnicos («crea un archivo .md con YAML frontmatter que contenga…»), desperdicia la ventaja de dejarlo elegir. El punto justo: describe las entradas, el comportamiento y el destino, y deja que se encargue del resto.
         </p>
 <!-- CODE BOX 1: prompt em Plan Mode -->
@@ -401,7 +401,7 @@ instruções). Me mostre o plano antes de gravar.</ex.:></ex.:></ex.:></descreva
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: el agente responde con un <strong>plan</strong> (nombre del comando, descripción, instrucciones) y pregunta qué falta, en vez de crear archivos de inmediato. Apruébalo y guardará el <code>SKILL.md</code>.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t1-p3">Una solicitud en el formato oficial garantiza que la skill nazca reutilizable, con nombre, descripción e instrucciones que el agente volverá a leer cada vez que la invoques. Pedirla en Plan Mode te da un punto de revisión: corriges el alcance antes de que se convierta en un archivo.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t1-p3">Una solicitud en el formato oficial garantiza que la skill nazca reutilizable, con nombre, descripción e instrucciones que el agente volverá a leer cada vez que la invoques. Pedirla en Plan Mode te da un punto de revisión: corriges el alcance antes de que se convierta en un archivo.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
 <h4 class="font-bold text-amber-400 mb-4">✓ Buena solicitud de skill</h4>
@@ -428,25 +428,25 @@ instruções). Me mostre o plano antes de gravar.</ex.:></ex.:></ex.:></descreva
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Formato oficial</div><p class="text-xs text-neutral-400">SKILL.md + slash command.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-4-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">✉️ Skill "redactar correo" (/draft-email)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t2-p1">
           Vamos a construir la primera skill de verdad: <strong class="text-amber-400">/draft-email</strong>. Recibe tres entradas: los <strong>viñetas</strong> del contenido, el <strong>destinatario</strong> e o <strong>tono</strong> — y escribe un correo pulido y conciso, sin rodeos (<em>fluff</em>). El borrador se guarda en una carpeta temporal y todo el procedimiento se convierte en el comando <code>/draft-email</code>.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -479,7 +479,7 @@ Se faltar alguma entrada, PERGUNTE antes de escrever.
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: invoca <code>/draft-email</code> con un destinatario, un tono y 2-3 viñetas. El agente debe devolver un correo conciso, con el tono adecuado, y guardar el archivo. Léelo: ¿tiene asunto? ¿está libre de relleno?</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t2-p2">El correo electrónico es el ejemplo perfecto de tarea repetitiva y estandarizable: escribes decenas por semana y todos siguen la misma estructura. Encapsular esto en una skill significa que el «cómo escribir bien» queda en el <code>SKILL.md</code>, y tú solo proporcionas el contenido. Constrúyelo una vez y ahorra tiempo para siempre.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t2-p2">El correo electrónico es el ejemplo perfecto de tarea repetitiva y estandarizable: escribes decenas por semana y todos siguen la misma estructura. Encapsular esto en una skill significa que el «cómo escribir bien» queda en el <code>SKILL.md</code>, y tú solo proporcionas el contenido. Constrúyelo una vez y ahorra tiempo para siempre.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Consejo práctico</h3>
 <p class="text-neutral-300 text-sm">Después de construir, <strong>prueba de inmediato</strong> con un caso real tuyo. Si el tono sale mal o el correo queda demasiado largo, no empieces de nuevo: da <strong>feedback</strong> ("quedó demasiado formal, hazlo más directo") y pide ajustar el <code>SKILL.md</code>. La skill mejora con cada uso.</p>
@@ -492,25 +492,25 @@ Se faltar alguma entrada, PERGUNTE antes de escrever.
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">/draft-email</div><p class="text-xs text-neutral-400">Se convierte en comando slash.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-4-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">❓ Invocar sin argumentos</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t3-p1">
           La prueba de robustez de una buena skill: llama a <code>/draft-email</code> <strong>sin enviar ningún dato</strong>. En vez de ejecutarse a ciegas e inventar un destinatario y un tono, la skill debe <strong class="text-amber-400">preguntar</strong> sobre los datos que faltan —destinatario, tono, bullets— antes de escribir una sola línea. Esa instrucción de <code>SKILL.md</code> ("si falta algún dato, PREGUNTA") es lo que garantiza eso.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -546,7 +546,7 @@ Se faltar alguma entrada, PERGUNTE antes de escrever.
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — invocar sin datos no es un error: activa la recopilación. La skill solo escribe después de tener las tres entradas.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t3-p2">Las skills que preguntan antes de ejecutarse evitan la peor pesadilla de la automatización: un resultado plausible pero incorrecto, basado en suposiciones. Cuando la skill recopila lo que falta, tú controlas la entrada y nunca recibes un correo dirigido a la persona equivocada y con el tono equivocado.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t3-p2">Las skills que preguntan antes de ejecutarse evitan la peor pesadilla de la automatización: un resultado plausible pero incorrecto, basado en suposiciones. Cuando la skill recopila lo que falta, tú controlas la entrada y nunca recibes un correo dirigido a la persona equivocada y con el tono equivocado.</p>
 <!-- CODE BOX 3: invocar sem args -->
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-amber-400 font-semibold mb-1">🎯 Objetivo: <span class="text-neutral-300 font-normal">ver cómo la skill solicita los datos de entrada en lugar de adivinarlos.</span></p>
@@ -571,32 +571,32 @@ Para escrever o e-mail, preciso de:
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Tú controlas</div><p class="text-xs text-neutral-400">La entrada es tuya.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-4-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🔁 Reutilizar con contexto limpio</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t4-p1">
           El verdadero retorno de crear una skill se ve al reutilizarla. Para reutilizarla bien, dale <code>/clear</code> (limpia la conversación) y llama a <code>/draft-email</code> de nuevo con <strong>nuevas entradas</strong>. El resultado: una salida <strong class="text-amber-400">fresca y consistente</strong>, siguiendo las mismas reglas del <code>SKILL.md</code>, sin que la basura de la conversación anterior contamine el nuevo correo.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-semibold mr-2">¿Qué es?</span><strong>/clear</strong> — comando que borra el contexto de la conversación (el agente «olvida» lo que se dijo antes). <strong>Contexto limpio</strong> — empezar desde cero, sin que los borradores antiguos influyan en el nuevo. <strong>Conversación inflada</strong> — cuando el historial acumulado hace que el agente mezcle pedidos y pierda consistencia.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t4-p2">Sin un contexto limpio, el tercer correo del día puede heredar el tono del primero o mencionar al destinatario equivocado. Limpiar antes de cada reutilización hace que cada ejecución <strong>previsible</strong> — la skill aplica siempre las mismas reglas, partiendo siempre del mismo punto.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t4-p2">Sin un contexto limpio, el tercer correo del día puede heredar el tono del primero o mencionar al destinatario equivocado. Limpiar antes de cada reutilización hace que cada ejecución <strong>previsible</strong> — la skill aplica siempre las mismas reglas, partiendo siempre del mismo punto.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
 <h4 class="font-bold text-amber-400 mb-4">✓ Reutiliza correctamente (contexto limpio)</h4>
@@ -638,25 +638,25 @@ bullets:
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Predecible</div><p class="text-xs text-neutral-400">Cada ejecución comienza igual.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-4-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">📊 Skill "documento → diapositivas"</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t5-p1">
           Una skill más ambiciosa, pero construida del mismo modo: <strong class="text-amber-400">documento → diapositivas</strong>. Lee un documento, extrae los <strong>puntos clave</strong> y crea una presentación profesional usando <strong>herramientas Python</strong>. El documento de entrada queda en <code>temporary/resources</code> y la presentación generada sale en <code>temporary/outputs</code> — carpetas organizadas, entrada separada de salida.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -678,7 +678,7 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <p class="text-xs text-neutral-500 mt-3">✅ Cómo verificar: coloca un documento en <code>temporary/resources</code>, invoca la skill y revisa <code>temporary/outputs</code> — debe existir un archivo de presentación con los puntos clave del documento, no el texto en bruto copiado.</p>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t5-p2">Esta skill muestra que el mismo patrón escala: entradas claras, comportamiento descrito, destino definido — ahora con el agente escribiendo código Python por debajo. No necesitas saber Python; necesitas describir el resultado. Y la separación <code>resources</code>/<code>outputs</code> mantiene el proyecto limpio y la skill reutilizable con cualquier documento.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t5-p2">Esta skill muestra que el mismo patrón escala: entradas claras, comportamiento descrito, destino definido — ahora con el agente escribiendo código Python por debajo. No necesitas saber Python; necesitas describir el resultado. Y la separación <code>resources</code>/<code>outputs</code> mantiene el proyecto limpio y la skill reutilizable con cualquier documento.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceptos clave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Lee el documento</div><p class="text-xs text-neutral-400">Entrada en resources.</p></div>
@@ -687,25 +687,25 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">outputs</div><p class="text-xs text-neutral-400">Salida separada.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-4-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🎨 Conectar una skill de diseño lista</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t6-p1">
           Skills <strong class="text-amber-400">se componen</strong>. En vez de describir cada detalle visual de tu presentación, tú <strong>apila</strong> una skill de diseño ya existente sobre la skill <code>doc-to-slides</code>. La skill de diseño carga las reglas de tipografía, colores y espaciado; tu skill se encarga del contenido. El resultado mejora visualmente sin que te conviertas en diseñador.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -743,7 +743,7 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — agregar una skill de diseño no reemplaza la tuya; cada una cubre una responsabilidad y juntas mejoran el resultado.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t6-p2">La composición es lo que hace que tu biblioteca de skills valga más que la suma de sus partes. Una skill de diseño lista para usar se convierte en un "tema" que puedes integrar en cualquier skill que genere un artefacto visual. Reutilizas conocimiento de diseño que ni siquiera es tuyo — y el resultado parece hecho por un especialista.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t6-p2">La composición es lo que hace que tu biblioteca de skills valga más que la suma de sus partes. Una skill de diseño lista para usar se convierte en un "tema" que puedes integrar en cualquier skill que genere un artefacto visual. Reutilizas conocimiento de diseño que ni siquiera es tuyo — y el resultado parece hecho por un especialista.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Consejo práctico</h3>
 <p class="text-neutral-300 text-sm">Mantener skills <strong>pequeñas y con una sola responsabilidad</strong> (una crea contenido, otra diseña). Las skills concisas se combinan mejor: es más fácil juntar dos piezas enfocadas que desmontar una skill gigante que intenta hacerlo todo. Piensa en piezas de Lego, no en un bloque macizo.</p>
@@ -756,25 +756,25 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Enfoque único</div><p class="text-xs text-neutral-400">Cada skill hace una cosa.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-4-2#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">📚 Biblioteca de skills del alumno</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m4-2-t7-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t7-p1">
           Ahora que sabes construir, probar, invocar y reutilizar, el paso final es acumular: crear tu <strong class="text-amber-400">biblioteca de skills</strong>. Cada skill es una tarea repetitiva tuya, encapsulada una sola vez. Abajo encontrarás un catálogo de ideas listas, no para copiar, sino para que te sirvan de <strong>punto de partida</strong> de tu propia colección.
         </p>
 <div class="bg-dark-800 border border-amber-500/30 rounded-xl p-4 mb-6">
@@ -841,7 +841,7 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 </ol>
 </div>
 <h3 class="text-lg font-semibold text-amber-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m4-2-t7-p2">Una biblioteca de skills es capital que genera intereses: cada skill que creas ahorra tiempo en cada ejecución futura, y las buenas skills se combinan en flujos más grandes. Empieza poco a poco —con una o dos skills para tus tareas más repetitivas— y deja que la colección crezca con el uso.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m4-2-t7-p2">Una biblioteca de skills es capital que genera intereses: cada skill que creas ahorra tiempo en cada ejecución futura, y las buenas skills se combinan en flujos más grandes. Empieza poco a poco —con una o dos skills para tus tareas más repetitivas— y deja que la colección crezca con el uso.</p>
 <h3 class="text-lg font-semibold text-amber-400 mb-3">Conceptos clave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Catálogo</div><p class="text-xs text-neutral-400">Ideas para empezar.</p></div>
@@ -849,20 +849,20 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Ciclo de vida</div><p class="text-xs text-neutral-400">Construir → probar → reutilizar → modificar.</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-semibold text-sm mb-1">Apalancamiento</div><p class="text-xs text-neutral-400">Descríbelo una vez, reutilízalo siempre.</p></div>
 </div>
-<!-- Checagem leve (data-inema-check) -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-4-2#q1">
-<p class="inema-check__q font-medium mb-4">Para reutilizar una skill con resultado <strong>fresco y consistente</strong>, ¿cuál es la forma correcta?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Continuar la misma conversación larga y seguir acumulando nuevos correos electrónicos.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Usar /clear (contexto limpio) y volver a ejecutar el comando con las nuevas entradas.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Reescribir el SKILL.md desde cero en cada ejecución.</button>
+<!-- Checagem leve (data-ARCKHÉ-check) -->
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-4-2#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">Para reutilizar una skill con resultado <strong>fresco y consistente</strong>, ¿cuál es la forma correcta?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Continuar la misma conversación larga y seguir acumulando nuevos correos electrónicos.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Usar /clear (contexto limpio) y volver a ejecutar el comando con las nuevas entradas.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Reescribir el SKILL.md desde cero en cada ejecución.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
@@ -892,23 +892,23 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Índice de la página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Sección <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">7</span></span></p>
+<nav aria-label="Índice de la página" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Sección <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">7</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-1">1. Pedir en el formato oficial</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-2">2. /draft-email</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-3">3. Invocar sin argumentos</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-4">4. Reutilizar con contexto limpio</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-5">5. Documento → diapositivas</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-6">6. Conectar skill de diseño</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-7">7. Biblioteca de skills</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-1">1. Pedir en el formato oficial</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-2">2. /draft-email</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-3">3. Invocar sin argumentos</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-4">4. Reutilizar con contexto limpio</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-5">5. Documento → diapositivas</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-6">6. Conectar skill de diseño</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400 block" href="#topico-7">7. Biblioteca de skills</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Dominio completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Dominio completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -924,15 +924,15 @@ o arquivo de entrada, PERGUNTE qual usar.</arquivo></doc-to-slides></pre>
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-4-2#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-4-2#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. Conversa longa = contexto inchado: o tom e o destinatário antigos vazam para o novo e-mail. O resultado fica imprevisível.',

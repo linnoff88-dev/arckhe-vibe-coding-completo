@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -195,8 +195,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #60a5fa; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #2563eb; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #60a5fa; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #2563eb; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -208,8 +208,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha2/modulo-2-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha2/modulo-2-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha2/modulo-2-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha2/modulo-2-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha2/modulo-2-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha2/modulo-2-2.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <!-- NAVIGATION (T2 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -221,7 +221,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -242,9 +242,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Producción</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Mi recorrido</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Alternar tema claro/oscuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -292,12 +292,12 @@
 <div class="text-xs text-neutral-400">Tipo</div>
 </div>
 </div>
-<div aria-label="Progreso del módulo 2.2" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:2-2" role="progressbar">
+<div aria-label="Progreso del módulo 2.2" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:2-2" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Progreso del módulo</span>
-<span class="text-blue-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 de 7</span></span>
+<span class="text-blue-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 de 7</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-blue-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-blue-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -310,7 +310,7 @@
 </div>
 <!-- SVG FUTURISTA (visêo geral, #29) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Antes de abrir cada capa, mira cómo encajan. Las <strong>instrucciones en markdown</strong> dicen qué hacer; el <strong>agente</strong> lee estas instrucciones, revisa las herramientas disponibles y decide cuál usar; las <strong>tools en Python</strong> hacen el trabajo de verdad. Y hay un detalle que lo cambia todo: cuando algo sale mal, el agente repara la tool <em>e</em> actualiza el workflow — así el sistema mejora con cada ejecución.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Antes de abrir cada capa, mira cómo encajan. Las <strong>instrucciones en markdown</strong> dicen qué hacer; el <strong>agente</strong> lee estas instrucciones, revisa las herramientas disponibles y decide cuál usar; las <strong>tools en Python</strong> hacen el trabajo de verdad. Y hay un detalle que lo cambia todo: cuando algo sale mal, el agente repara la tool <em>e</em> actualiza el workflow — así el sistema mejora con cada ejecución.</p>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Las tres capas del framework WAT: a la izquierda, los Workflows, que son instrucciones en markdown que sirven de manual; en el centro, el Agente, el cerebro coordinador destacado en cian que lee los workflows y elige la herramienta; a la derecha, las Tools, scripts de Python que hacen el trabajo; y una flecha de auto-mejora que vuelve de las tools a los workflows y cierra el ciclo" class="w-full h-auto" role="img" viewbox="0 0 1000 250">
 <defs>
@@ -360,29 +360,29 @@
 <p class="text-xs text-neutral-500">Diagrama ilustrativo — el manual (W) guía el cerebro (A), que usa las manos (T); lo que el agente aprende al corregir un error vuelve al manual, así que el sistema mejora por sí solo.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🗺️ Visión general de WAT</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-2-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t1-p1">
 <strong class="text-blue-400">WAT</strong> es una sigla sencilla para tres capas que, juntas, le dan a tu proyecto agéntico un <strong>manual, un cerebro y manos</strong>: <strong>W</strong>orkflows (instrucciones), <strong>A</strong>gent (el coordinador) y <strong>T</strong>ools (los scripts). La idea no es una tecnología nueva: es una forma de organizar piezas que ya conoces para que se comuniquen de manera predecible.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">¿Qué es?</span><strong>Flujo agéntico (agentic)</strong> — un proceso en el que una IA no solo responde, sino <em>actúa</em>: decide los pasos, llama a herramientas y se corrige. <strong>Framework</strong> — aquí, una estructura mental u organizativa, no un programa que instalas.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-2-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t1-p2">
           La analogía que funciona: imagina que contratas a un asistente nuevo. Le entregas un <strong>manual de procedimientos</strong> (los workflows), usa su propio <strong>razonamiento</strong> para decidir qué hacer en cada caso (el agente), y tiene un conjunto de <strong>herramientas físicas</strong> en la mesa de trabajo (las tools). La mayoría de los proyectos agénticos que vas a construir encajan en este molde; por eso vale la pena aprender el vocabulario una vez y reutilizarlo para siempre.
         </p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6 mb-6">
-<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m2-2-t1-p3">Tener una plantilla repetible significa que no reinventas la rueda en cada proyecto. Cuando WAT se convierte en tu estándar, cualquier persona (incluso tú dentro de tres meses) abre la carpeta y entiende de inmediato qué es cada cosa.</p>
+<p class="text-neutral-300 mb-3 ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t1-p3">Tener una plantilla repetible significa que no reinventas la rueda en cada proyecto. Cuando WAT se convierte en tu estándar, cualquier persona (incluso tú dentro de tres meses) abre la carpeta y entiende de inmediato qué es cada cosa.</p>
 <ul class="space-y-2 text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Vocabulario común:</strong> tú y la IA hablan el mismo idioma sobre el proyecto.</span></li>
 <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Estructura repetible:</strong> la misma estructura sirve desde el bot simple hasta el agente de producción.</span></li>
@@ -397,31 +397,31 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Plantilla única</div><p class="text-xs text-neutral-400">Casi todo cabe en él.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">📄 W = Workflows (instrucciones markdown)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-2-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t2-p1">
           La capa <strong class="text-blue-400">W</strong> son archivos de <strong>instrucción en markdown</strong> — texto simple con títulos, listas y negrita — que funcionan como una <strong>descripción del puesto</strong> o un <strong>SOP</strong> (procedimiento operativo estándar). Cada workflow le indica al agente qué debe hacer en una tarea específica: cuál es el objetivo, cuál es la entrada, cuál es el resultado esperado y cuáles son los pasos.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">¿Qué es?</span><strong>Markdown</strong> — una forma de escribir texto con formato usando símbolos sencillos (`#` se convierte en título, `-` en lista, `**` en negrita). <strong>SOP</strong> (Standard Operating Procedure) —un documento que describe, paso a paso, cómo realizar una tarea de forma consistente.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-2-t2-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t2-p2">
           Esta es la capa que tú <strong>además edita</strong>. Cambiar el comportamiento del agente casi nunca significa modificar código; significa reescribir el workflow en portugués claro. Un buen workflow documenta cuatro cosas: el <strong>objetivo</strong> (el resultado final), la <strong>entrada</strong> (lo que recibe), la <strong>salida esperada</strong> (formato, nombre, dónde guardar) y los <strong>pasos</strong> en orden. Cuanto más explícito seas, menos tendrá que adivinar el agente.
         </p>
 <!-- code box #2: esqueleto de workflow.md -->
@@ -447,7 +447,7 @@ top 5 produtos e variaçêo vs. semana anterior.
 <p class="text-xs text-neutral-500 mt-3">✅ Nota: aquí no hay código; solo lenguaje natural estructurado. El agente lo lee y elige las tools.</p>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-2-t2-p3">Como el workflow es la capa que más cambia, dominarla es lo que más beneficios te da. Un workflow bien escrito hace que el agente acierte a la primera; uno vago hace que pregunte (o, peor, que suponga algo incorrecto). Piensa en él como el briefing que le darías a una persona competente: lo bastante claro para que no haya dudas y lo bastante conciso para no cansar.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t2-p3">Como el workflow es la capa que más cambia, dominarla es lo que más beneficios te da. Un workflow bien escrito hace que el agente acierte a la primera; uno vago hace que pregunte (o, peor, que suponga algo incorrecto). Piensa en él como el briefing que le darías a una persona competente: lo bastante claro para que no haya dudas y lo bastante conciso para no cansar.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-3">Conceptos clave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Es un SOP</div><p class="text-xs text-neutral-400">Descripción del cargo del agente.</p></div>
@@ -456,25 +456,25 @@ top 5 produtos e variaçêo vs. semana anterior.
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Editas más</div><p class="text-xs text-neutral-400">Para cambiar el comportamiento, modifica aquí.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🧠 A = Agent (el coordinador que decide)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-2-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t3-p1">
           La capa <strong class="text-blue-400">A</strong> es el propio asistente de IA: el <strong>coordinador</strong>, el cerebro del sistema. Lee los workflows, ve qué tools existen y <strong>decide</strong>, en cada momento, qué herramienta llamar y cuándo. No es un guion fijo: el agente <em>elige</em> el camino, como un gerente de proyecto que delega cada parte a la persona adecuada.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
@@ -511,7 +511,7 @@ top 5 produtos e variaçêo vs. semana anterior.
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — el agente no ejecuta un script fijo; lee el manual y decide qué mano usar para lo que tiene enfrente.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-2-t3-p2">Confundir al agente con un script es el error más común de quienes llegan. Un script siempre hace lo mismo en el mismo orden; el agente <strong>razona</strong> y se adapta. Por eso puede manejar situaciones que no habías previsto, y por eso también tienes que darle buenos workflows (el manual) y buenas tools (las manos): solo es tan bueno como lo que tiene disponible para coordinar.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t3-p2">Confundir al agente con un script es el error más común de quienes llegan. Un script siempre hace lo mismo en el mismo orden; el agente <strong>razona</strong> y se adapta. Por eso puede manejar situaciones que no habías previsto, y por eso también tienes que darle buenos workflows (el manual) y buenas tools (las manos): solo es tan bueno como lo que tiene disponible para coordinar.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Consejo práctico</h3>
 <p class="text-neutral-300 text-sm">Cuando el agente elige la tool "equivocada", casi siempre el problema está en el <strong>workflow</strong> (descripción ambigua) o en el <strong>nombre/descripción de la tool</strong> (no explica claramente qué hace). Corrige el manual, no pelees con el cerebro.</p>
@@ -524,31 +524,31 @@ top 5 produtos e variaçêo vs. semana anterior.
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Se adapta</div><p class="text-xs text-neutral-400">Maneja imprevistos.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🔧 T = Tools (scripts de Python para una tarea cada uno)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-2-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t4-p1">
           La capa <strong class="text-blue-400">T</strong> son <strong>scripts en Python</strong> que hacen el trabajo de verdad. La regla de oro: idealmente, <strong>una herramienta hace un solo trabajo</strong> — extraer datos de un sitio, generar un PDF, analizar una hoja de cálculo. Son las «manos» del sistema, las que interactúan con el mundo (archivos, APIs, datos).
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">¿Qué es?</span><strong>Script</strong> — un archivo de código que ejecuta una tarea cuando se ejecuta. <strong>Python</strong> — el lenguaje más común para estas tools; no necesitas saber escribirlo, porque el agente lo escribe y lo corrige por ti.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-2-t4-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t4-p2">
           El punto que disipa el miedo: <strong>el agente escribe y repara las herramientas</strong>. No necesitas saber programar: describes lo que debe hacer la tool (en el workflow) y el agente genera el Python. Las tools pequeñas y enfocadas son fáciles de <strong>probar</strong> (solo una cosa puede salir mal), <strong>volver a usar</strong> (el mismo generar_pdf.py sirve para varios workflows) y <strong>arreglar</strong> (la solución queda aislada). Una tool que «lo hace todo» se convierte en una caja negra que nadie —ni el agente— entiende bien.
         </p>
 <!-- grid ✓/✗ #1 -->
@@ -578,25 +578,25 @@ top 5 produtos e variaçêo vs. semana anterior.
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Reutilizable</div><p class="text-xs text-neutral-400">Sirve para varios workflows.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🔄 El ciclo de autom mejora</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-2-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t5-p1">
           O <strong class="text-blue-400">ciclo de autom mejora</strong> es el superpoder de WAT. El agente ejecuta un workflow, se encuentra con un error, <strong>diagnostica</strong> la causa, <strong>arregla la herramienta</strong> — y, lo más importante, <strong>actualiza el archivo de workflow</strong> para que ese error <em>nunca más</em> ocurra. Con cada ejecución, el sistema funciona con más fluidez y rapidez.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
@@ -633,7 +633,7 @@ top 5 produtos e variaçêo vs. semana anterior.
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — el error no es un desperdicio: se convierte en una mejora permanente del manual. Por eso WAT mejora por sí solo con el uso.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-2-t5-p2">Sin el loop, corriges el mismo error cada semana. Con él, cada falla se «paga una vez»: el agente registra la lección en el workflow y el sistema deja de tropezar con eso. Es lo que transforma un prototipo frágil en un asistente confiable, y la clave es insistir en que <strong>actualiza el workflow</strong>, no te limites a remendar la tool sobre la marcha.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t5-p2">Sin el loop, corriges el mismo error cada semana. Con él, cada falla se «paga una vez»: el agente registra la lección en el workflow y el sistema deja de tropezar con eso. Es lo que transforma un prototipo frágil en un asistente confiable, y la clave es insistir en que <strong>actualiza el workflow</strong>, no te limites a remendar la tool sobre la marcha.</p>
 <!-- timeline (loop como etapas numeradas) -->
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <h4 class="font-semibold text-blue-400 mb-4">El ciclo completo, paso a paso</h4>
@@ -653,25 +653,25 @@ top 5 produtos e variaçêo vs. semana anterior.
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Mejora por sí solo</div><p class="text-xs text-neutral-400">Más fluido en cada run.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">📁 Estructura de carpetas (workflows/tools/temporary/.env)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-2-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t6-p1">
           WAT tiene un <strong>estructura de carpetas recomendada</strong> que le da un lugar a cada cosa: una carpeta <code>workflows/</code> (los manuales en markdown), una <code>tools/</code> (los scripts de Python), una <code>temporary/</code> (archivos intermedios y de salida), un archivo de entorno <code>.env</code> (claves de API y secretos, <strong>nunca</strong> compartido) y el <code>CLAUDE.md</code> en la raíz, que orienta al agente sobre todo el proyecto.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
@@ -735,25 +735,25 @@ Descreva cada camada (W, A, T) e as regras de operaçêo.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">.env</div><p class="text-xs text-neutral-400">Secretos aislados.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">🚦 Cuándo NO usar WAT</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tengo una duda</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Qué es</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-2-t7-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t7-p1">
           Tan importante como saber usar WAT es saber <strong class="text-blue-400">cuando no usarlo</strong>. Para una tarea puntual (de una sola vez), una experimentación inicial o una solicitud <strong>lo suficientemente simple como para expresarlo en una frase</strong>, montar toda la estructura WAT es excesivo: burocracia que cuesta tiempo y contexto sin aportar beneficios. En esos casos, basta con escribir la solicitud.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -779,7 +779,7 @@ Descreva cada camada (W, A, T) e as regras de operaçêo.</pre>
 </div>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por qué aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-2-t7-p2">Quien aprende WAT a veces quiere estructurarlo todo y acaba creando carpetas y workflows para cosas que podrían resolverse con un comando directo. Saber cuándo <em>no</em> usarlo evita burocracia, ahorra contexto y te permite avanzar rápido. La regla es simple: <strong>si cabe en una frase, es una frase</strong>; si se repetirá y crecerá, se convierte en WAT.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-2-t7-p2">Quien aprende WAT a veces quiere estructurarlo todo y acaba creando carpetas y workflows para cosas que podrían resolverse con un comando directo. Saber cuándo <em>no</em> usarlo evita burocracia, ahorra contexto y te permite avanzar rápido. La regla es simple: <strong>si cabe en una frase, es una frase</strong>; si se repetirá y crecerá, se convierte en WAT.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Consejo práctico</h3>
 <p class="text-neutral-300 text-sm">Empieza siempre con una solicitud directa. Cuando notes que repites la misma solicitud (o la ajustas cada vez), <strong>ahí</strong> es el momento de convertirlo en un workflow. Deja que la estructura surja de una necesidad real, no del entusiasmo.</p>
@@ -792,19 +792,19 @@ Descreva cada camada (W, A, T) e as regras de operaçêo.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Sin burocracia</div><p class="text-xs text-neutral-400">Estructura a la medida.</p></div>
 </div>
 <!-- Checagem leve opcional -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-2-2#q1">
-<p class="inema-check__q font-medium mb-4">En el framework WAT, <strong>qué capa decide</strong> ¿qué herramienta usar en cada momento?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">W — Workflows, los archivos markdown de instrucciones.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">A — Agent, el coordinador que lee los workflows y elige la tool.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">T — Tools, los scripts Python que realizan el trabajo.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-2-2#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">En el framework WAT, <strong>qué capa decide</strong> ¿qué herramienta usar en cada momento?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">W — Workflows, los archivos markdown de instrucciones.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">A — Agent, el coordinador que lee los workflows y elige la tool.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">T — Tools, los scripts Python que realizan el trabajo.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done hidden">Leído</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como leído</span><span class="ARCKHÉ-label-done hidden">Leído</span>
 </button>
 </div>
 </section>
@@ -834,23 +834,23 @@ Descreva cada camada (W, A, T) e as regras de operaçêo.</pre>
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Índice de la página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Sección <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">7</span></span></p>
+<nav aria-label="Índice de la página" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Sección <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">7</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-1">1. Visión general de WAT</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-2">2. W = Workflows</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-3">3. A = Agent</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-4">4. T = Tools</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-5">5. Bucle de autom mejora</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-6">6. Estructura de carpetas</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-7">7. Cuándo NO usar</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-1">1. Visión general de WAT</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-2">2. W = Workflows</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-3">3. A = Agent</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-4">4. T = Tools</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-5">5. Bucle de autom mejora</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-6">6. Estructura de carpetas</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-7">7. Cuándo NO usar</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Dominio completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Dominio completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -866,15 +866,15 @@ Descreva cada camada (W, A, T) e as regras de operaçêo.</pre>
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-2-2#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-2-2#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. Os Workflows dizem O QUE fazer (sêo o manual), mas nêo decidem nada por si — quem lê e decide é o agente.',

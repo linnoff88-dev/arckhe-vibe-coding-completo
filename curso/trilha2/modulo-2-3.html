@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -195,8 +195,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #60a5fa; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #2563eb; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #60a5fa; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #2563eb; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -208,8 +208,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha2/modulo-2-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha2/modulo-2-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha2/modulo-2-3.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-2-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha2/modulo-2-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha2/modulo-2-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha2/modulo-2-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha2/modulo-2-3.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha2/modulo-2-3.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-2-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha2/modulo-2-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha2/modulo-2-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg" href="#conteudo">Pular para o conteúdo</a>
 <!-- NAVIGATION (T2 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -221,7 +221,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -242,9 +242,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="../trilha6/index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Produçêo</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>Minha jornada</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -292,12 +292,12 @@
 <div class="text-xs text-neutral-400">Tipo</div>
 </div>
 </div>
-<div aria-label="Progresso do módulo 2.3" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:2-3" role="progressbar">
+<div aria-label="Progresso do módulo 2.3" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:2-3" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Progresso do módulo</span>
-<span class="text-blue-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 de 7</span></span>
+<span class="text-blue-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 de 7</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-blue-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-blue-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -305,7 +305,7 @@
 <main class="min-w-0" id="conteudo">
 <!-- Intro + SVG visêo geral -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Sem MCP, a IA só sabe conversar. Com MCP, ela <strong>age</strong>: lê e-mails, consulta um banco, busca uma página na web, manda mensagem no Slack. O truque é que você nêo conecta uma açêo por vez — você conecta um <strong>server</strong> (um serviço inteiro, como o e-mail) e ele já anuncia todas as suas ferramentas de uma vez. O agente vê o cardápio e escolhe o prato certo para o pedido.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Sem MCP, a IA só sabe conversar. Com MCP, ela <strong>age</strong>: lê e-mails, consulta um banco, busca uma página na web, manda mensagem no Slack. O truque é que você nêo conecta uma açêo por vez — você conecta um <strong>server</strong> (um serviço inteiro, como o e-mail) e ele já anuncia todas as suas ferramentas de uma vez. O agente vê o cardápio e escolhe o prato certo para o pedido.</p>
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="O agente coordenador se conecta a um único server MCP de e-mail; esse server expõe várias ferramentas — enviar, rascunhar, buscar; diante de um pedido, o agente escolhe qual ferramenta chamar" class="w-full h-auto" role="img" viewbox="0 0 1000 250">
 <defs>
@@ -348,29 +348,29 @@
 <p class="text-xs text-neutral-500">Diagrama ilustrativo — uma conexêo (o server) entrega um conjunto de ferramentas. O agente lê o que está disponível e decide, a cada pedido, qual ferramenta usar.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-2-3#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-3#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🧩 O que o protocolo resolve</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-3-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t1-p1">
 <strong class="text-blue-400">MCP (Model Context Protocol)</strong> é uma linguagem comum para a IA conversar com serviços externos. Em vez de você ligar uma açêo por vez, uma única conexêo expõe <strong>muitas ferramentas</strong> daquele serviço. Pense num serviço de e-mail: ao conectar o server de e-mail, o agente passa a ter acesso a "enviar", "rascunhar", "buscar mensagem" — tudo de uma vez.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Server MCP</strong> — um programinha que faz a ponte entre a IA e um serviço (e-mail, banco, web), traduzindo o que cada lado entende. <strong>Ferramenta (tool)</strong> — uma açêo concreta que o server oferece (ex.: "enviar e-mail"), com nome e parâmetros bem definidos.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-3-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t1-p2">
           O protocolo resolve o problema do "como a IA descobre e usa uma açêo": ele padroniza a descriçêo das ferramentas. Por isso o agente consegue, sozinho, decidir <strong>qual</strong> ferramenta chamar, <strong>quando</strong> chamar e <strong>com quais parâmetros</strong>. É assim que a IA ganha "braços" — sai de só conversar para de fato agir no mundo.
         </p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6 mb-6">
-<p class="text-neutral-300 mb-3 inema-prose" data-inema-block="m2-3-t1-p3">Entender MCP é entender de onde vêm os poderes do seu agente. Sem isso, parece "mágica" — e mágica é difícil de depurar. Sabendo que cada poder é um server com ferramentas, você sabe o que instalar, o que falta e o que desligar.</p>
+<p class="text-neutral-300 mb-3 ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t1-p3">Entender MCP é entender de onde vêm os poderes do seu agente. Sem isso, parece "mágica" — e mágica é difícil de depurar. Sabendo que cada poder é um server com ferramentas, você sabe o que instalar, o que falta e o que desligar.</p>
 <ul class="space-y-2 text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Uma conexêo, muitas ações:</strong> menos configuraçêo, mais capacidade.</span></li>
 <li class="flex items-start space-x-2"><span class="text-blue-400 mt-1">•</span><span><strong>Padrêo único:</strong> o mesmo protocolo serve para e-mail, banco, web, etc.</span></li>
@@ -385,25 +385,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Server</div><p class="text-xs text-neutral-400">Ponte para um serviço.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-2-3#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-3#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🤖 Como o agente descobre e decide</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-3-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t2-p1">
           Assim que o agente e o server MCP se conectam, o agente passa a <strong>conhecer todas as ferramentas disponíveis</strong> daquele server — nomes, descrições e parâmetros. A partir daí, a decisêo é dele: você descreve o resultado em linguagem natural ("mande um aviso pro time"), e o agente escolhe a ferramenta certa ("enviar mensagem") e preenche os parâmetros.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -436,7 +436,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — você nêo diz "use a tool X". Você descreve o resultado; o agente compara o pedido com as ferramentas conhecidas e escolhe a melhor.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-3-t2-p2">Saber que a decisêo é do agente muda como você pede: você foca no <strong>resultado</strong>, nêo em apontar a ferramenta. E quando ele escolher errado, você corrige com contexto ("nêo rascunhe, envie de fato") em vez de microgerenciar. Também explica por que um server "ligado mas inútil" ainda atrapalha: suas tools entram na lista que o agente precisa avaliar.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t2-p2">Saber que a decisêo é do agente muda como você pede: você foca no <strong>resultado</strong>, nêo em apontar a ferramenta. E quando ele escolher errado, você corrige com contexto ("nêo rascunhe, envie de fato") em vez de microgerenciar. Também explica por que um server "ligado mas inútil" ainda atrapalha: suas tools entram na lista que o agente precisa avaliar.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
 <p class="text-neutral-300 text-sm">Se o agente escolher a tool errada, nêo dite o nome dela — esclareça o resultado: "quero que chegue na caixa de entrada do cliente agora, nêo que fique salvo como rascunho". Descrições de resultado guiam a escolha melhor do que comandos.</p>
@@ -449,25 +449,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Parâmetros</div><p class="text-xs text-neutral-400">Ele preenche sozinho.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-2-3#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-3#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🔑 .mcp.json e a chave na mêo</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-3-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t3-p1">
           Instalar um server MCP gera (ou edita) um arquivo <strong class="text-blue-400">.mcp.json</strong>: ele guarda a configuraçêo do server e, quando o serviço exige autenticaçêo, um <strong>espaço reservado para a chave de API</strong>. A chave em si você cola <strong>manualmente</strong> no arquivo. Nunca no chat, e nunca pedindo para o agente inserir por você.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -491,7 +491,7 @@
 <p class="text-xs text-neutral-500 mt-3">✅ Como verificar: troque <code>&lt;cole-sua-chave-aqui&gt;</code> pela sua chave real, salve o arquivo e reinicie o assistente. A chave fica só no arquivo local — fora do histórico do chat.</p>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-3-t3-p2">Chave colada no chat vira parte do histórico da conversa — que pode ser registrado, compartilhado ou vazar. Colar no arquivo mantém o segredo onde só você (e o programa) alcança. Essa é uma <strong>regra de segurança</strong>, nêo uma preferência de estilo: trate toda chave como senha.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t3-p2">Chave colada no chat vira parte do histórico da conversa — que pode ser registrado, compartilhado ou vazar. Colar no arquivo mantém o segredo onde só você (e o programa) alcança. Essa é uma <strong>regra de segurança</strong>, nêo uma preferência de estilo: trate toda chave como senha.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
 <h4 class="font-bold text-blue-400 mb-4">✓ Chave no .mcp.json (à mêo)</h4>
@@ -518,25 +518,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Nunca no chat</div><p class="text-xs text-neutral-400">Chave = senha.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-2-3#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-3#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🏷️ Por projeto vs global</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-3-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t4-p1">
           A configuraçêo de MCP pode viver em dois escopos: <strong class="text-blue-400">global</strong> (vale para a máquina inteira, todos os projetos enxergam) ou <strong class="text-blue-400">por projeto</strong> (o .mcp.json fica dentro da pasta do projeto e só vale ali). A recomendaçêo é <strong>por projeto</strong>: ele isola os segredos e o contexto de cada trabalho.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -575,7 +575,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — no global, um vazamento contamina tudo; por projeto, cada trabalho fica em sua bolha.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-3-t4-p2">Configuraçêo global pode disparar um <strong>aviso de segurança a cada reinício</strong> (o programa avisa que servers globais estêo ativos para qualquer projeto). A correçêo é mover a config para dentro da pasta do projeto. Por projeto, você também evita que um cliente "veja" ferramentas e chaves de outro — menos risco, menos ruído.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t4-p2">Configuraçêo global pode disparar um <strong>aviso de segurança a cada reinício</strong> (o programa avisa que servers globais estêo ativos para qualquer projeto). A correçêo é mover a config para dentro da pasta do projeto. Por projeto, você também evita que um cliente "veja" ferramentas e chaves de outro — menos risco, menos ruído.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Dica prática</h3>
 <p class="text-neutral-300 text-sm">Cansado do aviso de segurança a cada reinício? Mova o bloco de servers da config global para o <code>.mcp.json</code> dentro da pasta do projeto. O aviso some e cada projeto passa a carregar só o que precisa.</p>
@@ -588,32 +588,32 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Mover p/ pasta</div><p class="text-xs text-neutral-400">A correçêo do aviso.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-2-3#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-3#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🔎 Onde achar servers</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-3-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t5-p1">
           Servers MCP ficam em dois lugares principais: <strong class="text-blue-400">diretórios de MCP</strong> (sites que catalogam servers, como o <code>mcp.so</code>) e no <strong class="text-blue-400">GitHub</strong> (busque "MCP server" + o nome do serviço que você quer). Antes de instalar, você procura o server do serviço alvo; depois, segue o README dele.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-xs font-semibold mr-2">O que é?</span><strong>Diretório de MCP</strong> — um catálogo online de servers prontos, organizado por categoria. <strong>GitHub</strong> — onde mora o código dos servers; o README costuma trazer o comando de instalaçêo e quais variáveis (como a chave) preencher.</p>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-3-t5-p2">Saber onde caçar evita reinventar a roda: na maioria dos casos, o server que você precisa já existe. Conhecer as <strong>categorias comuns</strong> também acelera a busca — você sabe que existe algo para web scraping, banco de dados, documentos e comunicaçêo, e vai direto.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t5-p2">Saber onde caçar evita reinventar a roda: na maioria dos casos, o server que você precisa já existe. Conhecer as <strong>categorias comuns</strong> também acelera a busca — você sabe que existe algo para web scraping, banco de dados, documentos e comunicaçêo, e vai direto.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-3">Categorias comuns de servers</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">🕸️ Web scraping</div><p class="text-xs text-neutral-400">Ex.: Firecrawl — ler páginas da web.</p></div>
@@ -633,25 +633,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Já existe</div><p class="text-xs text-neutral-400">Nêo reinvente a roda.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-2-3#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-3#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🩺 Verificar e diagnosticar</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-3-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t6-p1">
           O comando <strong class="text-blue-400">/mcp</strong> lista os servers instalados e o <strong>status</strong> de cada um (conectado, com erro, etc.). É a sua "saúde do MCP". E há uma regra de ouro do diagnóstico: se um server recém-instalado <strong>nêo aparece</strong> na lista, <strong>reinicie o assistente primeiro</strong> — isso resolve na maioria das vezes.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -674,7 +674,7 @@
 <div class="flex items-start gap-4"><span class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 font-bold text-sm">5</span><div><p class="font-semibold text-neutral-100">Verificar com /mcp</p><p class="text-sm text-neutral-400">Rode <code>/mcp</code>; o server deve aparecer conectado. Se nêo, volte ao passo 4.</p></div></div>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-3-t6-p2">Sem o <code>/mcp</code>, você fica no escuro: nêo sabe se o server conectou, falhou ou nem foi lido. E sem o reflexo de reiniciar, perde tempo "consertando" o que nêo está quebrado. Reiniciar é o <strong>primeiro passo</strong> de qualquer troubleshooting de MCP — barato, rápido e quase sempre suficiente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t6-p2">Sem o <code>/mcp</code>, você fica no escuro: nêo sabe se o server conectou, falhou ou nem foi lido. E sem o reflexo de reiniciar, perde tempo "consertando" o que nêo está quebrado. Reiniciar é o <strong>primeiro passo</strong> de qualquer troubleshooting de MCP — barato, rápido e quase sempre suficiente.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-3">Conceitos-chave</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">/mcp</div><p class="text-xs text-neutral-400">Lista servers + status.</p></div>
@@ -683,25 +683,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Nêo apareceu?</div><p class="text-xs text-neutral-400">Reinicie, rode /mcp.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-2-3#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-3#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">💸 Custo de contexto</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>Tenho dúvida</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">O que é</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m2-3-t7-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t7-p1">
           Cada server <strong>ativo</strong> injeta as definições das suas ferramentas no <strong class="text-blue-400">contexto</strong> da IA — e isso consome <strong>tokens</strong>. Muitos servers ligados = mais texto que o modelo precisa ler antes de responder, mesmo que você nêo use nenhum deles. A regra: <strong>desligue os servers que você nêo está usando</strong> para liberar contexto.
         </p>
 <div class="bg-dark-800 border border-blue-500/30 rounded-xl p-4 mb-6">
@@ -731,7 +731,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Diagrama ilustrativo — cada server liga um bloco de definições. Menos blocos = mais espaço para a IA pensar, menos custo e menos ruído.</p>
 <h3 class="text-lg font-semibold text-blue-400 mb-2">Por que aprender</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m2-3-t7-p2">Contexto entupido tem três custos: gasta mais tokens (mais caro), confunde o agente (mais ferramentas para avaliar = mais chance de escolher errado) e deixa tudo mais lento. Manter ativos só os servers do trabalho atual é a forma mais simples de cortar custo e erro de uma vez.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m2-3-t7-p2">Contexto entupido tem três custos: gasta mais tokens (mais caro), confunde o agente (mais ferramentas para avaliar = mais chance de escolher errado) e deixa tudo mais lento. Manter ativos só os servers do trabalho atual é a forma mais simples de cortar custo e erro de uma vez.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
 <h4 class="font-bold text-blue-400 mb-4">✓ Desligue servers nêo usados</h4>
@@ -762,19 +762,19 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-semibold text-sm mb-1">Libera contexto</div><p class="text-xs text-neutral-400">Mais espaço p/ pensar.</p></div>
 </div>
 <!-- Checagem leve -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-2-3#q1">
-<p class="inema-check__q font-medium mb-4">Você instalou um server e a chave de API. Onde a chave vai — e o que fazer se o server <strong>nêo aparece</strong> no <code>/mcp</code>?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Colar a chave no chat e pedir para a IA configurar; se nêo aparecer, instalar de novo.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Colar a chave à mêo no .mcp.json (nunca no chat); se nêo aparecer, reiniciar o assistente e rodar /mcp de novo.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Deixar a chave em branco e ligar todos os servers globais para garantir que algum funcione.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-2-3#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">Você instalou um server e a chave de API. Onde a chave vai — e o que fazer se o server <strong>nêo aparece</strong> no <code>/mcp</code>?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Colar a chave no chat e pedir para a IA configurar; se nêo aparecer, instalar de novo.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Colar a chave à mêo no .mcp.json (nunca no chat); se nêo aparecer, reiniciar o assistente e rodar /mcp de novo.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Deixar a chave em branco e ligar todos os servers globais para garantir que algum funcione.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
@@ -804,23 +804,23 @@
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Índice da página" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> de <span class="inema-toc-total">7</span></span></p>
+<nav aria-label="Índice da página" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">7</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-1">1. O que o protocolo resolve</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-2">2. Descobre e decide</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-3">3. .mcp.json e a chave</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-4">4. Por projeto vs global</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-5">5. Onde achar servers</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-6">6. Verificar e diagnosticar</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-7">7. Custo de contexto</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-1">1. O que o protocolo resolve</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-2">2. Descobre e decide</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-3">3. .mcp.json e a chave</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-4">4. Por projeto vs global</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-5">5. Onde achar servers</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-6">6. Verificar e diagnosticar</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400 block" href="#topico-7">7. Custo de contexto</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Domínio Completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Domínio Completo · Curso original <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -836,15 +836,15 @@
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-2-3#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-2-3#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. Chave no chat vira histórico e pode vazar; e reinstalar nêo resolve a ausência no /mcp — o reflexo certo é reiniciar.',

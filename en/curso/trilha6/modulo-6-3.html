@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -202,8 +202,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #fb7185; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #9f1239; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #fb7185; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #9f1239; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -215,8 +215,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha6/modulo-6-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha6/modulo-6-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha6/modulo-6-3.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha6/modulo-6-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-6-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha6/modulo-6-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha6/modulo-6-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha6/modulo-6-3.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha6/modulo-6-3.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha6/modulo-6-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-6-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha6/modulo-6-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-rose-600 focus:text-white focus:rounded-lg" href="#conteudo">Skip to content</a>
 <!-- NAVIGATION (T6 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -228,7 +228,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -249,9 +249,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-rose-400 bg-rose-500/10" href="index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Production</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>My journey</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Toggle light/dark theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -299,12 +299,12 @@
 <div class="text-xs text-neutral-400">Type</div>
 </div>
 </div>
-<div aria-label="Module 6.3 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:6-3" role="progressbar">
+<div aria-label="Module 6.3 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:6-3" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Module progress</span>
-<span class="text-rose-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 of 7</span></span>
+<span class="text-rose-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 of 7</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-rose-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-rose-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -317,7 +317,7 @@
 </div>
 <!-- SVG FUTURISTA (visêo geral) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Before the seven topics, take a look at what changes. In an interactive session, the AI reads the error and fixes it right away—a self-healing loop. But the task <strong>hosted</strong> runs without anyone watching: it executes, but doesn’t adapt. You recreate this loop with platform features (logs, retries, alerts) and better prompts; then close the revenue loop with Stripe.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Before the seven topics, take a look at what changes. In an interactive session, the AI reads the error and fixes it right away—a self-healing loop. But the task <strong>hosted</strong> runs without anyone watching: it executes, but doesn’t adapt. You recreate this loop with platform features (logs, retries, alerts) and better prompts; then close the revenue loop with Stripe.</p>
 <div class="rounded-2xl border border-rose-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="Comparison: in an interactive session, the AI reads the error and fixes it on its own in a closed loop; a hosted task, on the other hand, runs with no one watching, and a failure can go unnoticed—you recreate reliability with logs, try/catch, retries, and alerts, then monetize with Stripe, in the coordinating cloud shown in cyan" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
 <defs>
@@ -367,28 +367,28 @@
 <p class="text-xs text-neutral-500">Illustrative diagram — reliability recreates, with a platform and prompts, the healing loop you got for free in the interactive session; monetization closes the cycle by turning the workflow into a product.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-6-3#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-3#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🕳️ The agentic gap revisited</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t1-p1">
           During development, you and the <strong class="text-rose-400">Claude Code</strong> work in a self-healing loop: the task runs, errors, and the AI <em>reads</em> the error right away and fixes it. But when the task is <strong>deployed</strong> and starts running on its own — on a schedule (cron) or triggered by an event (webhook) in the cloud — this loop disappears. The <strong class="text-rose-400">agentic gap</strong> is exactly this gap: the hosted task <em>runs</em>, but it doesn't adapt, and no one is reading the errors.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-4">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 text-xs font-semibold mr-2">What is it?</span><strong>Agentic gap</strong> — the difference between the interactive session (AI is watching and correcting) and autonomous execution in the cloud (no one is watching). <strong>Silent failure</strong> — when a task breaks but no one is notified: it just “stops working,” and you find out later.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m6-3-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t1-p2">
           In practical terms: you close the terminal, go to sleep, and at 7 a.m. cron triggers the task. If a source's API is down, the task can <strong>freeze and die</strong> — and since Claude Code is no longer monitoring, the failure goes unnoticed until someone complains. The solution isn’t to “hope for the best”: you close the gap with <strong>platform resources</strong> (retries, traces, alerts) and with <strong>better prompting</strong> (error handling and logging requested from the very first prompt).
         </p>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t1-p3">Without closing the gap, “it ran in the demo” doesn’t mean “it runs in production.” An automation that fails silently is worse than none: you believe it’s taking care of something that stopped working days ago. Understanding the gap changes how you build—you start asking for robustness <strong>before</strong> of deployment, not after the incident.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t1-p3">Without closing the gap, “it ran in the demo” doesn’t mean “it runs in production.” An automation that fails silently is worse than none: you believe it’s taking care of something that stopped working days ago. Understanding the gap changes how you build—you start asking for robustness <strong>before</strong> of deployment, not after the incident.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Practical tip</h3>
 <p class="text-neutral-300 text-sm">Before deploying any task, answer two questions: "What happens if API X goes down?" and "How will I know if this fails in the middle of the night?" If you can't answer both, it's not ready for production yet.</p>
@@ -401,25 +401,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Prompting</div><p class="text-xs text-neutral-400">Error and log from the start.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-6-3#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-3#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">📝 Meaningful Logging</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t2-p1">
           O <strong class="text-rose-400">Trigger.dev</strong> gives you visibility (traces) and automatic retries, but it can only retry what <em>recognizes</em> how it fails — and you can only diagnose what the log tells you. Meaningful logging means asking AI for a <strong>clear log entry at each important step</strong>, with specific context: not “task failed,” but “Firecrawl returned 429 on source 3.” A vague log is useless; a specific log is actionable.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
@@ -446,7 +446,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Illustrative diagram — the same failure, two logs. The specific one carries enough context for you (or the AI) to act without guessing.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m6-3-t2-p2">When something fails at 3 a.m., the log is all you'll have. A trace full of generic "ok" and "error" messages forces you to reproduce the problem from scratch; a trace with rich messages tells you in seconds which source went down, with which code, at which step. Asking for good logs <strong>from the very first prompt</strong> is cheaper than adding them after the incident.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t2-p2">When something fails at 3 a.m., the log is all you'll have. A trace full of generic "ok" and "error" messages forces you to reproduce the problem from scratch; a trace with rich messages tells you in seconds which source went down, with which code, at which step. Asking for good logs <strong>from the very first prompt</strong> is cheaper than adding them after the incident.</p>
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-rose-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">ask Claude Code for clear, specific logs at each significant step of the task.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">code / prompt (copy and run)</span></div>
@@ -471,25 +471,25 @@ para que apareçam no trace do dashboard.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">In the trace</div><p class="text-xs text-neutral-400">Visible on the dashboard.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-6-3#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-3#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🧯 try/catch in external calls</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t3-p1">
           Every call to an external API can fail — the network goes down, the service returns an error, or the response comes in an unexpected format. The <strong class="text-rose-400">try/catch</strong> is the pattern that wraps this call so that, if it fails, the task <em>capture</em> the error instead of letting it die: you log the error with context, continue where possible, and only <strong>launches</strong> (stops permanently) on truly critical failures. That's what allows the task to write a <strong>partial row</strong> instead of breaking when a source goes down.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
@@ -514,7 +514,7 @@ para que apareçam no trace do dashboard.</pre>
 </div>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t3-p2">There's a real case that proves the point: the <strong>Firecrawl</strong> returned <code>success:false</code> with the results under the key <code>web</code> instead of <code>data</code>. Without error handling, this would have broken the read and crashed the task. With the <code>try/catch</code> in place, the task detected the unexpected format, logged the issue, and <strong>didn’t freeze</strong> — saved what it could. Error handling isn’t a luxury: it’s what keeps the automation running when the outside world misbehaves.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t3-p2">There's a real case that proves the point: the <strong>Firecrawl</strong> returned <code>success:false</code> with the results under the key <code>web</code> instead of <code>data</code>. Without error handling, this would have broken the read and crashed the task. With the <code>try/catch</code> in place, the task detected the unexpected format, logged the issue, and <strong>didn’t freeze</strong> — saved what it could. Error handling isn’t a luxury: it’s what keeps the automation running when the outside world misbehaves.</p>
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-rose-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">fail gracefully — wrap the external call in try/catch, log with context, and continue in noncritical cases.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">code / prompt (copy and run)</span></div>
@@ -552,25 +552,25 @@ if (!dadoEssencial) throw new Error("Dado essencial ausente — abortando");</pr
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Critical only</div><p class="text-xs text-neutral-400">throw only for the essentials.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-6-3#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-3#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🔁 Retries with backoff (vs. logic bugs)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t4-p1">
           You configure <strong class="text-rose-400">retries</strong> in the task definition itself (e.g., up to 3 attempts, with <strong>exponential backoff</strong> starting in 30s). If the task fails for a temporary reason, Trigger.dev waits and tries again, doubling the interval each time. The golden rule: retries solve <strong>transient failures</strong> (timeout, rate limit, network instability) — but <strong>no</strong> fix logic bugs in your code.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
@@ -604,7 +604,7 @@ if (!dadoEssencial) throw new Error("Dado essencial ausente — abortando");</pr
 </div>
 <p class="text-xs text-neutral-500 mb-6">Illustrative diagram — if all 3 attempts fail the same way, the problem isn’t the timing: it’s the logic. Retrying a bug forever just burns resources.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t4-p2">Knowing the difference helps you avoid two opposite mistakes: <strong>not have retries</strong> (a minor hiccup brings down a run that would have worked 30s later) and <strong>trust them too much</strong> (a logic bug gets retried forever, masking the real problem and wasting executions). If all three attempts fail with the same error, stop retrying and start debugging — the subject of topic 6.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t4-p2">Knowing the difference helps you avoid two opposite mistakes: <strong>not have retries</strong> (a minor hiccup brings down a run that would have worked 30s later) and <strong>trust them too much</strong> (a logic bug gets retried forever, masking the real problem and wasting executions). If all three attempts fail with the same error, stop retrying and start debugging — the subject of topic 6.</p>
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-rose-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">tolerate transient failures by configuring retries with exponential backoff on the task.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">code / prompt (copy and run)</span></div>
@@ -630,25 +630,25 @@ export const minhaTask = task({
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Bug ≠ retry</div><p class="text-xs text-neutral-400">Same error 3 times = debug it.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-6-3#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-3#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🔔 Alerts (email/Slack/webhook)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t5-p1">
           Logs and traces tell you what happened — <em>if</em> you’re going to look. <strong class="text-rose-400">Alerts</strong> turn that around: they come to you. In Trigger.dev, at <strong>Project Settings &gt; Alerts</strong>, you configure notifications by <strong>email</strong>, <strong>Slack</strong> or <strong>webhook</strong> triggered by deploy or run failures, with configurable environment and failure type. It takes less than two minutes to set up.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
@@ -673,7 +673,7 @@ export const minhaTask = task({
 </div>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t5-p2">This is the rule that closes the agentic gap in practice: <strong>every deployed task needs a failure alert</strong>. Without this, you’re betting that you’ll check the dashboard exactly when something goes wrong—which never happens. With alerts, the system contacts you; you replace "hope" with "a warning." Since it’s configurable by environment, keep production alerts on at all times.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t5-p2">This is the rule that closes the agentic gap in practice: <strong>every deployed task needs a failure alert</strong>. Without this, you’re betting that you’ll check the dashboard exactly when something goes wrong—which never happens. With alerts, the system contacts you; you replace "hope" with "a warning." Since it’s configurable by environment, keep production alerts on at all times.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🎯</span> Practical tip</h3>
 <p class="text-neutral-300 text-sm">Add “configure failure alert” to your deployment checklist, alongside “check env vars.” Go to <strong>Project Settings &gt; Alerts</strong>, choose the channel (Slack is usually the most visible for teams), mark the environment <em>prod</em> and the failure types (run failed, deploy failed). Two minutes now can save days of dead tasks later.</p>
@@ -686,25 +686,25 @@ export const minhaTask = task({
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Push, not pull</div><p class="text-xs text-neutral-400">The alert comes to you.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-6-3#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-3#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🧑‍🔧 The human debugging loop</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t6-p1">
           Claude still debugs — it just doesn’t <strong>automatically</strong> and more. In production, the healing loop exists, but with you in the middle: the task fails, the alert arrives, and you (the human) bridge the gap. Open the <strong>red trace</strong> in the dashboard, copy the error, paste it into Claude (“here’s the trace that failed: &lt;error&gt;, what’s wrong and how do I fix it?”), let Claude identify the fix, make the <strong>redeploy</strong> and test it. The trace + Claude provide a quick diagnosis; the human just needs to pass along the error.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
@@ -748,7 +748,7 @@ export const minhaTask = task({
 </div>
 <p class="text-xs text-neutral-500 mb-6">Illustrative timeline—the loop is the same as in the interactive session (error → diagnosis → fix → redeploy → test), but now <strong>you</strong> is what carries the error to Claude.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t6-p2">This is where everything connects: the <strong>meaningful log</strong> (topic 2) makes the trace readable, while the <strong>alerts</strong> (topic 5) tell you to open that trace, and the <strong>retries</strong> (topic 4) already tell you whether it’s worth debugging (same error 3x = bug). The cycle is fast because the trace + Claude handle the heavy diagnostic work; your part is just the bridge. Mastering this loop is what keeps a hosted automation running for weeks.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t6-p2">This is where everything connects: the <strong>meaningful log</strong> (topic 2) makes the trace readable, while the <strong>alerts</strong> (topic 5) tell you to open that trace, and the <strong>retries</strong> (topic 4) already tell you whether it’s worth debugging (same error 3x = bug). The cycle is fast because the trace + Claude handle the heavy diagnostic work; your part is just the bridge. Mastering this loop is what keeps a hosted automation running for weeks.</p>
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-rose-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">take the error from a failed trace and ask Claude to diagnose and fix it.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">code / prompt (copy and run)</span></div>
@@ -769,31 +769,31 @@ e me explique em uma frase a causa raiz.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Redeploy + test</div><p class="text-xs text-neutral-400">Close the loop with a green status.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-6-3#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-3#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">💳 Monetization with Stripe</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t7-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t7-p1">
           The step that turns the automation into a <strong class="text-rose-400">SaaS</strong>: add payments with <strong class="text-rose-400">Stripe</strong> in a model <strong>freemium</strong> — a limited free tier (e.g., 2 lead qualifications per day) and a paid pro tier (e.g., US$ 29/month, unlimited), all through <strong>Stripe Checkout</strong>. The motivation isn’t just making money: it’s <strong>limit usage</strong> so you don’t end up paying for users’ uncapped AI usage. That’s what completes the transition from “just a workflow” to “an app that generates revenue.”
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 text-xs font-semibold mr-2">What is it?</span><strong>SaaS</strong> — software sold as a subscription. <strong>Freemium</strong> — free tier with limits + paid tier without limits. <strong>Stripe Checkout</strong> — Stripe's ready-made payment page. <strong>Webhook</strong> — an endpoint Stripe calls to notify your app that a payment occurred.</p>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m6-3-t7-p2">The good news: you don’t write the integration by hand. You describe the result, and the <strong class="text-rose-400">Claude Code</strong> implements — but <em>you</em> you need to create the accounts, copy the four keys, and run the migration. The sequence below is the manual part; Claude handles the code.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t7-p2">The good news: you don’t write the integration by hand. You describe the result, and the <strong class="text-rose-400">Claude Code</strong> implements — but <em>you</em> you need to create the accounts, copy the four keys, and run the migration. The sequence below is the manual part; Claude handles the code.</p>
 <!-- TIMELINE: setup do Stripe -->
 <div class="bg-dark-800/40 rounded-xl border border-dark-600 p-6 mb-3">
 <h4 class="font-semibold text-rose-400 mb-5">Stripe setup sequence</h4>
@@ -832,7 +832,7 @@ e me explique em uma frase a causa raiz.</pre>
 </div>
 <p class="text-xs text-neutral-500 mb-6">Illustrative timeline—four keys (publishable, secret, price ID, webhook secret), a new table, and a webhook endpoint: this is the framework for any subscription billing.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-3-t7-p3">Without a usage limit, each free user can trigger unlimited AI usage—and the bill lands in your lap. Freemium solves both sides: the free tier (2/day) is a showcase and cost safeguard; the pro tier (US$ 29/month unlimited) generates revenue. With that, what was a technical workflow becomes a <strong>product</strong> that holds up — the final leap in the learning path.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-3-t7-p3">Without a usage limit, each free user can trigger unlimited AI usage—and the bill lands in your lap. Freemium solves both sides: the free tier (2/day) is a showcase and cost safeguard; the pro tier (US$ 29/month unlimited) generates revenue. With that, what was a technical workflow becomes a <strong>product</strong> that holds up — the final leap in the learning path.</p>
 <div class="codebox bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <p class="text-sm text-rose-400 font-semibold mb-1">🎯 Goal: <span class="text-neutral-300 font-normal">ask Claude Code to integrate payments with a free tier and a pro tier via Stripe Checkout.</span></p>
 <div class="flex items-center gap-2 mb-3"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="text-xs text-neutral-500 ml-2">code / prompt (copy and run)</span></div>
@@ -857,19 +857,19 @@ Bloqueie o uso acima do limite no tier grátis.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Becomes a product</div><p class="text-xs text-neutral-400">Workflow → recipe.</p></div>
 </div>
 <!-- Checagem leve -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-6-3#q1">
-<p class="inema-check__q font-medium mb-4">Wrapping up reliability: automatic retries solve <strong>which type</strong> of failure?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">A logic bug in the code.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">A transient/temporary API failure (e.g., timeout, 429).</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">An incorrect API key.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-6-3#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">Wrapping up reliability: automatic retries solve <strong>which type</strong> of failure?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">A logic bug in the code.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">A transient/temporary API failure (e.g., timeout, 429).</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">An incorrect API key.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
@@ -899,23 +899,23 @@ Bloqueie o uso acima do limite no tier grátis.</pre>
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Page index" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> of <span class="inema-toc-total">7</span></span></p>
+<nav aria-label="Page index" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">7</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-1">1. The agentic gap revisited</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-2">2. Meaningful logging</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-3">3. try/catch for external services</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-4">4. Retries with backoff</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-5">5. Alerts</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-6">6. Human debugging loop</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-7">7. Monetization with Stripe</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-1">1. The agentic gap revisited</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-2">2. Meaningful logging</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-3">3. try/catch for external services</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-4">4. Retries with backoff</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-5">5. Alerts</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-6">6. Human debugging loop</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-7">7. Monetization with Stripe</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Complete Mastery · Original course <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Complete Mastery · Original course <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -931,15 +931,15 @@ Bloqueie o uso acima do limite no tier grátis.</pre>
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-6-3#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-6-3#q1', {
           answer: 1,
           explain: {
             0: 'Nêo. Um bug de lógica vai repetir o mesmo erro a cada tentativa — retry só vai martelá-lo para sempre. Esse caso pede depuraçêo (tópico 6).',

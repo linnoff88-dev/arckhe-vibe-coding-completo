@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="vibe-coding-completo" name="inema-course"/>
+<meta content="vibe-coding-completo" name="ARCKHÉ-course"/>
 <!-- ANTI-FOUC: script BLOQUEANTE, SEPARADO, PRIMEIRO no <head>, antes do Tailwind e do learn.css. -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -23,18 +23,18 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
 
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
@@ -49,7 +49,7 @@
 
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -91,7 +91,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO, identico em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "vibe-coding-completo",
     "tracks": [
@@ -201,8 +201,8 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* TOC scrollspy active link */
-    .inema-toc-link.is-active, [data-inema-toc] a.is-active { color: #fb7185; font-weight: 600; }
-    html:not(.dark) [data-inema-toc] a.is-active { color: #9f1239; }
+    .ARCKHÉ-toc-link.is-active, [data-ARCKHÉ-toc] a.is-active { color: #fb7185; font-weight: 600; }
+    html:not(.dark) [data-ARCKHÉ-toc] a.is-active { color: #9f1239; }
 
     /* code box (copy-run) */
     .codebox pre { white-space: pre; }
@@ -214,8 +214,8 @@
       .wf-a:nth-child(4){animation-delay:.75s} .wf-a:nth-child(5){animation-delay:1s}
     }
   </style>
-<link href="https://inematds.github.io/vibe-coding-completo/curso/trilha6/modulo-6-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/en/curso/trilha6/modulo-6-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/vibe-coding-completo/es/curso/trilha6/modulo-6-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha6/modulo-6-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-6-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha6/modulo-6-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha6/modulo-6-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha6/modulo-6-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha6/modulo-6-2.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha6/modulo-6-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-6-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha6/modulo-6-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-rose-600 focus:text-white focus:rounded-lg" href="#conteudo">Skip to content</a>
 <!-- NAVIGATION (T6 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -227,7 +227,7 @@
 <span class="font-bold text-lg hidden sm:inline">Vibe Coding</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -248,9 +248,9 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-rose-400 bg-rose-500/10" href="index.html">
 <span class="sm:hidden">T6</span><span class="hidden sm:inline">Production</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>My journey</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button aria-label="Toggle light/dark theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20">
@@ -298,12 +298,12 @@
 <div class="text-xs text-neutral-400">Type</div>
 </div>
 </div>
-<div aria-label="Module 6.2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:6-2" role="progressbar">
+<div aria-label="Module 6.2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:6-2" role="progressbar">
 <div class="flex items-center justify-between mb-1 text-sm">
 <span class="text-neutral-400">Module progress</span>
-<span class="text-rose-400 font-semibold"><span data-inema-meter-pct="">0%</span> · <span data-inema-meter-frac="">0 of 8</span></span>
+<span class="text-rose-400 font-semibold"><span data-ARCKHÉ-meter-pct="">0%</span> · <span data-ARCKHÉ-meter-frac="">0 of 8</span></span>
 </div>
-<div class="inema-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="inema-bar__fill h-full bg-rose-500 rounded-full" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2 rounded-full bg-dark-700 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-rose-500 rounded-full" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </div>
 </header>
@@ -316,7 +316,7 @@
 </div>
 <!-- SVG FUTURISTA (visêo geral) -->
 <section class="mb-12">
-<p class="text-neutral-300 mb-4 inema-prose leading-relaxed">Before the eight topics, take a look at the idea that ties them all together: the <strong>code</strong> is public (it goes to GitHub), but the <strong>secrets</strong> stay outside it, in a separate vault, and are injected only at runtime. One more layer — the database with <strong>RLS</strong> — ensures that even when the app is live, one user never sees another user’s data.</p>
+<p class="text-neutral-300 mb-4 ARCKHÉ-prose leading-relaxed">Before the eight topics, take a look at the idea that ties them all together: the <strong>code</strong> is public (it goes to GitHub), but the <strong>secrets</strong> stay outside it, in a separate vault, and are injected only at runtime. One more layer — the database with <strong>RLS</strong> — ensures that even when the app is live, one user never sees another user’s data.</p>
 <div class="rounded-2xl border border-rose-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-3">
 <svg aria-label="The secrets model: public code is pushed to GitHub without any keys; keys stay in an environment-variable vault (local .env or cloud dashboard) and are injected only at runtime; the database uses Row-Level Security to isolate each user’s data" class="w-full h-auto" role="img" viewbox="0 0 1000 250">
 <defs>
@@ -357,18 +357,18 @@
 <p class="text-xs text-neutral-500">Illustrative diagram — layered security: no secrets in the code, keys only in the vault and injected at runtime, and the database isolating data with RLS independently of app bugs.</p>
 </section>
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-6-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🔑 Environment variables</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t1-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t1-p1">
           A <strong class="text-rose-400">environment variable</strong> is a value that is stored <strong>outside the code</strong> and is injected into the program only <strong>when it runs</strong> (in <em>runtime</em>). The effect is simple and powerful: the code never contains the key. Where you would previously write <code>const key = "sk-ant-abc123..."</code>, now write <code>const key = process.env.ANTHROPIC_API_KEY</code> — the actual value comes from the environment, not the file.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-4">
@@ -397,7 +397,7 @@
 </div>
 <p class="text-xs text-neutral-500 mb-6">Illustrative diagram — the code becomes a reference (“give me the key called ANTHROPIC_API_KEY”); the actual value lives in the environment and never appears in the repository.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-6 leading-relaxed inema-prose" data-inema-block="m6-2-t1-p2">It’s the mechanism that separates “what’s public” (the code) from “what’s secret” (the keys). Without it, every secret travels with the code—and all it takes is one <code>git push</code> for it to be exposed on GitHub forever, even if you delete it later. Environment variables are the foundation for everything in the next topics: they’re the basis of secrets management.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t1-p2">It’s the mechanism that separates “what’s public” (the code) from “what’s secret” (the keys). Without it, every secret travels with the code—and all it takes is one <code>git push</code> for it to be exposed on GitHub forever, even if you delete it later. Environment variables are the foundation for everything in the next topics: they’re the basis of secrets management.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Outside the code</div><p class="text-xs text-neutral-400">The secret doesn’t live in the file.</p></div>
@@ -406,25 +406,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Nothing hard-coded</div><p class="text-xs text-neutral-400">Key never written by hand.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-6-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🗄️ Local (.env) vs. cloud (dashboard)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t2-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t2-p1">
           The same secret lives in <strong>two different places</strong>, depending on where the code runs. In the <strong class="text-rose-400">local</strong>, it stays in a file <code>.env</code> on your machine. In the model <strong class="text-rose-400">cloud</strong>, it stays in the <strong>Environment Variables</strong> from the platform (Trigger.dev, Vercel), which injects the values at runtime. The detail that catches everyone off guard: the <strong>Trigger.dev can’t read your <code>.env</code> local</strong> — in the cloud, it only knows what you registered in the dashboard.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
@@ -450,7 +450,7 @@ SHEET_ID=&lt;id-da-sua-planilha&gt;</pre>
 <p class="text-neutral-300 text-sm">When deploying to production, register <strong>each</strong> key for the <code>.env</code> also in the cloud dashboard—and select both <strong>development</strong> how much <strong>production</strong>. Forgetting to add a key in production is the classic source of the bug that “only fails in prod”: everything works locally, but in the cloud the app breaks with “key is undefined.”</p>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t2-p2">Because “it worked on my machine” isn’t enough: the cloud environment is different, with a different secrets vault. Understanding that these are two places — and that they need to stay in sync — prevents the most frustrating deploy error. And it reinforces the rule from topic 5: you can (and sometimes should) use <strong>distinct keys</strong> for local and production.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t2-p2">Because “it worked on my machine” isn’t enough: the cloud environment is different, with a different secrets vault. Understanding that these are two places — and that they need to stay in sync — prevents the most frustrating deploy error. And it reinforces the rule from topic 5: you can (and sometimes should) use <strong>distinct keys</strong> for local and production.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Local = .env</div><p class="text-xs text-neutral-400">File on your machine.</p></div>
@@ -459,25 +459,25 @@ SHEET_ID=&lt;id-da-sua-planilha&gt;</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Dev + prod</div><p class="text-xs text-neutral-400">Add them in both environments.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-6-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">📄 .env.example and process.env</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t3-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t3-p1">
           O <strong class="text-rose-400">.env.example</strong> is a <em>safe-to-commit template</em>: lists the <strong>names</strong> of the keys the project needs, but <strong>with no value</strong>. It documents “what this project requires” without exposing a single secret. The <strong class="text-rose-400">process.env</strong> it’s how the code reads these values at runtime—it never writes them directly. In practice, you ask Claude Code to create the <code>.env</code>, confirm that it’s in the <code>.gitignore</code>, generate the <code>.env.example</code> and adjust the code to read from <code>process.env</code>.
         </p>
 <!-- copy-run #2: .env.example -->
@@ -524,7 +524,7 @@ Nêo cole nenhuma chave real no chat.</pre>
 <p class="text-xs text-neutral-500 mt-3">✅ How to verify: at the end, <code>git status</code> shows <code>.env.example</code> as a new file, but does NOT show <code>.env</code>. Search the code for “sk-” in quotes to make sure no key was hard-coded.</p>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t3-p2">Because a project without <code>.env.example</code> is a puzzle: whoever clones it doesn’t know which keys they need and ends up finding out through trial and error. The pair <code>.env.example</code> + <code>process.env</code> handle this elegantly — document what’s needed and keep secrets out of the code. It’s standard practice for any professional project.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t3-p2">Because a project without <code>.env.example</code> is a puzzle: whoever clones it doesn’t know which keys they need and ends up finding out through trial and error. The pair <code>.env.example</code> + <code>process.env</code> handle this elegantly — document what’s needed and keep secrets out of the code. It’s standard practice for any professional project.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">.env.example</div><p class="text-xs text-neutral-400">Names only, no values.</p></div>
@@ -533,32 +533,32 @@ Nêo cole nenhuma chave real no chat.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Document</div><p class="text-xs text-neutral-400">Say what the project needs.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-6-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🔄 OAuth &amp; refresh token</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t4-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t4-p1">
 <strong class="text-rose-400">OAuth</strong> is the protocol that allows <strong>delegate access</strong> to a service (for example, Google) <strong>without exposing your password</strong>. Instead of giving your password to the app, you authorize it to act on your behalf, and it receives tokens. The <strong class="text-rose-400">refresh token</strong> is the long-lived token that <strong>renews access automatically</strong> when temporary access expires — it's what keeps a hosted agent running without you having to log in again every time.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
 <p class="text-sm"><span class="inline-block px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 text-xs font-semibold mr-2">What is it?</span><strong>Client ID / Client secret</strong> — your app’s “identity” in Google Cloud Console. <strong>Access token</strong> — short-lived access that expires quickly. <strong>Refresh token</strong> — long-lived access that generates new access tokens. <strong>Service account</strong> — an alternative robot account (here, we use the user’s OAuth, which is simpler for personal Sheets/Drive).</p>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t4-p2">Because this is how cloud agents access Google Sheets, Drive, and Gmail without you opening the browser for every run. The concrete steps: create OAuth credentials (client ID + secret) in Google Cloud Console and obtain a refresh token. The standard flow through <strong>OAuth Playground</strong> sometimes fails with “access blocked” or “request is invalid”; the alternative that works is a <strong>terminal script</strong> that prints an authorization URL and, at the end, returns the refresh token for you to paste into <code>.env</code> and in the Trigger.dev env vars.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t4-p2">Because this is how cloud agents access Google Sheets, Drive, and Gmail without you opening the browser for every run. The concrete steps: create OAuth credentials (client ID + secret) in Google Cloud Console and obtain a refresh token. The standard flow through <strong>OAuth Playground</strong> sometimes fails with “access blocked” or “request is invalid”; the alternative that works is a <strong>terminal script</strong> that prints an authorization URL and, at the end, returns the refresh token for you to paste into <code>.env</code> and in the Trigger.dev env vars.</p>
 <!-- grid certo vs errado -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
@@ -590,25 +590,25 @@ Nêo cole nenhuma chave real no chat.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Terminal fallback</div><p class="text-xs text-neutral-400">The script generates the token.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-6-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🏆 Golden rules</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t5-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t5-p1">
           Three non-negotiable rules for handling secrets. <strong class="text-rose-400">One:</strong> never paste API keys into the AI chat — chat isn’t the place for secrets. <strong class="text-rose-400">Two:</strong> never commit the <code>.env</code> on GitHub — once it’s in the history, consider the key leaked. <strong class="text-rose-400">Three:</strong> rotate/regenerate keys periodically, and ideally use keys <strong>different</strong> for local and production. The mental model: treat an API key like access to a credit card.
         </p>
 <!-- timeline vertical: ciclo de vida de um segredo seguro -->
@@ -636,7 +636,7 @@ Nêo cole nenhuma chave real no chat.</pre>
 <p class="text-neutral-300 text-sm">A leaked key doesn’t just grant “access”: it lets someone make AI calls <strong>in your account</strong>, accumulating usage and costs under your name. Bots scan GitHub for exposed keys within minutes. So the rule is strict: if a key is exposed, rotate it immediately.</p>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t5-p2">Because most security incidents involving AI apps don’t come from sophisticated hackers — they come from a key pasted in the wrong place. Internalizing these three rules is what separates a careless prototype from a product you can leave running with peace of mind.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t5-p2">Because most security incidents involving AI apps don’t come from sophisticated hackers — they come from a key pasted in the wrong place. Internalizing these three rules is what separates a careless prototype from a product you can leave running with peace of mind.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Never in chat</div><p class="text-xs text-neutral-400">Key kept out of the conversation with the AI.</p></div>
@@ -645,25 +645,25 @@ Nêo cole nenhuma chave real no chat.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Key = card</div><p class="text-xs text-neutral-400">If it leaks, someone else spends it for you.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-6-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🛡️ RLS — isolate data in the database</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t6-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t6-p1">
 <strong class="text-rose-400">RLS (Row-Level Security)</strong> are rules that live <strong>inside the database itself</strong> (in Supabase, for example) and prevent one user from seeing another user’s rows—even if there’s a bug in the frontend. It’s a <strong>extra layer</strong> as a defense: the database protects the data regardless of the app. If your code accidentally requests "all leads," the database, with RLS, returns only that user's leads.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
@@ -715,7 +715,7 @@ using ( user_id = auth.uid() );</pre>
 <p class="text-neutral-300 text-sm">When creating the project in Supabase: define a <strong>bank password</strong> separate from the account login password, choose the <strong>region</strong> closest to users, <strong>enable RLS</strong> in tables with user data and run the SQL migration that creates the table. RLS turned off on an exposed table is the #1 security failure in quickly built apps.</p>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t6-p2">Because you’ll build quickly, and fast code has bugs. RLS is the seat belt: even if the frontend slips up, the database won’t let one user see another user’s data. It’s the difference between “an annoying bug” and “a data leak that makes the news.”</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t6-p2">Because you’ll build quickly, and fast code has bugs. RLS is the seat belt: even if the frontend slips up, the database won’t let one user see another user’s data. It’s the difference between “an annoying bug” and “a data leak that makes the news.”</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Database rule</div><p class="text-xs text-neutral-400">The protection is built into the foundation.</p></div>
@@ -724,25 +724,25 @@ using ( user_id = auth.uid() );</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Defense in depth</div><p class="text-xs text-neutral-400">If one fails, the other catches it.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-6-2#topico-7" id="topico-7">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-2#topico-7" id="topico-7">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">7</span>
 <h2 class="text-2xl font-bold">🔍 Security audit</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t7-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t7-p1">
           Before putting the app into production, you ask the AI to <strong>act as a security expert</strong> and review the project against a four-point checklist: <strong class="text-rose-400">protected routes</strong>, <strong class="text-rose-400">no key exposed in the frontend</strong>, <strong class="text-rose-400">secrets only in environment variables</strong> e <strong class="text-rose-400">RLS enabled</strong>. A good practice is to <strong>clear the conversation</strong> before (fresh context audits better) and then fix everything that fails.
         </p>
 <!-- copy-run #6: prompt de auditoria -->
@@ -779,7 +779,7 @@ como corrigir. Nêo invente: se nêo der pra confirmar, diga.</pre>
 </div>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t7-p2">Because with vibe coding, you build fast, and it’s easy to leave a door open without realizing it. An explicit audit with a checklist is cheap (one prompt) and catches exactly what slipped through. It’s “trust but verify” applied to security: don’t assume it’s secure — verify.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t7-p2">Because with vibe coding, you build fast, and it’s easy to leave a door open without realizing it. An explicit audit with a checklist is cheap (one prompt) and catches exactly what slipped through. It’s “trust but verify” applied to security: don’t assume it’s secure — verify.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Specialist</div><p class="text-xs text-neutral-400">Ask the AI to define its role.</p></div>
@@ -788,25 +788,25 @@ como corrigir. Nêo invente: se nêo der pra confirmar, diga.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Fix and repeat</div><p class="text-xs text-neutral-400">Until the list is empty.</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 8 -->
-<section class="mb-16" data-inema-topic="modulo-6-2#topico-8" id="topico-8">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-6-2#topico-8" id="topico-8">
 <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">8</span>
 <h2 class="text-2xl font-bold">⚠️ App open = risk</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button">
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button">
 <span aria-hidden="true">?</span><span>I have a question</span>
 </button>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">What it is</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t8-p1">
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t8-p1">
           A <strong class="text-rose-400">app open</strong> — without authentication — it's a concrete financial risk: anyone with the URL can trigger your workflow and <strong>consume your AI tokens</strong>. Since you pay for usage, strangers’ usage becomes your bill. So don’t leave an app without login running in production for long: before sharing it, add <strong>authentication</strong> (Supabase) and <strong>usage limits</strong>.
         </p>
 <div class="bg-dark-800 border border-rose-500/30 rounded-xl p-4 mb-6">
@@ -817,7 +817,7 @@ como corrigir. Nêo invente: se nêo der pra confirmar, diga.</pre>
 <p class="text-neutral-300 text-sm">You publish a cool app, post the link, and go to sleep. A bot finds the URL, triggers the workflow thousands of times, and each run calls the AI model. By morning, the provider’s bill has exploded—with usage that wasn’t yours. An open app + a paid AI call = a direct risk to your wallet.</p>
 </div>
 <h3 class="text-lg font-semibold text-rose-400 mb-2">Why learn</h3>
-<p class="text-neutral-300 mb-4 leading-relaxed inema-prose" data-inema-block="m6-2-t8-p2">Because this is the natural trigger for the next module. Adding Supabase login and usage limits isn’t just security — it’s the first step toward a <strong>business model</strong>: if you’re going to control who uses it and how much, you’re one step away from charging for it. This reasoning drives the <strong>freemium with Stripe</strong> that you see in 6.3.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed ARCKHÉ-prose" data-ARCKHÉ-block="m6-2-t8-p2">Because this is the natural trigger for the next module. Adding Supabase login and usage limits isn’t just security — it’s the first step toward a <strong>business model</strong>: if you’re going to control who uses it and how much, you’re one step away from charging for it. This reasoning drives the <strong>freemium with Stripe</strong> that you see in 6.3.</p>
 <h3 class="text-lg font-semibold text-rose-400 mb-3">Key concepts</h3>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">URL = access</div><p class="text-xs text-neutral-400">Whoever has the link fires it off.</p></div>
@@ -826,19 +826,19 @@ como corrigir. Nêo invente: se nêo der pra confirmar, diga.</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-rose-400 font-semibold text-sm mb-1">Usage limits</div><p class="text-xs text-neutral-400">Per-user limit → freemium.</p></div>
 </div>
 <!-- Checagem leve -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-6-2#q1">
-<p class="inema-check__q font-medium mb-4">Setting: <strong>where NEVER</strong> should you add an API key?</p>
-<div class="inema-check-options inema-check__options space-y-2">
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">In the file <code>.env</code> (which is in the <code>.gitignore</code>).</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">In the cloud Environment Variables dashboard.</button>
-<button class="inema-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Pasted into the AI chat or committed to GitHub.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-6-2#q1">
+<p class="ARCKHÉ-check__q font-medium mb-4">Setting: <strong>where NEVER</strong> should you add an API key?</p>
+<div class="ARCKHÉ-check-options ARCKHÉ-check__options space-y-2">
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">In the file <code>.env</code> (which is in the <code>.gitignore</code>).</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">In the cloud Environment Variables dashboard.</button>
+<button class="ARCKHÉ-check__option block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Pasted into the AI chat or committed to GitHub.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done hidden">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done hidden">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
@@ -869,24 +869,24 @@ como corrigir. Nêo invente: se nêo der pra confirmar, diga.</pre>
 </main>
 <!-- TOC sticky + scrollspy -->
 <aside class="hidden lg:block">
-<nav aria-label="Page index" class="sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span data-inema-section-counter=""><span class="inema-toc-pos">1</span> of <span class="inema-toc-total">8</span></span></p>
+<nav aria-label="Page index" class="sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span data-ARCKHÉ-section-counter=""><span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">8</span></span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-1">1. Environment variables</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-2">2. Local vs. cloud</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-3">3. .env.example / process.env</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-4">4. OAuth &amp; refresh token</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-5">5. Golden rules</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-6">6. RLS — isolate data</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-7">7. Security audit</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-8">8. Open app = risk</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-1">1. Environment variables</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-2">2. Local vs. cloud</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-3">3. .env.example / process.env</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-4">4. OAuth &amp; refresh token</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-5">5. Golden rules</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-6">6. RLS — isolate data</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-7">7. Security audit</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-rose-400 block" href="#topico-8">8. Open app = risk</a></li>
 </ol>
 </nav>
 </aside>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Vibe Coding: Complete Mastery · Original course <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Vibe Coding: Complete Mastery · Original course <a class="text-sky-400 hover:text-sky-300 font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> · 2026</p>
 </div>
 </footer>
 <script>
@@ -902,15 +902,15 @@ como corrigir. Nêo invente: se nêo der pra confirmar, diga.</pre>
       htmlEl.classList.toggle('dark');
       const isDark = htmlEl.classList.contains('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', isDark ? 'inema-dark' : 'claro'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', isDark ? 'ARCKHÉ-dark' : 'claro'); }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (window.INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-6-2#q1', {
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (window.ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-6-2#q1', {
           answer: 2,
           explain: {
             0: 'Nêo — o .env é justamente o lugar certo, desde que esteja no .gitignore. O segredo fica fora do código e nunca sobe.',
